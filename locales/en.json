@@ -1,0 +1,39 @@
+{
+    "header": {
+        "title": "UX Design Hub",
+        "subtitle": "The Ultimate Resource Center for Designers 📚",
+        "made_by": "Made with love ❤️ by",
+        "team": "Design Team"
+    },
+    "search": {
+        "placeholder": "What are you looking for? (e.g. Persona, Figma, AI)..."
+    },
+    "categories": {
+        "all": "All Resources",
+        "research": "📊 Research",
+        "strategy": "🎯 Strategy",
+        "ia": "🏗️ Structure",
+        "tools": "🛠️ Tools"
+    },
+    "no_results": {
+        "title": "No match found?",
+        "desc": "Try searching for a different keyword! 😂"
+    },
+    "footer": {
+        "text": "Made with love, laughter, and coffee ☕",
+        "copy": "© 2024 UX Design Hub - Ultimate Resources Edition"
+    },
+    "vibe_check": {
+        "happy": "Are you happy guys? 😄",
+        "always": "Always! ❤️"
+    },
+    "resource": {
+        "link": "Visit Link"
+    },
+    "chat": {
+        "assistant_welcome": "Welcome! I'm your UX AI Assistant. What would you like to ask today?",
+        "user_placeholder": "Ask me anything about UX...",
+        "title": "UX AI Assistant",
+        "thinking": "Thinking... 🧠"
+    }
+}
