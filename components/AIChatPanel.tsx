@@ -34,19 +34,50 @@ const AIChatPanel: React.FC = () => {
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
-    const userMsg = input.trim();
-    setInput('');
+    // UI Updates
+    const userMsg = input;
     setMessages(prev => [...prev, { role: 'user', content: userMsg }]);
+    setInput('');
     setIsLoading(true);
 
     try {
-      // Pass language context to AI if possible, or just expect it to reply in same language
-      const response = await askUXAI(userMsg);
-      setMessages(prev => [...prev, { role: 'assistant', content: response }]);
-    } catch (e) {
-      setMessages(prev => [...prev, { role: 'assistant', content: "Sorry, I encountered an error." }]);
+      // 1. Get the Key (Try all possibilities for Vercel)
+      const API_KEY = import.meta.env.VITE_GEMINI_API_KEY ||
+        (typeof process !== 'undefined' && process.env?.REACT_APP_GEMINI_API_KEY) ||
+        (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_GEMINI_API_KEY) ||
+        "";
+
+      if (!API_KEY) throw new Error("API Key is missing in Vercel Environment Variables");
+
+      // 2. Call Gemini API (Direct Fetch)
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: userMsg }] }]
+        })
+      });
+
+      const data = await response.json();
+
+      if (data.error) throw new Error(data.error.message);
+
+      const botText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+
+      if (!botText) throw new Error("No response text from AI.");
+
+      // 3. Show Real Response
+      setMessages(prev => [...prev, { role: 'assistant', content: botText }]);
+
+    } catch (error: any) {
+      console.error("AI Error:", error);
+      setMessages(prev => [...prev, {
+        role: 'assistant',
+        content: "عذراً، حدث خطأ في الاتصال بالذكاء الاصطناعي. تأكد من إعدادات الـ API Key في Vercel."
+      }]);
+    } finally {
+      setIsLoading(false);
     }
-    setIsLoading(false);
   };
 
   const isRtl = i18n.dir() === 'rtl';
