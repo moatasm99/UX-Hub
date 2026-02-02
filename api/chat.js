@@ -1,61 +1,41 @@
-// Vercel Serverless Function - Secure Gemini API Proxy
-// This file runs on the server, NOT in the browser.
-// The API Key is safe here.
-
 export default async function handler(req, res) {
-    // Only allow POST requests
-    if (req.method !== 'POST') {
-        return res.status(405).json({ error: 'Method not allowed' });
+    // 1. Setup CORS (Allow connections from your frontend)
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+    res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
+
+    if (req.method === 'OPTIONS') {
+        res.status(200).end();
+        return;
     }
 
     try {
         const { message } = req.body;
 
-        if (!message) {
-            return res.status(400).json({ error: 'Message is required' });
-        }
+        // 2. Securely get Key from Server Environment
+        const API_KEY = process.env.GEMINI_API_KEY ||
+            process.env.NEXT_PUBLIC_GEMINI_API_KEY ||
+            process.env.REACT_APP_GEMINI_API_KEY;
 
-        // Get API Key from Environment (Server-side, secure)
-        const API_KEY = process.env.GEMINI_API_KEY;
+        if (!API_KEY) throw new Error("Server Error: API Key is missing.");
 
-        if (!API_KEY) {
-            console.error('GEMINI_API_KEY is not set in environment variables');
-            return res.status(500).json({ error: 'Server configuration error: API Key missing' });
-        }
+        // 3. Call Google API (Server-to-Server) - Using gemini-1.5-flash
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ contents: [{ parts: [{ text: message }] }] })
+        });
 
-        // Call Google Gemini API
-        const googleResponse = await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`,
-            {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    contents: [{ parts: [{ text: message }] }]
-                })
-            }
-        );
+        const data = await response.json();
 
-        const data = await googleResponse.json();
+        if (!response.ok) throw new Error(data.error?.message || "Google API Error");
 
-        if (!googleResponse.ok) {
-            console.error('Gemini API Error:', data.error);
-            return res.status(googleResponse.status).json({
-                error: data.error?.message || 'Failed to get response from AI'
-            });
-        }
-
-        // Extract the response text
-        const responseText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-
-        if (!responseText) {
-            return res.status(500).json({ error: 'No response from AI' });
-        }
-
-        // Return success
-        return res.status(200).json({ response: responseText });
+        const reply = data.candidates[0].content.parts[0].text;
+        res.status(200).json({ reply });
 
     } catch (error) {
-        console.error('Server Error:', error);
-        return res.status(500).json({ error: 'Internal server error' });
+        console.error("Backend Error:", error);
+        res.status(500).json({ error: error.message });
     }
 }

@@ -54,7 +54,7 @@ const AIChatPanel: React.FC = () => {
         throw new Error(data.error || 'Failed to get response');
       }
 
-      setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
+      setMessages(prev => [...prev, { role: 'assistant', content: data.reply }]);
 
     } catch (error: any) {
       console.error('Chat Error:', error);
