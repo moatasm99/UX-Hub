@@ -1535,6 +1535,171 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "visual-01",
+        title: "Visual Design Mastery",
+        badge: "Aesthetics",
+        badgeColor: "from-pink-500 to-red-500",
+        totalHours: "30 Hours",
+        totalDays: 4,
+        description: "Mastering the atoms of UI: Color, Typography, Iconography, and Spacing Systems.",
+        icon: "✨",
+        modules: [
+            // PART 1: COLOR & DEPTH
+            {
+                day: "Day 1",
+                title: "1. Color Theory & HSB Model",
+                summary: "Stop guessing colors. Understanding Hue, Saturation, and Brightness.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "HSB Color System Explained", url: "https://www.youtube.com/watch?v=HSBVideo", duration: "10 min" },
+                    { type: "Article", title: "Refactoring UI: Color Palette", url: "https://www.refactoringui.com/previews/building-your-color-palette", source: "Refactoring UI" }
+                ],
+                task: {
+                    title: "Palette Creation",
+                    description: "Palette: Create a 'Brand Palette' in Figma using HSB. 1 Primary Color, 3 Neutral Grays (Light, Medium, Dark), and 1 Semantic Color (Error Red).",
+                    deliverable: "Color Palette"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. The 60-30-10 Rule",
+                summary: "Balancing colors: 60% Neutral, 30% Secondary, 10% Accent.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "The 60-30-10 Rule in UI", url: "https://uxplanet.org/60-30-10-rule-in-ui-design-8de797b5354f", source: "UX Planet" },
+                    { type: "Video", title: "Applying Color Balance", url: "https://www.youtube.com/watch?v=ColorBalance", duration: "8 min" }
+                ],
+                task: {
+                    title: "Apply Rule",
+                    description: "Apply: Take a black & white Wireframe. Color it using the 60-30-10 rule (Backgrounds, Cards, CTAs).",
+                    deliverable: "Colored UI"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "3. Shadows & Elevation (Depth)",
+                summary: "Using light sources to create hierarchy. Material Design principles.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Material Design: Elevation", url: "https://m3.material.io/styles/elevation/overview", source: "Material Design" },
+                    { type: "Video", title: "Designing Better Shadows", url: "https://www.youtube.com/watch?v=ShadowsVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Shadow Styles",
+                    description: "Effects: Create 3 Shadow Styles in Figma: 'Low' (Card), 'Medium' (Hover), 'High' (Modal/Dropdown).",
+                    deliverable: "Shadow System"
+                }
+            },
+            // PART 2: TYPOGRAPHY & READABILITY
+            {
+                day: "Day 2",
+                title: "4. Typography Anatomy & Selection",
+                summary: "Serif vs Sans Serif. Choosing fonts that match the brand personality.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Choosing Fonts for UI", url: "https://www.youtube.com/watch?v=FontsVideo", duration: "10 min" },
+                    { type: "Article", title: "Google Fonts Knowledge", url: "https://fonts.google.com/knowledge", source: "Google Fonts" }
+                ],
+                task: {
+                    title: "Font Pairing",
+                    description: "Pairing: Choose 2 fonts (Header & Body) for a 'Luxury Hotel' app. Justify why they fit the brand.",
+                    deliverable: "Typography Selection"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "5. Type Scales & Hierarchy",
+                summary: "Using a Modular Scale (e.g., Major Third) for mathematical harmony.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "The Type Scale", url: "https://material.io/design/typography/the-type-system.html", source: "Material Design" },
+                    { type: "Video", title: "Setting up a Type Scale", url: "https://www.youtube.com/watch?v=TypeScale", duration: "10 min" }
+                ],
+                task: {
+                    title: "Type System",
+                    description: "System: Use typescale.com to generate a scale. Set up Figma Text Styles: H1, H2, H3, Body, Caption.",
+                    deliverable: "Type Styles"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "6. Vertical Rhythm & Line Height",
+                summary: "The 4-point baseline grid. Why line-height matters for readability.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Baseline Grids in UI", url: "https://medium.com/@obignell/designing-with-a-baseline-grid-55555", source: "Medium" },
+                    { type: "Video", title: "Line Height Best Practices", url: "https://www.youtube.com/watch?v=LineHeight", duration: "8 min" }
+                ],
+                task: {
+                    title: "Rhythm Fix",
+                    description: "Fix: Take a paragraph of text. Adjust the Line Height to be 150% of the font size (e.g., 16px Font -> 24px Line Height).",
+                    deliverable: "Readable Text"
+                }
+            },
+            // PART 3: IMAGERY & SYSTEMS
+            {
+                day: "Day 3",
+                title: "7. Iconography Consistency",
+                summary: "Stroke vs Fill. Optical alignment and visual weight of icons.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Material Symbols Guide", url: "https://m3.material.io/styles/icons/designing-icons", source: "Material Design" },
+                    { type: "Video", title: "Icon Design Basics", url: "https://www.youtube.com/watch?v=IconVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Icon Audit",
+                    description: "Audit: Download a set of 5 icons. Check if they have the same Stroke Width and Corner Radius. Unify them if needed.",
+                    deliverable: "Unified Icon Set"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "8. The 8pt Grid System (Spacing)",
+                summary: "Using multiples of 8 (8, 16, 24, 32) for padding and margins.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Intro to 8pt Grid", url: "https://spec.fm/specifics/8-pt-grid", source: "Spec.fm" },
+                    { type: "Video", title: "Figma Nudge Amount Setup", url: "https://www.youtube.com/watch?v=8ptGrid", duration: "5 min" }
+                ],
+                task: {
+                    title: "Grid Setup",
+                    description: "Setup: Change your Figma 'Big Nudge' to 8px. Redesign a Card component ensuring all padding/margins are divisible by 8.",
+                    deliverable: "8pt Grid Card"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "9. Imagery & Art Direction",
+                summary: "Choosing photos that tell a story. Vectors vs Rasters.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Selecting Better Photos", url: "https://www.nngroup.com/articles/photos-as-web-content/", source: "NN/g" },
+                    { type: "Video", title: "Working with Images in Figma", url: "https://www.youtube.com/watch?v=ImagesVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Hero Composition",
+                    description: "Composition: Design a 'Hero Section'. Use a high-quality Unsplash image and overlay text. Ensure the text is readable (use a scrim overlay).",
+                    deliverable: "Hero Section"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "10. Creating a Mini-Style Guide",
+                summary: "Documenting your styles for the developer.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Creating a Style Guide", url: "https://www.youtube.com/watch?v=StyleGuide", duration: "15 min" },
+                    { type: "Article", title: "Design System Fundamentals", url: "https://www.invisionapp.com/inside-design/guide-to-design-systems/", source: "InVision" }
+                ],
+                task: {
+                    title: "Final Style Guide",
+                    description: "Final Project: Create a single Figma Frame showing your: Color Palette, Typography Scale, Icon Set, and Button Components.",
+                    deliverable: "Mini Design System"
+                }
+            }
+        ]
     }
 ];
 
@@ -1549,6 +1714,7 @@ export const badgeMeta = {
     "Technical Skills": { color: "from-fuchsia-500 to-purple-600", icon: "🎨", text: "text-fuchsia-600 dark:text-fuchsia-400", bg: "bg-fuchsia-100 dark:bg-fuchsia-900/30" },
     "Collaboration": { color: "from-lime-500 to-green-600", icon: "🤝", text: "text-lime-600 dark:text-lime-400", bg: "bg-lime-100 dark:bg-lime-900/30" },
     "Theory": { color: "from-indigo-400 to-cyan-400", icon: "🧠", text: "text-indigo-600 dark:text-indigo-400", bg: "bg-indigo-100 dark:bg-indigo-900/30" },
+    "Aesthetics": { color: "from-pink-500 to-red-500", icon: "✨", text: "text-pink-600 dark:text-pink-400", bg: "bg-pink-100 dark:bg-pink-900/30" },
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
