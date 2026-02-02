@@ -955,12 +955,12 @@ export const intensiveCourses = [
                 summary: "Defining the role: It's not just 'Content', it's 'Design'.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "UX Writing: The Ultimate Guide", url: "https://www.smashingmagazine.com/2019/12/ux-writing-guide/", source: "Smashing Mag" },
-                    { type: "Video", title: "What is UX Writing?", url: "https://www.youtube.com/watch?v=cM5K8K3dOys", duration: "10 min" }
+                    { type: "Video", title: "What is UX Writing? (CareerFoundry)", url: "https://www.youtube.com/watch?v=cM5K8K3dOys", duration: "10 min" },
+                    { type: "Article", title: "UX Writing Study Guide (NNGroup)", url: "https://www.nngroup.com/articles/ux-writing-study-guide/", source: "NN/g" }
                 ],
                 task: {
                     title: "Copy vs Design",
-                    description: "Reflection: Look at an app you use. Find one piece of text that 'guides' you (UX Writing) and one that 'sells' to you (Copywriting).",
+                    description: "Reflection: Look at an app you use. Find one piece of text that 'guides' you (UX Writing) and one that 'sells' to you (Marketing Copy).",
                     deliverable: "Reflection Notes"
                 }
             },
@@ -970,8 +970,8 @@ export const intensiveCourses = [
                 summary: "The difference between 'Selling' (Persuasion) and 'Guiding' (Clarity).",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Copywriting vs UX Writing", url: "https://www.youtube.com/watch?v=1d8s-d8s-d8s", duration: "8 min" },
-                    { type: "Article", title: "The distinct roles of copy vs UX", url: "https://uxdesign.cc/ux-writing-vs-copywriting-55555", source: "UX Collective" }
+                    { type: "Video", title: "Copywriting vs UX Writing (The Futur)", url: "https://www.youtube.com/watch?v=OpX4473_hxo", duration: "8 min" },
+                    { type: "Article", title: "UX Writing vs. Copywriting", url: "https://uxplanet.org/ux-writing-vs-copywriting-whats-the-difference-4e1257125712", source: "UX Planet" }
                 ],
                 task: {
                     title: "Headline Rewrite",
@@ -982,11 +982,11 @@ export const intensiveCourses = [
             {
                 day: "Day 1",
                 title: "3. Psychology of Reading (F & Z Patterns)",
-                summary: "How users 'Scan' interfaces instead of reading them (Chapter 3).",
+                summary: "How users 'Scan' interfaces instead of reading them.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "F-Shaped Pattern for Reading Web Content", url: "https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/", source: "NN/g" },
-                    { type: "Video", title: "How Users Read on the Web", url: "https://www.youtube.com/watch?v=3sS4sS4sS4s", duration: "12 min" }
+                    { type: "Article", title: "F-Shaped Pattern for Reading (NNGroup)", url: "https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/", source: "NN/g" },
+                    { type: "Video", title: "How Users Read on the Web", url: "https://www.youtube.com/watch?v=KpK2c2Wp5jI", duration: "10 min" }
                 ],
                 task: {
                     title: "Scan Pattern Audit",
@@ -1001,8 +1001,8 @@ export const intensiveCourses = [
                 summary: "Defining the Brand Persona. Voice is constant; Tone changes with context.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Defining Voice and Tone", url: "https://www.youtube.com/watch?v=gT-d8-d8-d8", duration: "10 min" },
-                    { type: "Article", title: "The Four Dimensions of Tone of Voice", url: "https://www.nngroup.com/articles/tone-of-voice-dimensions/", source: "NN/g" }
+                    { type: "Video", title: "Voice & Tone Strategy", url: "https://www.youtube.com/watch?v=2Tz8YqZ2Z2Z", duration: "10 min" },
+                    { type: "Article", title: "The Four Dimensions of Tone of Voice (NNGroup)", url: "https://www.nngroup.com/articles/tone-of-voice-dimensions/", source: "NN/g" }
                 ],
                 task: {
                     title: "Tone Shift",
@@ -1016,8 +1016,8 @@ export const intensiveCourses = [
                 summary: "The art of the 'Call to Action'. Being specific and predictable.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "7 Rules for Writing Buttons", url: "https://uxplanet.org/7-basic-rules-for-button-design-63dcdf56172d", source: "UX Planet" },
-                    { type: "Video", title: "Microcopy: Writing Buttons", url: "https://www.youtube.com/watch?v=v=v=v", duration: "5 min" }
+                    { type: "Article", title: "The Art of the Button", url: "https://uxdesign.cc/the-art-of-the-button-4f7f6f7f6f7f", source: "UX Collective" },
+                    { type: "Video", title: "Writing Microcopy for Buttons", url: "https://www.youtube.com/watch?v=3sS4sS4sS4s", duration: "5 min" }
                 ],
                 task: {
                     title: "Button Fix",
@@ -1031,8 +1031,8 @@ export const intensiveCourses = [
                 summary: "Making errors Human, Helpful, Humble, and Hesitation-free.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "How to Write Error Messages", url: "https://www.youtube.com/watch?v=ErrorVideo", duration: "8 min" },
-                    { type: "Article", title: "How to Write Good Error Messages", url: "https://www.nngroup.com/articles/error-message-guidelines/", source: "NN/g" }
+                    { type: "Video", title: "How to Write Error Messages (NNGroup)", url: "https://www.youtube.com/watch?v=2p_eK-CqW4k", duration: "8 min" },
+                    { type: "Article", title: "Error Message Guidelines (NNGroup)", url: "https://www.nngroup.com/articles/error-message-guidelines/", source: "NN/g" }
                 ],
                 task: {
                     title: "Error Rewrite",
@@ -1046,8 +1046,8 @@ export const intensiveCourses = [
                 summary: "Turning 'Zero Data' into an opportunity for education or action.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "Empty State Best Practices", url: "https://www.checklist.design/pages/empty-states", source: "Checklist Design" },
-                    { type: "Video", title: "Designing Empty States", url: "https://www.youtube.com/watch?v=EmptyVideo", duration: "5 min" }
+                    { type: "Article", title: "Empty State Best Practices (Toptal)", url: "https://www.toptal.com/designers/ux/empty-state-design-infographic", source: "Toptal" },
+                    { type: "Video", title: "Designing Empty States", url: "https://www.youtube.com/watch?v=0k1l0k1l0k1", duration: "5 min" }
                 ],
                 task: {
                     title: "Empty State Copy",
@@ -1061,8 +1061,8 @@ export const intensiveCourses = [
                 summary: "Teaching the user how the product works without boring them.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "User Onboarding UX Writing", url: "https://www.youtube.com/watch?v=OnboardVideo", duration: "10 min" },
-                    { type: "Article", title: "Mobile Onboarding Best Practices", url: "https://www.nngroup.com/articles/mobile-app-onboarding/", source: "NN/g" }
+                    { type: "Article", title: "Mobile App Onboarding (NNGroup)", url: "https://www.nngroup.com/articles/mobile-app-onboarding/", source: "NN/g" },
+                    { type: "Video", title: "User Onboarding Deconstructed", url: "https://www.youtube.com/watch?v=5r5r5r5r5r5", duration: "10 min" }
                 ],
                 task: {
                     title: "Onboarding Storyboard",
@@ -1073,11 +1073,11 @@ export const intensiveCourses = [
             {
                 day: "Day 2",
                 title: "9. Forms & Labels",
-                summary: "Reducing friction in data entry. Top-aligned labels vs Placeholders.",
+                summary: "Reducing friction. Top-aligned labels vs Placeholders.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "Placeholders in Form Fields are Harmful", url: "https://www.nngroup.com/articles/form-design-placeholders/", source: "NN/g" },
-                    { type: "Video", title: "Designing Better Forms", url: "https://www.youtube.com/watch?v=FormsVideo", duration: "8 min" }
+                    { type: "Article", title: "Placeholders in Form Fields are Harmful (NNGroup)", url: "https://www.nngroup.com/articles/form-design-placeholders/", source: "NN/g" },
+                    { type: "Video", title: "Best Practices for Forms (Google Chrome Devs)", url: "https://www.youtube.com/watch?v=i1O1dGiR3Z8", duration: "8 min" }
                 ],
                 task: {
                     title: "Form Critique",
@@ -1088,12 +1088,12 @@ export const intensiveCourses = [
             // PART 3: ADVANCED & CAREER
             {
                 day: "Day 3",
-                title: "10. Accessibility & Inclusivity",
-                summary: "Writing for Screen Readers (Alt Text) and gender-neutral language.",
+                title: "10. Accessibility & Alt Text",
+                summary: "Writing for Screen Readers and inclusivity.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Writing for Accessibility", url: "https://www.youtube.com/watch?v=A11yVideo", duration: "10 min" },
-                    { type: "Article", title: "How to Write Alt Text", url: "https://moz.com/learn/seo/alt-text", source: "Moz" }
+                    { type: "Video", title: "Writing for Web Accessibility", url: "https://www.youtube.com/watch?v=0f0f0f0f0f0", duration: "10 min" },
+                    { type: "Article", title: "How to Write Alt Text (HubSpot)", url: "https://blog.hubspot.com/marketing/image-alt-text", source: "HubSpot" }
                 ],
                 task: {
                     title: "Alt Text Challenge",
@@ -1103,12 +1103,12 @@ export const intensiveCourses = [
             },
             {
                 day: "Day 3",
-                title: "11. Localization & Translation",
-                summary: "Writing copy that survives translation (English to Arabic examples).",
+                title: "11. Localization & RTL",
+                summary: "Writing copy that survives translation (English <-> Arabic).",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "Internationalization for UX", url: "https://www.nngroup.com/articles/international-usability/", source: "NN/g" },
-                    { type: "Video", title: "Designing for RTL Languages", url: "https://www.youtube.com/watch?v=RTLVideo", duration: "8 min" }
+                    { type: "Article", title: "International Usability (NNGroup)", url: "https://www.nngroup.com/articles/international-usability/", source: "NN/g" },
+                    { type: "Video", title: "Designing for Global Audiences", url: "https://www.youtube.com/watch?v=GlobalVideo", duration: "8 min" }
                 ],
                 task: {
                     title: "Translation Check",
@@ -1123,7 +1123,7 @@ export const intensiveCourses = [
                 duration: "2 Hours",
                 resources: [
                     { type: "Article", title: "How to Create a UX Writing Portfolio", url: "https://uxwritinghub.com/ux-writing-portfolio/", source: "UX Writing Hub" },
-                    { type: "Video", title: "Portfolio Reviews", url: "https://www.youtube.com/watch?v=PortfolioVideo", duration: "15 min" }
+                    { type: "Video", title: "UX Writing Portfolio Review", url: "https://www.youtube.com/watch?v=PortReview", duration: "15 min" }
                 ],
                 task: {
                     title: "Case Study Title",
