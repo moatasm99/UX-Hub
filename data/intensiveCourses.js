@@ -2241,6 +2241,172 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "adv-tools-01",
+        title: "Advanced UI & Prototyping",
+        badge: "Expert Logic",
+        badgeColor: "from-cyan-500 to-indigo-500",
+        totalHours: "30 Hours",
+        totalDays: 5,
+        description: "Making designs think. Figma Variables, Conditional Logic, Expressions, and ProtoPie.",
+        icon: "🧠",
+        modules: [
+            // PART 1: FIGMA VARIABLES & MODES
+            {
+                day: "Day 1",
+                title: "1. Advanced Variables (Modes)",
+                summary: "Switching Contexts. Creating Light/Dark modes and Density modes instantly.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Figma Variables: Modes Deep Dive", url: "https://www.youtube.com/watch?v=55555", duration: "15 min" },
+                    { type: "Article", title: "Guide to Variable Modes", url: "https://help.figma.com/hc/en-us/articles/15343221279767-Variable-modes", source: "Figma" }
+                ],
+                task: {
+                    title: "Mode Switcher",
+                    description: "Build: Create a 'Card' component. Set up 2 Variable Modes: 'Light Mode' and 'Dark Mode'. Drag the card between two frames to see it switch auto-magically.",
+                    deliverable: "Variable System"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Number Variables & Spacing Tokens",
+                summary: "Controlling dimensions and corner radius with math variables.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "The Power of Number Variables", url: "https://www.youtube.com/watch?v=NumberVars", duration: "10 min" },
+                    { type: "Article", title: "Aliasing Variables", url: "https://www.figma.com/best-practices/variables-guide/", source: "Figma" }
+                ],
+                task: {
+                    title: "Spacing System",
+                    description: "System: Create a 'Spacing Scale' (4, 8, 16, 32) using Variables. Apply these variables to the Auto Layout padding of a button. Change the variable value and watch the button update.",
+                    deliverable: "Spacing Variables"
+                }
+            },
+            // PART 2: CONDITIONAL LOGIC (FIGMA)
+            {
+                day: "Day 2",
+                title: "3. Conditional Logic (If/Else)",
+                summary: "Making prototypes smart. 'If Input is Empty, Disable Button'.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Prototyping with Conditions", url: "https://www.youtube.com/watch?v=ConditionsFigma", duration: "12 min" },
+                    { type: "Article", title: "Using Conditional Logic", url: "https://help.figma.com/hc/en-us/articles/15253220891799-Use-conditional-logic", source: "Figma" }
+                ],
+                task: {
+                    title: "Conditional Form",
+                    description: "Logic: Create a 'Form'. Add logic: IF the text input is not empty, THEN change the 'Submit' button state to 'Active'.",
+                    deliverable: "Smart Prototype"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "4. Expressions & Counters",
+                summary: "Doing math in design. Shopping carts and counters.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Building a Shopping Cart in Figma", url: "https://www.youtube.com/watch?v=ShoppingCart", duration: "15 min" },
+                    { type: "Article", title: "Prototyping Expressions", url: "https://help.figma.com/hc/en-us/articles/15253196696471-Use-expressions", source: "Figma" }
+                ],
+                task: {
+                    title: "Counter Interaction",
+                    description: "Build: Create a 'Counter' component (- 1 +). When clicking +, increment a variable called 'Count'. Display that number in a text layer.",
+                    deliverable: "Interactive Counter"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "5. Component Properties (Advanced)",
+                summary: "Nested instances and exposing properties for complex systems.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Advanced Component Properties", url: "https://www.youtube.com/watch?v=AdvProps", duration: "10 min" },
+                    { type: "Article", title: "Exposing Nested Instances", url: "https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components", source: "Figma" }
+                ],
+                task: {
+                    title: "Dialog Architecture",
+                    description: "Architecture: Create a 'Dialog Modal' component. Expose the 'Content' slot property so you can swap the inner content without detaching.",
+                    deliverable: "Slot Component"
+                }
+            },
+            // PART 3: PROTOPIE (BEYOND FIGMA)
+            {
+                day: "Day 3",
+                title: "6. Introduction to ProtoPie",
+                summary: "Why ProtoPie? Accessing Sensors, Camera, and Text Input logic.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Figma vs ProtoPie", url: "https://www.youtube.com/watch?v=FigmaVsProtoPie", duration: "10 min" },
+                    { type: "Article", title: "Getting Started with ProtoPie", url: "https://www.protopie.io/learn/getting-started", source: "ProtoPie" }
+                ],
+                task: {
+                    title: "ProtoPie Setup",
+                    description: "Setup: Install the ProtoPie plugin in Figma. Export a simple 'Login Screen' from Figma to ProtoPie Studio.",
+                    deliverable: "ProtoPie Export"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "7. ProtoPie: Chain & Detect Triggers",
+                summary: "Linking properties. 'When I scroll, rotate this header'.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Chain Trigger Tutorial", url: "https://www.youtube.com/watch?v=ChainTrigger", duration: "10 min" },
+                    { type: "Article", title: "Mastering Chain Interaction", url: "https://www.protopie.io/learn/chain", source: "ProtoPie" }
+                ],
+                task: {
+                    title: "Parallax header",
+                    description: "Micro-interaction: Create a 'Parallax Header'. As the user scrolls up (Y axis), change the Opacity and Scale of the header image.",
+                    deliverable: "Scroll Interaction"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "8. ProtoPie: Variables & Formulas",
+                summary: "Advanced calculator logic and storing user input.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Formulas in ProtoPie", url: "https://www.youtube.com/watch?v=Formulas", duration: "15 min" },
+                    { type: "Article", title: "Using Variables in ProtoPie", url: "https://www.protopie.io/learn/variables", source: "ProtoPie" }
+                ],
+                task: {
+                    title: "Password Logic",
+                    description: "Challenge: Build a 'Password Strength' checker. If the input length > 8, change the strength bar color to Green.",
+                    deliverable: "Logic Component"
+                }
+            },
+            // PART 4: AI & WORKFLOW
+            {
+                day: "Day 5",
+                title: "9. AI Tools for UI (Relume & Magician)",
+                summary: "Speeding up layout and content generation.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Relume Library Workflow", url: "https://www.youtube.com/watch?v=RelumeAI", duration: "10 min" },
+                    { type: "Article", title: "AI in the Design Workflow", url: "https://www.nngroup.com/articles/ai-tools-ux/", source: "NN/g" }
+                ],
+                task: {
+                    title: "AI Wireframing",
+                    description: "Speed Run: Use 'Relume Library' to generate a full Sitemap and Wireframe for a Marketing Site in under 10 minutes.",
+                    deliverable: "AI Wireframe"
+                }
+            },
+            {
+                day: "Day 5",
+                title: "10. The Realistic Prototype (Project)",
+                summary: "Combining everything into a usable product simulation.",
+                duration: "5 Hours",
+                resources: [
+                    { type: "Video", title: "High Fidelity Prototyping Showcase", url: "https://www.youtube.com/watch?v=HiFiProto", duration: "5 min" },
+                    { type: "Article", title: "Testing High-Fidelity Prototypes", url: "https://www.nngroup.com/articles/ux-prototype-fidelity/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Hi-Fi Player",
+                    description: "Final Project: Create a 'Music Player' prototype where: 1. You can play/pause (toggle). 2. The progress bar moves. 3. Switching songs updates the Title variable.",
+                    deliverable: "Final Prototype"
+                }
+            }
+        ]
     }
 ];
 
@@ -2262,6 +2428,7 @@ export const badgeMeta = {
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
+    "Expert Logic": { color: "from-cyan-500 to-indigo-500", icon: "🧠", text: "text-cyan-600 dark:text-cyan-400", bg: "bg-cyan-100 dark:bg-cyan-900/30" },
     "Capstone": { color: "from-rose-500 to-pink-600", icon: "🏆", text: "text-rose-600 dark:text-rose-400", bg: "bg-rose-100 dark:bg-rose-900/30" }
 };
 
