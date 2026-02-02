@@ -231,6 +231,122 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "ux-03",
+        title: "User Research Methods",
+        badge: "Deep Dive",
+        badgeColor: "from-blue-500 to-indigo-600",
+        totalHours: "60 Hours",
+        totalDays: 4,
+        description: "From raw data to deep understanding: Interviews, Synthesis, IA, and Testing.",
+        icon: "🔍",
+        modules: [
+            {
+                day: "Day 1",
+                title: "Lean UX & The Research Plan",
+                summary: "Planning the research and mastering the art of the interview.",
+                duration: "15 Hours",
+                resources: [
+                    {
+                        type: "Video",
+                        title: "How to Create a UX Research Plan",
+                        url: "https://www.youtube.com/watch?v=XZ3Z3Z3Z3Z3",
+                        duration: "12 min",
+                        source: "Placeholder"
+                    },
+                    {
+                        type: "Article",
+                        title: "The Mom Test: How to talk to users",
+                        url: "https://medium.com/@soyouwanttowrite/the-mom-test-summary-4d0f7a08605e",
+                        source: "Medium"
+                    }
+                ],
+                task: {
+                    title: "Research Protocol",
+                    description: "Draft a 'Research Plan' for a travel app. Then, write a full 'Interview Script' with 5 open-ended questions avoiding Yes/No answers.",
+                    deliverable: "Research Plan + Interview Script"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "Making Sense of Data (Synthesis)",
+                summary: "Transforming chaos into clarity: Affinity Mapping & Personas.",
+                duration: "15 Hours",
+                resources: [
+                    {
+                        type: "Video",
+                        title: "Affinity Mapping Tutorial",
+                        url: "https://www.youtube.com/watch?v=UqI7hB5X2s8",
+                        duration: "10 min",
+                        source: "NN/g"
+                    },
+                    {
+                        type: "Article",
+                        title: "Guide to Customer Journey Maps",
+                        url: "https://www.nngroup.com/articles/journey-mapping-101/",
+                        source: "NN/g"
+                    }
+                ],
+                task: {
+                    title: "Synthesis & Persona",
+                    description: "Use sticky notes to cluster your interview data (Affinity Sort). Create 1 Primary Persona and map their 'Current Journey' identifying 3 Pain Points.",
+                    deliverable: "Persona Profile + Journey Map"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "Information Architecture (IA)",
+                summary: "Structuring content using Card Sorting & Tree Testing.",
+                duration: "15 Hours",
+                resources: [
+                    {
+                        type: "Video",
+                        title: "Card Sorting: Open vs Closed",
+                        url: "https://www.youtube.com/watch?v=qT_1O2O_Sbs",
+                        duration: "8 min",
+                        source: "NN/g"
+                    },
+                    {
+                        type: "Article",
+                        title: "IA & The Researcher's Toolkit",
+                        url: "https://www.nngroup.com/articles/ia-101/",
+                        source: "NN/g"
+                    }
+                ],
+                task: {
+                    title: "Card Sorting Session",
+                    description: "Perform an 'Open Card Sort' with 3 users using 20 cards/labels. Use the results to propose a new, logic-based Site Map.",
+                    deliverable: "Card Sort Results + Site Map"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "The Researcher's Toolkit & Reporting",
+                summary: "Using tools (Hotjar, Analytics) and presenting findings.",
+                duration: "15 Hours",
+                resources: [
+                    {
+                        type: "Video",
+                        title: "Presenting UX Research Findings",
+                        url: "https://www.youtube.com/watch?v=M5QjT4Th6Mw",
+                        duration: "15 min",
+                        source: "NN/g"
+                    },
+                    {
+                        type: "Article",
+                        title: "Triangulating Data (Qual + Quant)",
+                        url: "https://www.nngroup.com/articles/triangulation-better-research-results/",
+                        source: "NN/g"
+                    }
+                ],
+                task: {
+                    title: "Final Research Report",
+                    description: "Prepare a slide deck presenting your Persona, Journey Map, and IA proposal. Include 'Recommendations' for the design team.",
+                    deliverable: "Research Presentation Deck"
+                }
+            }
+        ]
     }
 ];
 
@@ -238,6 +354,7 @@ export const intensiveCourses = [
 export const badgeMeta = {
     "Foundation": { color: "from-emerald-500 to-teal-600", icon: "🎓", text: "text-emerald-600 dark:text-emerald-400", bg: "bg-emerald-100 dark:bg-emerald-900/30" },
     "Methodology": { color: "from-violet-500 to-purple-600", icon: "💡", text: "text-violet-600 dark:text-violet-400", bg: "bg-violet-100 dark:bg-violet-900/30" },
+    "Deep Dive": { color: "from-blue-600 to-indigo-700", icon: "🔍", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
