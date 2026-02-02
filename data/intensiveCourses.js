@@ -3186,6 +3186,127 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "ai-dt-01",
+        title: "AI Design Thinking Workshop",
+        badge: "Methodology",
+        badgeColor: "from-violet-500 to-purple-600",
+        totalHours: "20 Hours",
+        totalDays: 4,
+        description: "Reinventing the Double Diamond. How to co-create with AI to solve complex problems faster.",
+        icon: "💡",
+        modules: [
+            // PART 1: EMPATHIZE & DEFINE (The Problem Space)
+            {
+                day: "Day 1",
+                title: "1. AI-Empowered Empathy",
+                summary: "Using NLP to analyze thousands of user reviews instantly. Beyond manual coding.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "AI for User Research Analysis", url: "https://www.nngroup.com/articles/ai-user-research-analysis/", source: "NN/g" },
+                    { type: "Video", title: "Synthesizing Data with AI", url: "https://www.youtube.com/watch?v=AIResearchData", duration: "10 min" }
+                ],
+                task: {
+                    title: "Sentiment Analysis",
+                    description: "Workshop: Upload a CSV of 500 App Store reviews to ChatGPT (Code Interpreter). Ask it to 'Identify the top 3 emotional pain points' and visualize them in a chart.",
+                    deliverable: "Sentiment Report"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Reframing the Problem with LLMs",
+                summary: "Generating 'How Might We' (HMW) questions to widen the scope.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Reframing Problems with AI", url: "https://hbr.org/2023/04/how-generative-ai-can-augment-human-creativity", source: "HBR" },
+                    { type: "Video", title: "The Art of HMW Questions", url: "https://www.youtube.com/watch?v=HMWVideo", duration: "8 min" }
+                ],
+                task: {
+                    title: "HMW Generator",
+                    description: "Activity: Feed a problem statement to Claude 2 (e.g., 'Users hate waiting'). Ask it to generate 10 radical 'How Might We' questions using the 'SCAMPER' technique.",
+                    deliverable: "HMW List"
+                }
+            },
+            // PART 2: IDEATION (The Solution Space)
+            {
+                day: "Day 2",
+                title: "3. Divergent Thinking with AI",
+                summary: "Brainstorming 100 ideas in 10 minutes. Overcoming 'Designer's Block'.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Brainstorming with ChatGPT", url: "https://www.youtube.com/watch?v=IdeationAI", duration: "10 min" },
+                    { type: "Article", title: "Generative AI for Ideation", url: "https://www.boardofinnovation.com/blog/ai-in-design-thinking/", source: "Board of Innovation" }
+                ],
+                task: {
+                    title: "Crazy 8s AI",
+                    description: "Mash-up: Use the 'Random Word' technique with AI. Ask AI to combine 'Banking App' with 'Tinder Interface'. What crazy ideas come out?",
+                    deliverable: "Idea Sketch"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "4. Storyboarding with Midjourney",
+                summary: "Visualizing the 'Future State' scenario without drawing skills.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Storyboarding with Generative AI", url: "https://uxdesign.cc/storyboarding-with-ai-55555", source: "UX Design" },
+                    { type: "Video", title: "Midjourney for Storytelling", url: "https://www.youtube.com/watch?v=MidjourneyStory", duration: "15 min" }
+                ],
+                task: {
+                    title: "Storyboard Gen",
+                    description: "Visual Narrative: Generate a 4-panel storyboard showing a user solving their problem using your new idea. Use consistent characters.",
+                    deliverable: "Storyboard"
+                }
+            },
+            // PART 3: PROTOTYPE & TEST (The Reality Space)
+            {
+                day: "Day 3",
+                title: "5. The 'Wizard of Oz' Prototype",
+                summary: "Faking complex AI features using simple tools to test demand.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Wizard of Oz Prototyping", url: "https://www.youtube.com/watch?v=WizardOfOz", duration: "10 min" },
+                    { type: "Article", title: "Prototyping AI Experiences", url: "https://alistapart.com/article/prototyping-ai/", source: "A List Apart" }
+                ],
+                task: {
+                    title: "WoZ Simulation",
+                    description: "Build: Create a 'Fake AI Chatbot' in Figma. Manually type the responses during a user test to simulate a super-smart AI.",
+                    deliverable: "Prototype Record"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. AI-Simulated User Testing",
+                summary: "Using 'Synthetic Personas' to critique your solution before humans see it.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Synthetic Users: Pros & Cons", url: "https://www.nngroup.com/articles/synthetic-users/", source: "NN/g" },
+                    { type: "Video", title: "Simulating Feedback with AI", url: "https://www.youtube.com/watch?v=SyntheticFeedback", duration: "10 min" }
+                ],
+                task: {
+                    title: "Synthetic Critique",
+                    description: "Critique: Show your value proposition to ChatGPT acting as 'A skeptical 60-year-old user'. Ask it to list 3 reasons why it wouldn't use your product.",
+                    deliverable: "Feedback Log"
+                }
+            },
+            // WRAP UP: ETHICS & STRATEGY
+            {
+                day: "Day 4",
+                title: "7. Responsible AI Design",
+                summary: "Bias, Hallucinations, and the 'Black Box' problem.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Human-Centered AI Guidelines (Google)", url: "https://www.youtube.com/watch?v=PAIRGuide", duration: "15 min" },
+                    { type: "Article", title: "Microsoft HAX Toolkit", url: "https://www.microsoft.com/en-us/haxtoolkit/", source: "Microsoft" }
+                ],
+                task: {
+                    title: "Risk Audit",
+                    description: "Audit: Review your AI-generated ideas. Do they exclude any demographic? Are they relying on biased training data? Write a 'Risk Assessment'.",
+                    deliverable: "Audit Report"
+                }
+            }
+        ]
     }
 ];
 
