@@ -1299,6 +1299,110 @@ export const intensiveCourses = [
         ]
     },
     {
+        id: "ia-01",
+        title: "Information Architecture & User Flows",
+        badge: "Methodology",
+        badgeColor: "from-violet-500 to-purple-600",
+        totalHours: "20 Hours",
+        totalDays: 3,
+        description: "The blueprint of design. Sitemaps, User Flows, and organizing complex information.",
+        icon: "🗺️",
+        modules: [
+            // PART 1: STRUCTURE
+            {
+                day: "Day 1",
+                title: "1. Mental Models & IA patterns",
+                summary: "How users expect content to be organized. Hierarchical vs Flat vs Linear.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Information Architecture Basics", url: "https://www.youtube.com/watch?v=IA_Basics", duration: "12 min" },
+                    { type: "Article", title: "Complete Guide to IA", url: "https://www.nngroup.com/articles/ia-structure/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Navigation Analysis",
+                    description: "Analyze: Open Spotify. Draw a tree diagram of its main navigation Structure (Home -> Section -> Detail).",
+                    deliverable: "Mini Sitemap"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Card Sorting",
+                summary: "A research method to discover how users categorize information.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "How to run a Card Sort", url: "https://www.youtube.com/watch?v=CardSorting", duration: "10 min" },
+                    { type: "Tool", title: "OptimalSort (Free Trial)", url: "https://www.optimalworkshop.com/optimalsort", source: "Tool" }
+                ],
+                task: {
+                    title: "Card Sort Session",
+                    description: "Activity: Write down 20 grocery items on slips of paper. Ask a friend to group them. Did they group by 'Meal Type' or 'Aisle'?",
+                    deliverable: "Sorting Results"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "3. Sitemaps",
+                summary: "Visualizing the hierarchy of a website or app.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "How to Create a Sitemap", url: "https://uxderm.com/sitemap-guide", source: "UX Derm" },
+                    { type: "Video", title: "Sitemaps in Figma", url: "https://www.youtube.com/watch?v=SitemapsFigma", duration: "15 min" }
+                ],
+                task: {
+                    title: "E-commerce Sitemap",
+                    description: "Map: Create a Sitemap for an online shoe store. Include: Home, Category (Men/Women), Product Detail, Cart, Checkout, Profile.",
+                    deliverable: "Sitemap Diagram"
+                }
+            },
+            // PART 2: FLOW
+            {
+                day: "Day 2",
+                title: "4. User Flows vs Task Flows",
+                summary: "Mapping the path a user takes to complete a goal.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "User Flows Explained", url: "https://www.youtube.com/watch?v=UserFlows", duration: "10 min" },
+                    { type: "Article", title: "Flow Charts Symbols 101", url: "https://www.balsamiq.com/learn/articles/user-flow-examples/", source: "Balsamiq" }
+                ],
+                task: {
+                    title: "Booking Flow",
+                    description: "Flow: Map the 'Book a Flight' process. Start: 'Search Flight'. End: 'Confirmation Email'. Include decision diamonds (e.g., 'Is user logged in?').",
+                    deliverable: "User Flow Diagram"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "5. Wireframing the Flow",
+                summary: "Moving from boxes and arrows to screen layouts (Low-Fi).",
+                duration: "4 Hours",
+                resources: [
+                    { type: "Video", title: "From Flow to Wireframe", url: "https://www.youtube.com/watch?v=WireframingFlows", duration: "15 min" },
+                    { type: "Article", title: "Wireframing Best Practices", url: "https://www.smashingmagazine.com/2021/wireframing-guide/", source: "Smashing Mag" }
+                ],
+                task: {
+                    title: "Lo-Fi Sketches",
+                    description: "Sketch: Take your 'Book a Flight' user flow and sketch the 5 key screens needed to complete it (Search -> Results -> Details -> Passenger Info -> Pay).",
+                    deliverable: "Low-Fi Screens"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. Navigation Patterns",
+                summary: "Tabs, Hamburgers, Breadcrumbs, and Mega Menus.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Mobile Navigation Patterns", url: "https://www.nngroup.com/articles/mobile-navigation-patterns/", source: "NN/g" },
+                    { type: "Video", title: "Designing Navigation", url: "https://www.youtube.com/watch?v=NavDesign", duration: "10 min" }
+                ],
+                task: {
+                    title: "Nav Redesign",
+                    description: "Redesign: Take a screenshot of a confusing app menu. Redesign it to be simpler and label the pattern you used (e.g., 'Bottom Tab Bar').",
+                    deliverable: "Nav Concept"
+                }
+            }
+        ]
+    },
+    {
         id: "handoff-01",
         title: "Design-Dev Handoff Process",
         badge: "Collaboration",
@@ -2647,6 +2751,141 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "agile-01",
+        title: "Agile for UX Designers",
+        badge: "Management",
+        badgeColor: "from-blue-700 to-indigo-800",
+        totalHours: "30 Hours",
+        totalDays: 4,
+        description: "Surviving and thriving in Agile environments. Scrum, Kanban, User Stories, and Dual Track Agile.",
+        icon: "🔄",
+        modules: [
+            // PART 1: AGILE FOUNDATIONS
+            {
+                day: "Day 1",
+                title: "1. Agile vs. Waterfall",
+                summary: "Why we stopped building software like factories. The Agile Manifesto.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Agile Product Ownership in a Nutshell", url: "https://www.youtube.com/watch?v=502ILHjX9EE", duration: "15 min" },
+                    { type: "Article", title: "Agile UX: The Complete Guide", url: "https://www.nngroup.com/articles/agile-ux-updates/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Process Reflection",
+                    description: "Reflection: Compare a past project (or imagine one). How would 'shipping every 2 weeks' change your design decisions compared to 'shipping after 6 months'?",
+                    deliverable: "Reflection Note"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. The Scrum Framework",
+                summary: "Understanding the Rituals: Standup, Planning, Review, and Retro.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Scrum Events Guide", url: "https://www.atlassian.com/agile/scrum/ceremonies", source: "Atlassian" },
+                    { type: "Video", title: "Scrum Guide Visualized", url: "https://www.youtube.com/watch?v=TRcReyRYIMg", duration: "10 min" }
+                ],
+                task: {
+                    title: "Standup Sim",
+                    description: "Simulation: Record a 1-minute video for a 'Daily Standup'. Answer: 1. What did you do yesterday? 2. What will you do today? 3. Any blockers?",
+                    deliverable: "Video/Script"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "3. Integrating UX in Scrum (The Struggle)",
+                summary: "How to fit 'Big Picture' design into 'Small Sprints'.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Doing UX in an Agile World", url: "https://www.nngroup.com/articles/doing-ux-agile/", source: "NN/g" },
+                    { type: "Video", title: "UX in Agile: One Sprint Ahead", url: "https://www.youtube.com/watch?v=AgileUX", duration: "10 min" }
+                ],
+                task: {
+                    title: "Staggered Sprints",
+                    description: "Strategy: Create a timeline showing 'Sprint N' (Devs building login) and 'Sprint N+1' (Designers researching Dashboard). This is 'Staggered Sprints'.",
+                    deliverable: "Timeline Visual"
+                }
+            },
+            // PART 2: EXECUTION & DELIVERABLES
+            {
+                day: "Day 2",
+                title: "4. Writing User Stories",
+                summary: "The currency of Agile. 'As a [User], I want [Action], so that [Benefit]'.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Writing Good User Stories", url: "https://www.youtube.com/watch?v=UserStories", duration: "8 min" },
+                    { type: "Article", title: "User Stories with Acceptance Criteria", url: "https://www.mountaingoatsoftware.com/agile/user-stories", source: "Mountaingoat" }
+                ],
+                task: {
+                    title: "User Story Authoring",
+                    description: "Write: Convert this feature request: 'We need a search bar' into a User Story. Add 3 'Acceptance Criteria' (e.g., 'Must handle typos').",
+                    deliverable: "User Story Card"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "5. Dual Track Agile",
+                summary: "Separating 'Discovery' (Research) from 'Delivery' (Coding).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Dual Track Agile Explained", url: "https://www.svpg.com/dual-track-agile/", source: "Marty Cagan" },
+                    { type: "Video", title: "Discovery vs Delivery", url: "https://www.youtube.com/watch?v=DualTrack", duration: "10 min" }
+                ],
+                task: {
+                    title: "Track Separation",
+                    description: "Diagram: Draw two parallel tracks. Track 1: Interviewing users about 'Payment'. Track 2: Devs building the 'Cart' designed last week.",
+                    deliverable: "Dual Track Diagram"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. Estimation & Story Points",
+                summary: "How teams guess effort. Why Design is hard to estimate.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Story Points vs Hours", url: "https://www.youtube.com/watch?v=StoryPoints", duration: "8 min" },
+                    { type: "Article", title: "Estimating Design Work", url: "https://www.nngroup.com/articles/estimating-ux-work/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Planning Poker",
+                    description: "Poker: Assign Fibonacci points (1, 2, 3, 5, 8) to these tasks: 1. Change Button Color. 2. Redesign Checkout Flow. Justify the complexity.",
+                    deliverable: "Estimation Log"
+                }
+            },
+            // PART 3: DEFINITION OF DONE
+            {
+                day: "Day 4",
+                title: "7. The Definition of Done (DoD)",
+                summary: "When is a design 'Finished'? No more 'Just one small tweak'.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Definition of Done for UX", url: "https://www.scrum.org/resources/blog/definition-done-ux", source: "Scrum.org" },
+                    { type: "Video", title: "DoD vs Acceptance Criteria", url: "https://www.youtube.com/watch?v=DoDVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "DoD Checklist",
+                    description: "Checklist: Create a 'Design DoD' checklist. (e.g., 1. Mobile & Desktop mockups ready? 2. Assets exported? 3. Accessibility checked?).",
+                    deliverable: "Checklist"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "8. Design Sprints (Google Ventures)",
+                summary: "Solving big problems in 5 days. Map, Sketch, Decide, Prototype, Test.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "The Design Sprint in 90 Seconds", url: "https://www.youtube.com/watch?v=K2vSQPh6MHCQ", duration: "2 min" },
+                    { type: "Article", title: "The Design Sprint Guide", url: "https://www.gv.com/sprint/", source: "GV" }
+                ],
+                task: {
+                    title: "Sprint Plan",
+                    description: "Plan: You have a 5-day sprint for a new feature. Assign a specific goal for Monday (Map), Wednesday (Decide), and Friday (Test).",
+                    deliverable: "Sprint Agenda"
+                }
+            }
+        ]
     }
 ];
 
@@ -2671,6 +2910,7 @@ export const badgeMeta = {
     "Expert Logic": { color: "from-cyan-500 to-indigo-500", icon: "🧠", text: "text-cyan-600 dark:text-cyan-400", bg: "bg-cyan-100 dark:bg-cyan-900/30" },
     "Capstone": { color: "from-rose-500 to-pink-600", icon: "🏆", text: "text-rose-600 dark:text-rose-400", bg: "bg-rose-100 dark:bg-rose-900/30" },
     "Quality Control": { color: "from-red-500 to-rose-600", icon: "🧐", text: "text-red-600 dark:text-red-400", bg: "bg-red-100 dark:bg-red-900/30" },
-    "Get Hired": { color: "from-teal-500 to-green-600", icon: "💼", text: "text-teal-600 dark:text-teal-400", bg: "bg-teal-100 dark:bg-teal-900/30" }
+    "Get Hired": { color: "from-teal-500 to-green-600", icon: "💼", text: "text-teal-600 dark:text-teal-400", bg: "bg-teal-100 dark:bg-teal-900/30" },
+    "Management": { color: "from-blue-700 to-indigo-800", icon: "🔄", text: "text-blue-700 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" }
 };
 
