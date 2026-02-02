@@ -1700,6 +1700,141 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "web-01",
+        title: "UI Principles for Web",
+        badge: "Web Standards",
+        badgeColor: "from-sky-500 to-blue-500",
+        totalHours: "30 Hours",
+        totalDays: 4,
+        description: "Designing for the browser. Mastering Responsive Layouts, Grids, and Web Accessibility.",
+        icon: "🌐",
+        modules: [
+            // PART 1: RESPONSIVE WEB DESIGN (RWD)
+            {
+                day: "Day 1",
+                title: "1. The 12-Column Grid System",
+                summary: "The backbone of the web. Margins, Gutters, and Columns (Bootstrap Standard).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Responsive Grids Explained", url: "https://www.youtube.com/watch?v=GridsVideo", duration: "10 min" },
+                    { type: "Article", title: "Guide to Responsive Grids", url: "https://material.io/design/layout/responsive-layout-grid.html", source: "Material Design" }
+                ],
+                task: {
+                    title: "Grid Setup",
+                    description: "Setup: Create 3 Artboards in Figma: Desktop (1440px), Tablet (768px), Mobile (375px). Apply the correct 12, 8, and 4-column grids.",
+                    deliverable: "Responsive Grids"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Breakpoints & Media Queries",
+                summary: "Understanding how content reflows at specific widths (sm, md, lg, xl).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Responsive Design Breakpoints", url: "https://www.w3schools.com/css/css_rwd_mediaqueries.asp", source: "W3Schools" },
+                    { type: "Video", title: "Designing for Breakpoints", url: "https://www.youtube.com/watch?v=BreakpointsVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Adapt Content",
+                    description: "Adapt: Design a 'Pricing Section' with 3 cards. Show how they stack vertically on Mobile and align horizontally on Desktop.",
+                    deliverable: "Reflow Design"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "3. Mobile-First vs. Desktop-First",
+                summary: "Designing for the smallest screen first to prioritize content.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Mobile First Design Strategy", url: "https://www.youtube.com/watch?v=MobileFirst", duration: "8 min" },
+                    { type: "Article", title: "What is Mobile First Design?", url: "https://www.interaction-design.org/literature/article/mobile-first-design-strategy", source: "IxDF" }
+                ],
+                task: {
+                    title: "Mobile First Challenge",
+                    description: "Challenge: Sketch a complex News Homepage for Mobile ONLY. Decide what to hide, what to stack, and what to keep visible.",
+                    deliverable: "Mobile Sketch"
+                }
+            },
+            // PART 2: WEB TYPOGRAPHY & LAYOUT
+            {
+                day: "Day 2",
+                title: "4. Web Typography & Readability",
+                summary: "Rem vs Px, fluid typography, and optimal line lengths (60-75 chars).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Web Typography: The Basics", url: "https://fonts.google.com/knowledge/choosing_type/choosing_type_for_web", source: "Google Fonts" },
+                    { type: "Video", title: "Responsive Typography", url: "https://www.youtube.com/watch?v=FluidType", duration: "10 min" }
+                ],
+                task: {
+                    title: "Responsive Scale",
+                    description: "Scale: Set up a responsive Type Scale. Define how H1 changes size from Desktop (e.g., 64px) to Mobile (e.g., 32px).",
+                    deliverable: "Fluid Type Scale"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "5. Hero Sections & Above the Fold",
+                summary: "Designing the first 800px. Value proposition, imagery, and CTAs.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Designing High-Converting Hero Sections", url: "https://www.youtube.com/watch?v=HeroSection", duration: "12 min" },
+                    { type: "Article", title: "The Fold is Still Real", url: "https://www.nngroup.com/articles/page-fold-manifesto/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Hero Design",
+                    description: "Design: Create a Hero Section for a SaaS product. Include: Headline, Subheadline, 2 CTAs (Primary/Secondary), and a Hero Image.",
+                    deliverable: "Hero Section"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. Navigation Patterns for Web",
+                summary: "Sticky headers, Mega Menus, and Footers (Fat Footers).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Website Navigation Patterns", url: "https://uxdesign.cc/website-navigation-patterns-55555", source: "UX Collective" },
+                    { type: "Video", title: "Designing Sticky Headers", url: "https://www.youtube.com/watch?v=StickyHeader", duration: "8 min" }
+                ],
+                task: {
+                    title: "Fat Footer",
+                    description: "Build: Design a 'Fat Footer' containing: Logo, Social Links, Newsletter Signup, and 4 Columns of Sitemap links.",
+                    deliverable: "Fat Footer UI"
+                }
+            },
+            // PART 3: ACCESSIBILITY & PERFORMANCE
+            {
+                day: "Day 4",
+                title: "7. Web Accessibility (A11y)",
+                summary: "Focus states, keyboard navigation, and semantic HTML tags.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Designing for Accessibility", url: "https://www.youtube.com/watch?v=A11yWeb", duration: "15 min" },
+                    { type: "Article", title: "Web Content Accessibility Guidelines (WCAG)", url: "https://www.w3.org/WAI/standards-guidelines/wcag/", source: "W3C" }
+                ],
+                task: {
+                    title: "Focus State Audit",
+                    description: "Audit: Design the 'Focus State' (outline) for your buttons and inputs. Ensure it is visible and high-contrast.",
+                    deliverable: "Focus States"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "8. Designing for Performance",
+                summary: "Optimizing images (WebP) and understanding LCP (Largest Contentful Paint).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Image Optimization for Web", url: "https://web.dev/learn/images/", source: "web.dev" },
+                    { type: "Video", title: "Core Web Vitals for Designers", url: "https://www.youtube.com/watch?v=WebVitals", duration: "10 min" }
+                ],
+                task: {
+                    title: "Image Optimization",
+                    description: "Optimization: Export your Hero Image in 3 formats (PNG, JPG, WebP). Compare file sizes and explain which one to use.",
+                    deliverable: "Optimization Report"
+                }
+            }
+        ]
     }
 ];
 
@@ -1715,6 +1850,7 @@ export const badgeMeta = {
     "Collaboration": { color: "from-lime-500 to-green-600", icon: "🤝", text: "text-lime-600 dark:text-lime-400", bg: "bg-lime-100 dark:bg-lime-900/30" },
     "Theory": { color: "from-indigo-400 to-cyan-400", icon: "🧠", text: "text-indigo-600 dark:text-indigo-400", bg: "bg-indigo-100 dark:bg-indigo-900/30" },
     "Aesthetics": { color: "from-pink-500 to-red-500", icon: "✨", text: "text-pink-600 dark:text-pink-400", bg: "bg-pink-100 dark:bg-pink-900/30" },
+    "Web Standards": { color: "from-sky-500 to-blue-500", icon: "🌐", text: "text-sky-600 dark:text-sky-400", bg: "bg-sky-100 dark:bg-sky-900/30" },
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
