@@ -41,51 +41,26 @@ const AIChatPanel: React.FC = () => {
     setIsLoading(true);
 
     try {
-      // 1. SAFE Key Retrieval (Prevents "process is not defined" crash)
-      let API_KEY = "";
-
-      // Check Vite (Modern)
-      if (typeof import.meta !== 'undefined' && import.meta.env) {
-        API_KEY = import.meta.env.VITE_GEMINI_API_KEY ||
-          import.meta.env.NEXT_PUBLIC_GEMINI_API_KEY || "";
-      }
-
-      // Check Process (Legacy/Next.js) - Only if safely available
-      if (!API_KEY && typeof process !== 'undefined' && process.env) {
-        API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY ||
-          process.env.REACT_APP_GEMINI_API_KEY || "";
-      }
-
-      // 2. Validate Key
-      if (!API_KEY) {
-        throw new Error("MISSING_KEY: لم يتم العثور على المفتاح في Vercel.");
-      }
-
-      // 3. Call API
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: userMsg }] }]
-        })
+      // Call our secure backend API route (NOT Google directly)
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: userMsg })
       });
 
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(`API_ERROR: ${data.error?.message || response.statusText}`);
+        throw new Error(data.error || 'Failed to get response');
       }
 
-      const botText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-      setMessages(prev => [...prev, { role: 'assistant', content: botText }]);
+      setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
 
     } catch (error: any) {
-      console.error("Full Error Details:", error);
-
-      // PRINT THE REAL ERROR IN CHAT
+      console.error('Chat Error:', error);
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: `⚠️ **تشخيص الخطأ (Debug Mode):**\n\nالسبب: ${error.message}\n\n(لو السبب MISSING_KEY: يبقى Vercel مش قاري المتغيرات. لو process is not defined: يبقى الكود الجديد ده حل المشكلة).`
+        content: `⚠️ **عذراً، حدث خطأ:**\n${error.message}\n\n(تأكد إن الـ API Route شغال وإن GEMINI_API_KEY موجود في Vercel Environment Variables).`
       }]);
     } finally {
       setIsLoading(false);
