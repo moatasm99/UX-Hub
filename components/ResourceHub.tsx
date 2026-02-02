@@ -18,7 +18,7 @@ import {
     Coffee
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import AIChatPanel from './AIChatPanel';
+// AI Chat Panel removed for cleaner static site
 
 // --- Data Structure ---
 const RESOURCES = [
@@ -470,8 +470,7 @@ const ResourceHub: React.FC = () => {
                 </p>
             </footer>
 
-            {/* --- AI Chat Panel --- */}
-            <AIChatPanel />
+            {/* AI Chat Panel removed */}
 
             {/* --- Vibe Check FAB --- */}
             <button
