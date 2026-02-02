@@ -34,22 +34,23 @@ const AIChatPanel: React.FC = () => {
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
-    // UI Updates
+    // 1. UI Updates (User Message)
     const userMsg = input;
     setMessages(prev => [...prev, { role: 'user', content: userMsg }]);
     setInput('');
     setIsLoading(true);
 
     try {
-      // 1. Get the Key (Try all possibilities for Vercel)
-      const API_KEY = import.meta.env.VITE_GEMINI_API_KEY ||
-        (typeof process !== 'undefined' && process.env?.REACT_APP_GEMINI_API_KEY) ||
-        (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_GEMINI_API_KEY) ||
-        "";
+      // 2. Retrieve API Key (Try all standard prefixes)
+      const API_KEY = (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_GEMINI_API_KEY) ||
+        (import.meta && import.meta.env && import.meta.env.VITE_GEMINI_API_KEY) ||
+        (typeof process !== 'undefined' && process.env?.REACT_APP_GEMINI_API_KEY);
 
-      if (!API_KEY) throw new Error("API Key is missing in Vercel Environment Variables");
+      if (!API_KEY) {
+        throw new Error("API Key not found. Please check Vercel Environment Variables.");
+      }
 
-      // 2. Call Gemini API (Direct Fetch)
+      // 3. Call Google Gemini API
       const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -60,20 +61,22 @@ const AIChatPanel: React.FC = () => {
 
       const data = await response.json();
 
-      if (data.error) throw new Error(data.error.message);
+      if (!response.ok) {
+        throw new Error(data.error?.message || "Failed to fetch response from Gemini.");
+      }
 
       const botText = data.candidates?.[0]?.content?.parts?.[0]?.text;
 
-      if (!botText) throw new Error("No response text from AI.");
-
-      // 3. Show Real Response
+      // 4. Show Bot Response
       setMessages(prev => [...prev, { role: 'assistant', content: botText }]);
 
-    } catch (error: any) {
+    } catch (error) {
       console.error("AI Error:", error);
+
+      // Fallback Message if API fails
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: "عذراً، حدث خطأ في الاتصال بالذكاء الاصطناعي. تأكد من إعدادات الـ API Key في Vercel."
+        content: "معلش يا هندسة، في مشكلة صغيرة في الاتصال بالذكاء الاصطناعي (API Key Error). 😅\nتأكد إنك ضفت المفتاح في Vercel Settings واعملت Redeploy."
       }]);
     } finally {
       setIsLoading(false);
