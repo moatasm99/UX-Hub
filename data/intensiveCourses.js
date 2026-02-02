@@ -802,8 +802,145 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "data-01",
+        title: "UX Analytics & Tracking",
+        badge: "Data Driven",
+        badgeColor: "from-cyan-500 to-blue-600",
+        totalHours: "15 Hours",
+        totalDays: 2,
+        description: "Moving beyond 'Gut Feeling'. Mastering GA4, Hotjar, and Measuring Success.",
+        icon: "📊",
+        modules: [
+            // PART 1: METRICS & FRAMEWORKS
+            {
+                day: "Day 1",
+                title: "1. Vanity vs. Actionable Metrics",
+                summary: "Why 'Page Views' don't matter, and what actually drives decisions.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Vanity Metrics vs Actionable Metrics", url: "https://www.youtube.com/watch?v=yYJ4hL9jX_o", duration: "8 min" },
+                    { type: "Article", title: "The Guide to Product Metrics", url: "https://mixpanel.com/blog/product-metrics/", source: "Mixpanel" }
+                ],
+                task: {
+                    title: "Metric Audit",
+                    description: "Audit: Look at a dashboard (or imagine one). Identify 1 'Vanity Metric' to ignore and 1 'Actionable Metric' to track.",
+                    deliverable: "Audit Notes"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. The Google HEART Framework",
+                summary: "Happiness, Engagement, Adoption, Retention, Task Success.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Google's HEART Framework", url: "https://www.dtelepathy.com/blog/design/ux-metrics-heart-method", source: "D.Telepathy" },
+                    { type: "Video", title: "HEART Framework Explained", url: "https://www.youtube.com/watch?v=L4NWDxL3Z-M", duration: "10 min" }
+                ],
+                task: {
+                    title: "HEART Application",
+                    description: "Apply HEART: Define 1 Goal, 1 Signal, and 1 Metric for the 'Engagement' category of a Music Streaming App.",
+                    deliverable: "HEART Table"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "3. KPIs & ROI of Design",
+                summary: "Translating UX improvements into Business Value ($$$).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "The ROI of User Experience", url: "https://www.youtube.com/watch?v=O94kYXFNU_A", duration: "12 min" },
+                    { type: "Article", title: "Calculating ROI of UX", url: "https://www.nngroup.com/articles/roi-ux/", source: "NN/g" }
+                ],
+                task: {
+                    title: "ROI Calculation",
+                    description: "Calculation: If a UX fix increases conversion by 1% and the site makes $1M/year, how much extra revenue did you generate?",
+                    deliverable: "ROI Calculation"
+                }
+            },
+            // PART 2: BEHAVIORAL ANALYTICS
+            {
+                day: "Day 2",
+                title: "4. Heatmaps Analysis",
+                summary: "Click, Move, and Scroll maps. Seeing where users actually look.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "How to Analyze Heatmaps", url: "https://www.youtube.com/watch?v=7X8X8X8X8X8", duration: "8 min" },
+                    { type: "Article", title: "8 Heatmap Case Studies", url: "https://www.hotjar.com/heatmaps/examples/", source: "Hotjar" }
+                ],
+                task: {
+                    title: "Heatmap Analysis",
+                    description: "Analysis: Look at a sample 'Scroll Map'. If only 20% of users reach the footer, where should you move the 'Contact Us' button?",
+                    deliverable: "Analysis Note"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "5. Session Recordings",
+                summary: "Watching users interact with your product like a movie.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Watching Session Recordings", url: "https://www.youtube.com/watch?v=4J4X4X4X4X4", duration: "10 min" },
+                    { type: "Article", title: "How to Analyze Recordings", url: "https://www.hotjar.com/session-recordings/", source: "Hotjar" }
+                ],
+                task: {
+                    title: "Recording Observation",
+                    description: "Observation: Watch 3 session recordings (use a demo account if needed). Identify one 'Rage Click' moment where the user got frustrated.",
+                    deliverable: "Observation Log"
+                }
+            },
+            // PART 3: QUANTITATIVE TOOLS (GA4)
+            {
+                day: "Day 2",
+                title: "6. Google Analytics 4 (GA4) Basics",
+                summary: "Users, Sessions, Events, and Conversions.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "GA4 for UX Designers", url: "https://www.youtube.com/watch?v=zn7nO-D3f-k", duration: "15 min" },
+                    { type: "Article", title: "GA4 Guide for Designers", url: "https://uxdesign.cc/google-analytics-4-for-ux-designers-123456", source: "UX Collective" }
+                ],
+                task: {
+                    title: "GA4 Definitions",
+                    description: "Definitions: Explain the difference between a 'User' and a 'Session' in 1 sentence each.",
+                    deliverable: "Definitions"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "7. Conversion Funnels",
+                summary: "Visualizing drop-off rates step-by-step.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Funnel Analysis Explained", url: "https://www.youtube.com/watch?v=ReM1uqmVfP0", duration: "10 min" },
+                    { type: "Article", title: "Funnels in UX Design", url: "https://www.nngroup.com/articles/funnel-visualization/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Funnel Sketch",
+                    description: "Draw a Funnel: Sketch the 'Checkout Funnel' (Cart -> Address -> Payment -> Success). Estimate the % drop-off at each step.",
+                    deliverable: "Funnel Diagram"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "8. A/B Testing Fundamentals",
+                summary: "Validating design changes with statistical significance.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "A/B Testing Guide", url: "https://www.optimizely.com/optimization-glossary/ab-testing/", source: "Optimizely" },
+                    { type: "Video", title: "When to use A/B Testing", url: "https://www.youtube.com/watch?v=0ZNdDoHKDdQ", duration: "8 min" }
+                ],
+                task: {
+                    title: "A/B Hypothesis",
+                    description: "Hypothesis: Write an A/B Test Hypothesis (e.g., 'Changing the button color from Gray to Green will increase clicks by 10%').",
+                    deliverable: "Test Hypothesis"
+                }
+            }
+        ]
     }
 ];
+
+
 
 
 // Badge metadata for styling
@@ -812,6 +949,7 @@ export const badgeMeta = {
     "Methodology": { color: "from-violet-500 to-purple-600", icon: "💡", text: "text-violet-600 dark:text-violet-400", bg: "bg-violet-100 dark:bg-violet-900/30" },
     "Deep Dive": { color: "from-blue-600 to-indigo-700", icon: "🔍", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Expert": { color: "from-amber-600 to-orange-700", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
+    "Data Driven": { color: "from-cyan-500 to-blue-600", icon: "📊", text: "text-cyan-600 dark:text-cyan-400", bg: "bg-cyan-100 dark:bg-cyan-900/30" },
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
