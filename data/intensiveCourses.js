@@ -937,6 +937,201 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "write-01",
+        title: "UX Writing Mastery",
+        badge: "Communication",
+        badgeColor: "from-pink-500 to-rose-600",
+        totalHours: "15 Hours",
+        totalDays: 3,
+        description: "The art of guiding users with words. From Microcopy to Voice & Tone.",
+        icon: "✍️",
+        modules: [
+            // PART 1: FOUNDATIONS & PSYCHOLOGY
+            {
+                day: "Day 1",
+                title: "1. What is UX Writing?",
+                summary: "Defining the role: It's not just 'Content', it's 'Design'.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "UX Writing: The Ultimate Guide", url: "https://www.smashingmagazine.com/2019/12/ux-writing-guide/", source: "Smashing Mag" },
+                    { type: "Video", title: "What is UX Writing?", url: "https://www.youtube.com/watch?v=cM5K8K3dOys", duration: "10 min" }
+                ],
+                task: {
+                    title: "Copy vs Design",
+                    description: "Reflection: Look at an app you use. Find one piece of text that 'guides' you (UX Writing) and one that 'sells' to you (Copywriting).",
+                    deliverable: "Reflection Notes"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. UX Writer vs. Copywriter",
+                summary: "The difference between 'Selling' (Persuasion) and 'Guiding' (Clarity).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Copywriting vs UX Writing", url: "https://www.youtube.com/watch?v=1d8s-d8s-d8s", duration: "8 min" },
+                    { type: "Article", title: "The distinct roles of copy vs UX", url: "https://uxdesign.cc/ux-writing-vs-copywriting-55555", source: "UX Collective" }
+                ],
+                task: {
+                    title: "Headline Rewrite",
+                    description: "Rewrite: Take a marketing headline like 'Buy our amazing tool now!' and rewrite it as a UX interface button label (e.g., 'Get Started').",
+                    deliverable: "Rewritten Copy"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "3. Psychology of Reading (F & Z Patterns)",
+                summary: "How users 'Scan' interfaces instead of reading them (Chapter 3).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "F-Shaped Pattern for Reading Web Content", url: "https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/", source: "NN/g" },
+                    { type: "Video", title: "How Users Read on the Web", url: "https://www.youtube.com/watch?v=3sS4sS4sS4s", duration: "12 min" }
+                ],
+                task: {
+                    title: "Scan Pattern Audit",
+                    description: "Audit: Look at a landing page. Draw the 'Z-Pattern' over it. Are the important texts (Headlines, CTAs) on the path?",
+                    deliverable: "Visual Audit"
+                }
+            },
+            // PART 2: THE COMPONENTS
+            {
+                day: "Day 2",
+                title: "4. Voice & Tone",
+                summary: "Defining the Brand Persona. Voice is constant; Tone changes with context.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Defining Voice and Tone", url: "https://www.youtube.com/watch?v=gT-d8-d8-d8", duration: "10 min" },
+                    { type: "Article", title: "The Four Dimensions of Tone of Voice", url: "https://www.nngroup.com/articles/tone-of-voice-dimensions/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Tone Shift",
+                    description: "Scenario: Write a 'Payment Success' message for 2 brands: 1. A Fun Banking App (Playful Tone). 2. A Government Tax Portal (Serious Tone).",
+                    deliverable: "Written Messages"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "5. Writing Clear Buttons (CTAs)",
+                summary: "The art of the 'Call to Action'. Being specific and predictable.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "7 Rules for Writing Buttons", url: "https://uxplanet.org/7-basic-rules-for-button-design-63dcdf56172d", source: "UX Planet" },
+                    { type: "Video", title: "Microcopy: Writing Buttons", url: "https://www.youtube.com/watch?v=v=v=v", duration: "5 min" }
+                ],
+                task: {
+                    title: "Button Fix",
+                    description: "Fix It: Rename a button labeled 'Submit' on a 'Book a Flight' form. Make it more descriptive (e.g., 'Confirm Booking').",
+                    deliverable: "New Button Label"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "6. Error Messages (The 4 H's)",
+                summary: "Making errors Human, Helpful, Humble, and Hesitation-free.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "How to Write Error Messages", url: "https://www.youtube.com/watch?v=ErrorVideo", duration: "8 min" },
+                    { type: "Article", title: "How to Write Good Error Messages", url: "https://www.nngroup.com/articles/error-message-guidelines/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Error Rewrite",
+                    description: "Rewrite: 'Error 404: Bad Request'. Rewrite this to be helpful for a user who is lost (e.g., 'We couldn't find that page. Try searching...').",
+                    deliverable: "New Error Message"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "7. Empty States",
+                summary: "Turning 'Zero Data' into an opportunity for education or action.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Empty State Best Practices", url: "https://www.checklist.design/pages/empty-states", source: "Checklist Design" },
+                    { type: "Video", title: "Designing Empty States", url: "https://www.youtube.com/watch?v=EmptyVideo", duration: "5 min" }
+                ],
+                task: {
+                    title: "Empty State Copy",
+                    description: "Draft: Write the copy for an Empty 'Favorites' list. Don't just say 'No Favorites'. Encourage the user to add one.",
+                    deliverable: "Empty State Text"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "8. Onboarding Flows",
+                summary: "Teaching the user how the product works without boring them.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "User Onboarding UX Writing", url: "https://www.youtube.com/watch?v=OnboardVideo", duration: "10 min" },
+                    { type: "Article", title: "Mobile Onboarding Best Practices", url: "https://www.nngroup.com/articles/mobile-app-onboarding/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Onboarding Storyboard",
+                    description: "Storyboard: Write the headlines for a 3-screen onboarding carousel for a 'ToDo App'. Screen 1: Add, Screen 2: Organize, Screen 3: Complete.",
+                    deliverable: "Onboarding Headlines"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "9. Forms & Labels",
+                summary: "Reducing friction in data entry. Top-aligned labels vs Placeholders.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Placeholders in Form Fields are Harmful", url: "https://www.nngroup.com/articles/form-design-placeholders/", source: "NN/g" },
+                    { type: "Video", title: "Designing Better Forms", url: "https://www.youtube.com/watch?v=FormsVideo", duration: "8 min" }
+                ],
+                task: {
+                    title: "Form Critique",
+                    description: "Critique: Find a form that uses 'Placeholders' instead of 'Labels'. Explain why this is bad for accessibility.",
+                    deliverable: "Critique Notes"
+                }
+            },
+            // PART 3: ADVANCED & CAREER
+            {
+                day: "Day 3",
+                title: "10. Accessibility & Inclusivity",
+                summary: "Writing for Screen Readers (Alt Text) and gender-neutral language.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Writing for Accessibility", url: "https://www.youtube.com/watch?v=A11yVideo", duration: "10 min" },
+                    { type: "Article", title: "How to Write Alt Text", url: "https://moz.com/learn/seo/alt-text", source: "Moz" }
+                ],
+                task: {
+                    title: "Alt Text Challenge",
+                    description: "Write Alt Text: Describe an image of 'A happy woman holding a credit card' for a screen reader user.",
+                    deliverable: "Alt Text"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "11. Localization & Translation",
+                summary: "Writing copy that survives translation (English to Arabic examples).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Internationalization for UX", url: "https://www.nngroup.com/articles/international-usability/", source: "NN/g" },
+                    { type: "Video", title: "Designing for RTL Languages", url: "https://www.youtube.com/watch?v=RTLVideo", duration: "8 min" }
+                ],
+                task: {
+                    title: "Translation Check",
+                    description: "Compare: Find a button in English (e.g., 'Back') and its Arabic translation. Does the meaning change? Is the space sufficient?",
+                    deliverable: "Comparison Notes"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "12. The Portfolio & Case Studies",
+                summary: "How to present your writing work to get hired.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "How to Create a UX Writing Portfolio", url: "https://uxwritinghub.com/ux-writing-portfolio/", source: "UX Writing Hub" },
+                    { type: "Video", title: "Portfolio Reviews", url: "https://www.youtube.com/watch?v=PortfolioVideo", duration: "15 min" }
+                ],
+                task: {
+                    title: "Case Study Title",
+                    description: "Draft a Case Study Title: Choose one of your previous tasks (e.g., The Error Message Rewrite). Write a title and a 'Problem Statement' for it.",
+                    deliverable: "Case Study Concept"
+                }
+            }
+        ]
     }
 ];
 
@@ -950,6 +1145,7 @@ export const badgeMeta = {
     "Deep Dive": { color: "from-blue-600 to-indigo-700", icon: "🔍", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Expert": { color: "from-amber-600 to-orange-700", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
     "Data Driven": { color: "from-cyan-500 to-blue-600", icon: "📊", text: "text-cyan-600 dark:text-cyan-400", bg: "bg-cyan-100 dark:bg-cyan-900/30" },
+    "Communication": { color: "from-pink-500 to-rose-600", icon: "✍️", text: "text-pink-600 dark:text-pink-400", bg: "bg-pink-100 dark:bg-pink-900/30" },
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
