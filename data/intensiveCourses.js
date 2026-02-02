@@ -1401,6 +1401,140 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "principle-01",
+        title: "Design Concepts & Principles",
+        badge: "Theory",
+        badgeColor: "from-indigo-400 to-cyan-400",
+        totalHours: "30 Hours",
+        totalDays: 4,
+        description: "The science behind aesthetics. Mastering Balance, Contrast, Hierarchy, and Gestalt Psychology.",
+        icon: "🧠",
+        modules: [
+            // PART 1: COMPOSITION & LAYOUT PRINCIPLES
+            {
+                day: "Day 1",
+                title: "1. Balance & Alignment",
+                summary: "Symmetrical vs. Asymmetrical Balance. The stability of the grid.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Balance in Design Explained", url: "https://www.youtube.com/watch?v=K4M05-J5gJ0", duration: "10 min" },
+                    { type: "Article", title: "The Principle of Balance", url: "https://www.smashingmagazine.com/2015/06/design-principles-compositional-balance-symmetry-asymmetry/", source: "Smashing Mag" }
+                ],
+                task: {
+                    title: "Analysis",
+                    description: "Analysis: Find a movie poster. Draw a line down the middle. Is it Symmetrical or Asymmetrical? Explain how it achieves 'visual weight' balance.",
+                    deliverable: "Poster Analysis"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Negative Space (White Space)",
+                summary: "White space is not 'empty'; it's an active design element.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "White Space is Not Your Enemy", url: "https://alistapart.com/article/whitespace/", source: "A List Apart" },
+                    { type: "Video", title: "How to use White Space", url: "https://www.youtube.com/watch?v=J3s7f8f8f8f", duration: "8 min" }
+                ],
+                task: {
+                    title: "Redesign",
+                    description: "Redesign: Take a cluttered screenshot (e.g., a busy news site). Redesign one section by ONLY adding padding and margins (White Space).",
+                    deliverable: "De-cluttered Design"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "3. Visual Hierarchy & Scale",
+                summary: "Guiding the user's eye. Using Size, Color, and Weight to signal importance.",
+                duration: "4 Hours",
+                resources: [
+                    { type: "Video", title: "Visual Hierarchy Basics", url: "https://www.youtube.com/watch?v=6m6m6m6m6m6", duration: "12 min" },
+                    { type: "Article", title: "Visual Hierarchy in UI Design", url: "https://www.nngroup.com/articles/visual-hierarchy-ux-definition/", source: "NN/g" }
+                ],
+                task: {
+                    title: "The Squint Test",
+                    description: "The Squint Test: Take a screenshot of a landing page. Blur it (squint). Can you still tell what the most important button/headline is?",
+                    deliverable: "Blurred Analysis"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "4. Repetition & Rhythm",
+                summary: "Creating consistency and patterns to reduce cognitive load.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Repetition, Pattern, and Rhythm", url: "https://www.smashingmagazine.com/2015/07/design-principles-dominance-focal-points-hierarchy/", source: "Smashing Mag" },
+                    { type: "Video", title: "Rhythm in Design", url: "https://www.youtube.com/watch?v=RhythmVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Pattern Audit",
+                    description: "Audit: Look at Spotify or Netflix. Identify 3 elements that repeat (e.g., Card styles, Headers). How does this repetition help you browse faster?",
+                    deliverable: "Audit Notes"
+                }
+            },
+            // PART 2: PERCEPTUAL PSYCHOLOGY (GESTALT)
+            {
+                day: "Day 3",
+                title: "5. Gestalt: Proximity & Common Region",
+                summary: "Things close together are perceived as a group.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Gestalt Principles in UX", url: "https://www.youtube.com/watch?v=be1d-d1d-d1", duration: "10 min" },
+                    { type: "Article", title: "Law of Proximity in UX", url: "https://www.nngroup.com/articles/gestalt-proximity/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Fix It",
+                    description: "Fix It: Find a form where the label is equidistant between two fields. Fix the 'Proximity' so the label is clearly attached to its input.",
+                    deliverable: "Fixed Form"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. Gestalt: Similarity & Continuity",
+                summary: "How we perceive lines and similar objects as related.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Law of Similarity", url: "https://www.interaction-design.org/literature/article/laws-of-proximity-uniform-connectedness-and-continuation-gestalt-principles-2", source: "IxDF" },
+                    { type: "Video", title: "Gestalt: Continuity & Closure", url: "https://www.youtube.com/watch?v=Gestalt2", duration: "10 min" }
+                ],
+                task: {
+                    title: "Similarity Design",
+                    description: "Design: Create a row of 'Cards'. Make one card look different (Break Similarity) to highlight it as 'Featured'. How does the eye react?",
+                    deliverable: "Card Layout"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "7. The Golden Ratio & Proportion",
+                summary: "Using math (1:1.618) to create naturally pleasing layouts.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Golden Ratio in UI Design", url: "https://www.youtube.com/watch?v=ke4h5h5h5h5", duration: "8 min" },
+                    { type: "Article", title: "A Guide to the Golden Ratio", url: "https://www.canva.com/learn/what-is-the-golden-ratio/", source: "Canva" }
+                ],
+                task: {
+                    title: "Layout Practice",
+                    description: "Layout: Create a simple 2-column layout in Figma using the Golden Ratio (e.g., Content area is 61.8% width, Sidebar is 38.2%).",
+                    deliverable: "Golden Ratio Grid"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "8. Contrast & Accessibility",
+                summary: "Ensuring legibility and meeting WCAG standards.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Contrast and Color Accessibility", url: "https://webaim.org/articles/contrast/", source: "WebAIM" },
+                    { type: "Video", title: "Understanding Contrast Ratios", url: "https://www.youtube.com/watch?v=ContrastVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Contrast Check",
+                    description: "Check: Use a 'Contrast Checker' plugin. Test 3 color combinations (Text on Background). Do they pass WCAG AA?",
+                    deliverable: "Contrast Report"
+                }
+            }
+        ]
     }
 ];
 
@@ -1414,6 +1548,7 @@ export const badgeMeta = {
     "Communication": { color: "from-pink-500 to-rose-600", icon: "✍️", text: "text-pink-600 dark:text-pink-400", bg: "bg-pink-100 dark:bg-pink-900/30" },
     "Technical Skills": { color: "from-fuchsia-500 to-purple-600", icon: "🎨", text: "text-fuchsia-600 dark:text-fuchsia-400", bg: "bg-fuchsia-100 dark:bg-fuchsia-900/30" },
     "Collaboration": { color: "from-lime-500 to-green-600", icon: "🤝", text: "text-lime-600 dark:text-lime-400", bg: "bg-lime-100 dark:bg-lime-900/30" },
+    "Theory": { color: "from-indigo-400 to-cyan-400", icon: "🧠", text: "text-indigo-600 dark:text-indigo-400", bg: "bg-indigo-100 dark:bg-indigo-900/30" },
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
