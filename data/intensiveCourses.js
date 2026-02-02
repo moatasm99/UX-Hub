@@ -2106,6 +2106,141 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "system-01",
+        title: "Design Systems Architecture",
+        badge: "Advanced",
+        badgeColor: "from-purple-500 to-fuchsia-600",
+        totalHours: "30 Hours",
+        totalDays: 4,
+        description: "Building scalable infrastructure. Atomic Design, Tokens, Governance, and Storybook integration.",
+        icon: "🧱",
+        modules: [
+            // PART 1: FOUNDATIONS & ATOMIC DESIGN
+            {
+                day: "Day 1",
+                title: "1. Atomic Design Methodology",
+                summary: "Atoms, Molecules, Organisms, Templates, Pages. Breaking interfaces down.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Atomic Design (Brad Frost)", url: "https://atomicdesign.bradfrost.com/chapter-2/", source: "Brad Frost" },
+                    { type: "Video", title: "Atomic Design Explained", url: "https://www.youtube.com/watch?v=Yi-A20x2dcA", duration: "10 min" }
+                ],
+                task: {
+                    title: "System Deconstruction",
+                    description: "Deconstruction: Take a screenshot of Instagram. Circle an Atom (Icon), a Molecule (Post Header), and an Organism (The Feed).",
+                    deliverable: "Atomic Breakdown"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Design Tokens (The Truth Source)",
+                summary: "Storing decisions (Color, Spacing, Radius) as platform-agnostic variables.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Introduction to Design Tokens", url: "https://www.youtube.com/watch?v=q6247-47-47", duration: "15 min" },
+                    { type: "Article", title: "Naming Design Tokens (Nathan Curtis)", url: "https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c74466c9", source: "Nathan Curtis" }
+                ],
+                task: {
+                    title: "Token Architecture",
+                    description: "Tokenize: Create a JSON structure for your Primary Color. Define: 'Global Token' (Blue-500) -> 'Semantic Token' (Primary-Action) -> 'Component Token' (Btn-Bg).",
+                    deliverable: "Token JSON"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "3. Governance & Contribution Models",
+                summary: "Who owns the system? How do designers suggest new components?",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Team Models for Design Systems", url: "https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0", source: "EightShapes" },
+                    { type: "Video", title: "Governance in Design Systems", url: "https://www.youtube.com/watch?v=GovernanceVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Contribution Policy",
+                    description: "Draft: Write a simple 'Contribution Policy'. If a designer wants a new icon, what is the process? (Request -> Review -> Merge).",
+                    deliverable: "Policy Doc"
+                }
+            },
+            // PART 2: COMPONENT ARCHITECTURE (FIGMA)
+            {
+                day: "Day 2",
+                title: "4. Building Robust Components",
+                summary: "Slot Architecture, Base Components, and maximizing flexibility.",
+                duration: "4 Hours",
+                resources: [
+                    { type: "Video", title: "Building Flexible Components (Config)", url: "https://www.youtube.com/watch?v=k74IrUNaJkE", duration: "20 min" },
+                    { type: "Article", title: "Component Architecture Patterns", url: "https://www.smashingmagazine.com/2021/08/compound-components-react-design-system/", source: "Smashing Mag" }
+                ],
+                task: {
+                    title: "Slot Component",
+                    description: "Build: Create a 'Card' component in Figma using 'Slots' (Instance Swap property) so the content inside can be swapped easily.",
+                    deliverable: "Master Component"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "5. Documentation (Zeroheight / Storybook)",
+                summary: "A system is only as good as its documentation. Writing for Devs & Designers.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Documentation Guide", url: "https://zeroheight.com/blog/guide-to-design-system-documentation/", source: "Zeroheight" },
+                    { type: "Video", title: "Storybook for Designers", url: "https://www.youtube.com/watch?v=pObiK4S1ee8", duration: "10 min" }
+                ],
+                task: {
+                    title: "Component Docs",
+                    description: "Write Docs: Write usage guidelines for a 'Modal'. When to use it? When NOT to use it? (e.g., 'Don't use Modals for complex forms').",
+                    deliverable: "Documentation Page"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. Versioning & Release Cycles",
+                summary: "Managing updates without breaking product teams. Semantic Versioning (1.0.0).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Versioning Design Systems", url: "https://medium.com/eightshapes-llc/versioning-design-systems-481e80931165", source: "Nathan Curtis" },
+                    { type: "Video", title: "Maintaining a Design System", url: "https://www.youtube.com/watch?v=MaintenanceVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Release Strategy",
+                    description: "Scenario: You changed the 'Primary Button' color. Is this a Patch (1.0.1), Minor (1.1.0), or Major (2.0.0) update? Explain why.",
+                    deliverable: "Change Log"
+                }
+            },
+            // PART 3: ADVANCED TOPICS
+            {
+                day: "Day 4",
+                title: "7. Dark Mode & Theming",
+                summary: "Using Variables/Tokens to switch themes instantly.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Designing for Dark Mode", url: "https://www.youtube.com/watch?v=DarkModeFigma", duration: "15 min" },
+                    { type: "Article", title: "Material Design: Theming", url: "https://m3.material.io/styles/color/theming", source: "Material Design" }
+                ],
+                task: {
+                    title: "Dark Mode Theme",
+                    description: "Theme It: Duplicate your 'Card' component. Create a 'Dark Mode' variable collection. Watch the card switch themes automatically.",
+                    deliverable: "Themed Component"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "8. Measuring System Success",
+                summary: "Adoption rates and Detachment rates. Is the system actually working?",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Measuring Design System Success", url: "https://www.nngroup.com/articles/design-systems-roi/", source: "NN/g" },
+                    { type: "Video", title: "Analytics for Design Systems", url: "https://www.youtube.com/watch?v=AnalyticsDS", duration: "10 min" }
+                ],
+                task: {
+                    title: "System KPIs",
+                    description: "KPIs: Define 2 metrics to track the health of your system (e.g., 'Percentage of components detached in Figma').",
+                    deliverable: "KPI Dashboard"
+                }
+            }
+        ]
     }
 ];
 
