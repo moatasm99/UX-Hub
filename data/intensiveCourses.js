@@ -1297,11 +1297,112 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "handoff-01",
+        title: "Design-Dev Handoff Process",
+        badge: "Collaboration",
+        badgeColor: "from-lime-500 to-green-600",
+        totalHours: "15 Hours",
+        totalDays: 2,
+        description: "Stop 'throwing designs over the wall'. Learn to prepare files, annotate behaviors, and speak 'Developer'.",
+        icon: "🤝",
+        modules: [
+            // PART 1: PREPARATION & HYGIENE
+            {
+                day: "Day 1",
+                title: "1. The Handoff Mindset",
+                summary: "It's a conversation, not a file transfer. Involving devs early.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Stop Handing Off, Start Collaborating", url: "https://www.youtube.com/watch?v=FjI9q5J2s2s", duration: "10 min" },
+                    { type: "Article", title: "The Handoff Guide", url: "https://www.interaction-design.org/literature/article/design-handoff-guide", source: "IxDF" }
+                ],
+                task: {
+                    title: "Intro Message",
+                    description: "Scenario: You finished a design. Write a 3-bullet point 'Slack Message' to your developer introducing the feature and asking for a review.",
+                    deliverable: "Communication Draft"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. File Hygiene & Organization",
+                summary: "Naming layers, removing unused frames, and using Sections.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Figma File Organization for Handoff", url: "https://www.figma.com/best-practices/file-organization/", source: "Figma Best Practices" },
+                    { type: "Video", title: "Preparing Files for Developers", url: "https://www.youtube.com/watch?v=DevModeVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "File Cleanup",
+                    description: "Cleanup: Take a messy Figma file (or create one). Rename all layers (e.g., 'Frame 132' -> 'Hero Section'), delete hidden layers, and group logical sections.",
+                    deliverable: "Organized File Screenshot"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "3. Annotations & Redlining",
+                summary: "Explaining 'Behavior', 'States', and 'Edge Cases' that static screens can't show.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "How to Annotate Designs", url: "https://www.youtube.com/watch?v=AnnotateVideo", duration: "8 min" },
+                    { type: "Article", title: "The Art of Redlining", url: "https://uxdesign.cc/the-art-of-redlining-55555", source: "UX Collective" }
+                ],
+                task: {
+                    title: "Annotation Practice",
+                    description: "Annotate: Use a sticky note plugin in Figma to explain a 'Hover State' and what happens when the user has 'No Internet Connection'.",
+                    deliverable: "Annotated Screen"
+                }
+            },
+            // PART 2: TECHNICAL EXECUTION
+            {
+                day: "Day 2",
+                title: "4. Figma Dev Mode & Specs",
+                summary: "Using the 'Inspect' panel, Box Model, and copying code (CSS/Swift).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Mastering Figma Dev Mode", url: "https://www.youtube.com/watch?v=DevModeDeepDive", duration: "15 min" },
+                    { type: "Article", title: "Figma for Developers Guide", url: "https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode", source: "Figma Help" }
+                ],
+                task: {
+                    title: "Dev Mode Audit",
+                    description: "Inspect: Go to Dev Mode. Copy the CSS for a button's shadow and border-radius. Paste it into a text file to check accuracy.",
+                    deliverable: "CSS Snippet Validation"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "5. Assets & Exporting",
+                summary: "SVG vs PNG vs JPG. 1x, 2x, 3x. Handling icons and illustrations.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "The Ultimate Guide to Image Exporting", url: "https://www.smashingmagazine.com/2021/03/image-export-guide-ui-designers/", source: "Smashing Mag" },
+                    { type: "Video", title: "Exporting Assets in Figma", url: "https://www.youtube.com/watch?v=ExportVideo", duration: "8 min" }
+                ],
+                task: {
+                    title: "Export Kit",
+                    description: "Export Kit: Prepare a folder with: 1. The Logo as SVG. 2. The Hero Image as JPG (Compressed). 3. App Icons as PNG (2x and 3x).",
+                    deliverable: "Asset Folder Structure"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "6. Design QA (VQA)",
+                summary: "Reviewing the coded build. Spotting 'Visual Bugs' vs 'Functional Bugs'.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "How to do Design QA", url: "https://www.youtube.com/watch?v=QAVideo", duration: "10 min" },
+                    { type: "Article", title: "Design QA Checklist", url: "https://www.nngroup.com/articles/design-qa/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Bug Bash",
+                    description: "Bug Bash: Compare a coded website (use any site) to its design (imagine the design). Find 3 'Visual Bugs' (e.g., Wrong font size, Misalignment) and screenshot them.",
+                    deliverable: "Bug Report"
+                }
+            }
+        ]
     }
 ];
-
-
-
 
 // Badge metadata for styling
 export const badgeMeta = {
@@ -1312,6 +1413,7 @@ export const badgeMeta = {
     "Data Driven": { color: "from-cyan-500 to-blue-600", icon: "📊", text: "text-cyan-600 dark:text-cyan-400", bg: "bg-cyan-100 dark:bg-cyan-900/30" },
     "Communication": { color: "from-pink-500 to-rose-600", icon: "✍️", text: "text-pink-600 dark:text-pink-400", bg: "bg-pink-100 dark:bg-pink-900/30" },
     "Technical Skills": { color: "from-fuchsia-500 to-purple-600", icon: "🎨", text: "text-fuchsia-600 dark:text-fuchsia-400", bg: "bg-fuchsia-100 dark:bg-fuchsia-900/30" },
+    "Collaboration": { color: "from-lime-500 to-green-600", icon: "🤝", text: "text-lime-600 dark:text-lime-400", bg: "bg-lime-100 dark:bg-lime-900/30" },
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
