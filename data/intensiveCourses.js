@@ -2512,6 +2512,141 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "portfolio-01",
+        title: "Build Your Portfolio & Career",
+        badge: "Get Hired",
+        badgeColor: "from-teal-500 to-green-600",
+        totalHours: "30 Hours",
+        totalDays: 5,
+        description: "Turning your skills into a job. Crafting Case Studies, Resumes, and crushing the Interview.",
+        icon: "💼",
+        modules: [
+            // PART 1: THE CASE STUDY (STORYTELLING)
+            {
+                day: "Day 1",
+                title: "1. Structure of a Winning Case Study",
+                summary: "Don't just show UI. Show the Process (STAR Method: Situation, Task, Action, Result).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "How to Write a UX Case Study", url: "https://uxdesign.cc/how-to-write-a-ux-case-study-55555", source: "UX Design" },
+                    { type: "Video", title: "Portfolio Reviews: What Managers Look For", url: "https://www.youtube.com/watch?v=PortfolioReview", duration: "15 min" }
+                ],
+                task: {
+                    title: "STAR Outline",
+                    description: "Draft: Outline one project using the STAR method. Write the 'Problem Statement' and 'The Solution' (Result) first.",
+                    deliverable: "Case Study Outline"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Visual Storytelling for Portfolios",
+                summary: "Making long text readable. Using mockups, gifs, and 'scrollytelling'.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Designing Case Study Thumbnails", url: "https://www.youtube.com/watch?v=Thumbnails", duration: "10 min" },
+                    { type: "Article", title: "Best Portfolio Websites 2024", url: "https://www.bestfolios.com/", source: "BestFolios" }
+                ],
+                task: {
+                    title: "Hero Design",
+                    description: "Design: Create a 'Hero Image' for your case study. It must include the App Name, a tag line, and a high-fidelity mockup of the main screen.",
+                    deliverable: "Case Study Hero"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "3. Selecting Your Projects",
+                summary: "Quality over Quantity. You only need 3 great projects, not 10 mediocre ones.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "How Many Projects in a Portfolio?", url: "https://uxplanet.org/how-many-projects-do-you-need-in-your-ux-portfolio-55555", source: "UX Planet" },
+                    { type: "Video", title: "Curating Your Work", url: "https://www.youtube.com/watch?v=CurateWork", duration: "10 min" }
+                ],
+                task: {
+                    title: "Project Audit",
+                    description: "Audit: Look at your current work. Select your Top 3 projects. Discard or archive the rest. Explain WHY you chose these 3.",
+                    deliverable: "Selection Rationale"
+                }
+            },
+            // PART 2: THE APPLICATION PACKAGE
+            {
+                day: "Day 2",
+                title: "4. The UX Resume (ATS Friendly)",
+                summary: "Keywords, Layout, and what recruiters actually read in 6 seconds.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "UX Designer Resume Guide", url: "https://www.nngroup.com/articles/ux-resumes/", source: "NN/g" },
+                    { type: "Video", title: "Resume Dos and Don'ts", url: "https://www.youtube.com/watch?v=ResumeTips", duration: "10 min" }
+                ],
+                task: {
+                    title: "Resume Draft",
+                    description: "Build: Create a 1-page Resume. Include: Contact, Portfolio Link, Skills (Tools & Methods), and Work Experience (focused on impact, not just duties).",
+                    deliverable: "PDF Resume"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "5. LinkedIn & Personal Branding",
+                summary: "Optimizing your profile headline, 'About' section, and networking.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "LinkedIn for Designers", url: "https://www.youtube.com/watch?v=LinkedInUX", duration: "10 min" },
+                    { type: "Article", title: "Personal Branding for UX", url: "https://uxdesign.cc/personal-branding-for-ux-designers-55555", source: "UX Design" }
+                ],
+                task: {
+                    title: "LinkedIn Refresh",
+                    description: "Update: Rewrite your LinkedIn Headline. Instead of 'Student', use 'Product Designer | UX Researcher | Open to Work'. Add your portfolio link to the featured section.",
+                    deliverable: "Profile Screenshot"
+                }
+            },
+            // PART 3: THE INTERVIEW
+            {
+                day: "Day 3",
+                title: "6. The Portfolio Presentation",
+                summary: "Presenting your work live (Deck vs Website). Handling Q&A.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Presenting Your Portfolio in Interviews", url: "https://www.youtube.com/watch?v=PresentingPortfolio", duration: "15 min" },
+                    { type: "Article", title: "The Portfolio Presentation Deck", url: "https://uxdesign.cc/the-portfolio-presentation-deck-55555", source: "UX Design" }
+                ],
+                task: {
+                    title: "Presentation Deck",
+                    description: "Slide Deck: Create a 10-slide presentation for your best project. Practice presenting it in exactly 10 minutes.",
+                    deliverable: "Slide Deck"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "7. The Whiteboard Challenge",
+                summary: "Solving a design problem on the spot. Frameworks and time management.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Mastering the Whiteboard Challenge", url: "https://bootcamp.uxdesign.cc/mastering-the-whiteboard-challenge-55555", source: "Bootcamp" },
+                    { type: "Video", title: "Live Whiteboard Challenge Demo", url: "https://www.youtube.com/watch?v=WhiteboardDemo", duration: "20 min" }
+                ],
+                task: {
+                    title: "Whiteboard Practice",
+                    description: "Practice: Solve this prompt in 30 mins: 'Design an ATM for children'. Sketch the flow and key screens on paper.",
+                    deliverable: "Whiteboard Sketches"
+                }
+            },
+            {
+                day: "Day 5",
+                title: "8. Behavioral Questions (Soft Skills)",
+                summary: "Answering 'Tell me about a time you disagreed with a stakeholder'.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "UX Interview Questions & Answers", url: "https://www.youtube.com/watch?v=InterviewQA", duration: "15 min" },
+                    { type: "Article", title: "Behavioral Interview Questions", url: "https://www.nngroup.com/articles/ux-job-interview-questions/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Interview Prep",
+                    description: "Prepare: Write down answers for: 1. Tell me about yourself. 2. What is your biggest weakness? 3. Why do you want to work here?",
+                    deliverable: "Interview Script"
+                }
+            }
+        ]
     }
 ];
 
@@ -2535,6 +2670,7 @@ export const badgeMeta = {
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
     "Expert Logic": { color: "from-cyan-500 to-indigo-500", icon: "🧠", text: "text-cyan-600 dark:text-cyan-400", bg: "bg-cyan-100 dark:bg-cyan-900/30" },
     "Capstone": { color: "from-rose-500 to-pink-600", icon: "🏆", text: "text-rose-600 dark:text-rose-400", bg: "bg-rose-100 dark:bg-rose-900/30" },
-    "Quality Control": { color: "from-red-500 to-rose-600", icon: "🧐", text: "text-red-600 dark:text-red-400", bg: "bg-red-100 dark:bg-red-900/30" }
+    "Quality Control": { color: "from-red-500 to-rose-600", icon: "🧐", text: "text-red-600 dark:text-red-400", bg: "bg-red-100 dark:bg-red-900/30" },
+    "Get Hired": { color: "from-teal-500 to-green-600", icon: "💼", text: "text-teal-600 dark:text-teal-400", bg: "bg-teal-100 dark:bg-teal-900/30" }
 };
 
