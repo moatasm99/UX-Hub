@@ -2407,6 +2407,111 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "eval-01",
+        title: "How to Evaluate Your Design",
+        badge: "Quality Control",
+        badgeColor: "from-red-500 to-rose-600",
+        totalHours: "15 Hours",
+        totalDays: 3,
+        description: "The art of self-correction. Heuristic Audits, Accessibility Checks, and Design QA.",
+        icon: "🧐",
+        modules: [
+            // PART 1: HEURISTIC & EXPERT REVIEWS
+            {
+                day: "Day 1",
+                title: "1. Systematic Heuristic Evaluation",
+                summary: "Moving beyond 'gut feeling'. Using a scorecard to rate usability.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "How to Conduct a Heuristic Evaluation", url: "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/", source: "NN/g" },
+                    { type: "Video", title: "Heuristic Evaluation Checklist", url: "https://www.youtube.com/watch?v=5y2g7h5y5y5", duration: "10 min" }
+                ],
+                task: {
+                    title: "Heuristic Audit",
+                    description: "Audit: Download a 'Heuristic Scorecard'. Evaluate the 'Checkout Flow' of a site like eBay. Rate 'Error Prevention' from 1 to 5 and justify the score.",
+                    deliverable: "Scorecard Audit"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Cognitive Walkthrough",
+                summary: "Stepping through a task as a new user. The 'Happy Path' check.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "How to Conduct a Cognitive Walkthrough", url: "https://www.interaction-design.org/literature/article/how-to-conduct-a-cognitive-walkthrough", source: "IxDF" },
+                    { type: "Video", title: "Cognitive Walkthrough Demo", url: "https://www.youtube.com/watch?v=CognitiveWalk", duration: "10 min" }
+                ],
+                task: {
+                    title: "Walkthrough Stress Test",
+                    description: "Simulate: Perform a Cognitive Walkthrough for 'Resetting a Password'. Ask at each step: 'Will the user know what to do here?' and record potential failures.",
+                    deliverable: "Walkthrough Report"
+                }
+            },
+            // PART 2: ACCESSIBILITY (A11Y) AUDIT
+            {
+                day: "Day 2",
+                title: "3. Evaluating Contrast & Color",
+                summary: "Ensuring WCAG AA compliance using tools.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Using the Stark Plugin", url: "https://www.youtube.com/watch?v=StarkPlugin", duration: "10 min" },
+                    { type: "Article", title: "Contrast and Color Accessibility", url: "https://webaim.org/articles/contrast/", source: "WebAIM" }
+                ],
+                task: {
+                    title: "Accessibility Scan",
+                    description: "Tool Check: Install the 'Stark' or 'Contrast' plugin in Figma. Scan your design. Fix any text layer that fails the AA ratio.",
+                    deliverable: "A11y Report"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "4. Focus Order & Screen Reader Audit",
+                summary: "Can you navigate this without a mouse? Evaluating Tabbing order.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Keyboard Accessibility Guidelines", url: "https://webaim.org/techniques/keyboard/", source: "WebAIM" },
+                    { type: "Video", title: "Screen Reader Demo", url: "https://www.youtube.com/watch?v=ScreenReader", duration: "10 min" }
+                ],
+                task: {
+                    title: "Focus Map",
+                    description: "Annotation: Create a 'Focus Order' map for a form. Draw arrows showing where the cursor goes when the user presses 'Tab'. Is it logical?",
+                    deliverable: "Focus Order Map"
+                }
+            },
+            // PART 3: VISUAL QA & CRITIQUE
+            {
+                day: "Day 3",
+                title: "5. Visual QA (Design vs. Build)",
+                summary: "Spotting the difference between the Figma file and the live site.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "The Discipline of Design QA", url: "https://medium.com/interactive-mind/design-qa-101-55555", source: "Medium" },
+                    { type: "Video", title: "How to QA Your Designs", url: "https://www.youtube.com/watch?v=DesignQA", duration: "10 min" }
+                ],
+                task: {
+                    title: "Visual Bug Bash",
+                    description: "Bug Bash: Open a live website and inspect it (F12). Find an element where the padding/font-size doesn't match the intended design. Screenshot it.",
+                    deliverable: "Bug Report"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. The Design Critique",
+                summary: "How to evaluate peers' work objectively (not subjective opinion).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "The Art of Design Critique", url: "https://www.youtube.com/watch?v=CritiqueVideo", duration: "10 min" },
+                    { type: "Article", title: "Design Critique Etiquette", url: "https://www.nngroup.com/articles/design-critiques/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Peer Review",
+                    description: "Feedback: Write a 'Critique Note' for a colleague's design using the framework: 'I noticed [Observation], which might cause [Problem]. Have you considered [Suggestion]?'",
+                    deliverable: "Critique Note"
+                }
+            }
+        ]
     }
 ];
 
@@ -2429,6 +2534,7 @@ export const badgeMeta = {
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
     "Expert Logic": { color: "from-cyan-500 to-indigo-500", icon: "🧠", text: "text-cyan-600 dark:text-cyan-400", bg: "bg-cyan-100 dark:bg-cyan-900/30" },
-    "Capstone": { color: "from-rose-500 to-pink-600", icon: "🏆", text: "text-rose-600 dark:text-rose-400", bg: "bg-rose-100 dark:bg-rose-900/30" }
+    "Capstone": { color: "from-rose-500 to-pink-600", icon: "🏆", text: "text-rose-600 dark:text-rose-400", bg: "bg-rose-100 dark:bg-rose-900/30" },
+    "Quality Control": { color: "from-red-500 to-rose-600", icon: "🧐", text: "text-red-600 dark:text-red-400", bg: "bg-red-100 dark:bg-red-900/30" }
 };
 
