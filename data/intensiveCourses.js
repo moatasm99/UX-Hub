@@ -1970,6 +1970,142 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "devices-01",
+        title: "UI Design Across Devices",
+        badge: "Multi-Platform",
+        badgeColor: "from-orange-500 to-amber-500",
+        totalHours: "30 Hours",
+        totalDays: 4,
+        description: "Designing for every screen: Tablets, Smartwatches, TVs, Foldables, and Car Interfaces.",
+        icon: "🖥️",
+        modules: [
+            // PART 1: THE HYBRID SCREENS (TABLETS & FOLDABLES)
+            {
+                day: "Day 1",
+                title: "1. Tablet Design Patterns",
+                summary: "More than just a big phone. Split Views, Popovers, and Drag & Drop.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Designing for iPad (Apple HIG)", url: "https://developer.apple.com/design/human-interface-guidelines/layout", source: "Apple HIG" },
+                    { type: "Video", title: "Tablet UI Design Best Practices", url: "https://www.youtube.com/watch?v=TabletDesign", duration: "10 min" }
+                ],
+                task: {
+                    title: "Tablet Redesign",
+                    description: "Redesign: Take a mobile 'Email App'. Redesign it for Tablet landscape mode using a 'Master-Detail' (Split View) layout.",
+                    deliverable: "Tablet Layout"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Foldable Devices",
+                summary: "Designing for changing screen states (Folded, Unfolded, Tent Mode).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Designing for Foldables (Google I/O)", url: "https://www.youtube.com/watch?v=Foldables", duration: "12 min" },
+                    { type: "Article", title: "Material Design for Large Screens", url: "https://m3.material.io/foundations/adaptive-design/large-screens/overview", source: "Material Design" }
+                ],
+                task: {
+                    title: "Foldable Prototype",
+                    description: "Prototype: Sketch a video player app that changes layout when the device is half-folded (Tabletop mode: Video top, Controls bottom).",
+                    deliverable: "Adaptive Sketch"
+                }
+            },
+            // PART 2: THE TINY SCREENS (WEARABLES)
+            {
+                day: "Day 2",
+                title: "3. Smartwatch Design (Glanceability)",
+                summary: "2-second rule. Designing for Apple Watch (watchOS) and WearOS.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Designing for Apple Watch", url: "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos", source: "Apple HIG" },
+                    { type: "Video", title: "Wear OS Design Principles", url: "https://www.youtube.com/watch?v=WearOS", duration: "10 min" }
+                ],
+                task: {
+                    title: "Watch Face UI",
+                    description: "Design: Create a 'Fitness Tracker' screen for a watch. Show ONLY the 3 most critical metrics (HR, Time, Distance). No clutter.",
+                    deliverable: "Watch UI"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "4. Micro-Interactions for Watch",
+                summary: "Digital Crown, Haptics, and Voice Control integration.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Micro-interactions on Small Screens", url: "https://www.youtube.com/watch?v=MicroWatch", duration: "8 min" },
+                    { type: "Article", title: "Gestures in watchOS", url: "https://developer.apple.com/design/human-interface-guidelines/inputs/gestures/", source: "Apple HIG" }
+                ],
+                task: {
+                    title: "Crown Interaction",
+                    description: "Flow: Design a 'Timer App' interaction. How does the user set 5 minutes using a rotating dial (Digital Crown)?",
+                    deliverable: "Interaction Flow"
+                }
+            },
+            // PART 3: THE LARGE SCREENS (TV & AUTOMOTIVE)
+            {
+                day: "Day 3",
+                title: "5. TV Design (The 10-Foot Experience)",
+                summary: "No touch, only focus. Overscan, Remote Control navigation, and Focus States.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Designing for Android TV", url: "https://developer.android.com/design/ui/tv/guides/principles", source: "Android TV" },
+                    { type: "Video", title: "Apple TV Human Interface Guidelines", url: "https://developer.apple.com/design/human-interface-guidelines/technologies/tvos/", source: "Apple TV" }
+                ],
+                task: {
+                    title: "TV UI Focus",
+                    description: "Design: Create a 'Movie Details' screen for a TV app. Ensure the 'Play' button has a massive, high-contrast 'Focus State'.",
+                    deliverable: "TV Interface"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. Automotive UI (CarPlay & Android Auto)",
+                summary: "Safety first. Low distraction, high legibility, and voice first.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Android Auto Design Guidelines", url: "https://developer.android.com/design/ui/mobile/guides/foundations/automotive", source: "Android Auto" },
+                    { type: "Video", title: "Designing for Drivers", url: "https://www.youtube.com/watch?v=CarUI", duration: "10 min" }
+                ],
+                task: {
+                    title: "Car Dashboard",
+                    description: "Audit: Sketch a 'Music Player' for a car dashboard. Remove any button that requires more than 1 second of attention.",
+                    deliverable: "Dashboard Sketch"
+                }
+            },
+            // PART 4: SYSTEM CONSISTENCY
+            {
+                day: "Day 4",
+                title: "7. Kiosk & Touch Screen Interfaces",
+                summary: "Public usage contexts. Arm fatigue (Gorilla Arm) and huge touch targets.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Designing for Touch Kiosks", url: "https://www.nngroup.com/articles/interactive-kiosks/", source: "NN/g" },
+                    { type: "Video", title: "Kiosk UX Design", url: "https://www.youtube.com/watch?v=KioskVideo", duration: "8 min" }
+                ],
+                task: {
+                    title: "Kiosk Layout",
+                    description: "Design: Create a 'Fast Food Ordering' screen for a kiosk. Ensure buttons are placed lower on the screen for accessibility.",
+                    deliverable: "Kiosk UI"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "8. Cross-Platform Continuity",
+                summary: "Starting a task on phone, finishing on tablet. Seamless Handoff.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Designing Continuous Experiences", url: "https://www.interaction-design.org/literature/article/designing-cross-channel-user-experiences", source: "IxDF" },
+                    { type: "Video", title: "Apple Handoff UX", url: "https://www.youtube.com/watch?v=Handoff", duration: "5 min" }
+                ],
+                task: {
+                    title: "Ecosystem Map",
+                    description: "Map: Draw a User Journey for buying a house. Phone: Browse listing. Tablet: View 3D tour. Watch: Get notification for appointment.",
+                    deliverable: "Journey Map"
+                }
+            }
+        ]
     }
 ];
 
@@ -1987,6 +2123,7 @@ export const badgeMeta = {
     "Aesthetics": { color: "from-pink-500 to-red-500", icon: "✨", text: "text-pink-600 dark:text-pink-400", bg: "bg-pink-100 dark:bg-pink-900/30" },
     "Web Standards": { color: "from-sky-500 to-blue-500", icon: "🌐", text: "text-sky-600 dark:text-sky-400", bg: "bg-sky-100 dark:bg-sky-900/30" },
     "iOS & Android": { color: "from-green-500 to-emerald-500", icon: "📱", text: "text-green-600 dark:text-green-400", bg: "bg-green-100 dark:bg-green-900/30" },
+    "Multi-Platform": { color: "from-orange-500 to-amber-500", icon: "🖥️", text: "text-orange-600 dark:text-orange-400", bg: "bg-orange-100 dark:bg-orange-900/30" },
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
