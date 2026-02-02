@@ -1835,6 +1835,141 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "mobile-01",
+        title: "UI Principles for Mobile",
+        badge: "iOS & Android",
+        badgeColor: "from-green-500 to-emerald-500",
+        totalHours: "30 Hours",
+        totalDays: 4,
+        description: "Mastering Native Design Guidelines. Touch targets, Gestures, and the difference between iOS and Android.",
+        icon: "📱",
+        modules: [
+            // PART 1: THE GUIDELINES (THE LAW)
+            {
+                day: "Day 1",
+                title: "1. iOS (HIG) vs. Material Design 3",
+                summary: "The philosophy differences: Flat & Blur (Apple) vs. Depth & Ink (Google).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Apple Human Interface Guidelines", url: "https://developer.apple.com/design/human-interface-guidelines/", source: "Apple" },
+                    { type: "Article", title: "Material Design 3 Overview", url: "https://m3.material.io/", source: "Material Design" }
+                ],
+                task: {
+                    title: "Platform Comparison",
+                    description: "Comparison: Create a side-by-side comparison of a 'Settings Page' for iOS and Android. Note the different icon styles and font weights.",
+                    deliverable: "UI Comparison"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. The Thumb Zone & Touch Targets",
+                summary: "Designing for fingers. Minimum sizes (44pt vs 48dp) and reachability.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "The Thumb Zone", url: "https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/", source: "Smashing Mag" },
+                    { type: "Video", title: "Touch Targets Explained", url: "https://www.youtube.com/watch?v=TouchTargets", duration: "8 min" }
+                ],
+                task: {
+                    title: "Thumb Zone Audit",
+                    description: "Audit: Check your design. Is the primary button within easy reach of the thumb? Is it at least 44x44 points?",
+                    deliverable: "Audit Notes"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "3. Safe Areas & System Bars",
+                summary: "Respecting the Notch, Dynamic Island, and Home Indicator.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Designing for iPhone X & Safe Areas", url: "https://ivomynttinen.com/blog/ios-design-guidelines", source: "Ivo Mynttinen" },
+                    { type: "Video", title: "Figma Constraints for Safe Areas", url: "https://www.youtube.com/watch?v=SafeAreaVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Safe Area Setup",
+                    description: "Setup: Create a Figma Frame for iPhone 15. Add 'Guides' for the Status Bar (Top) and Home Indicator (Bottom). Don't put content there.",
+                    deliverable: "Safe Area Guides"
+                }
+            },
+            // PART 2: NAVIGATION & PATTERNS
+            {
+                day: "Day 2",
+                title: "4. Mobile Navigation Patterns",
+                summary: "Bottom Tab Bar (iOS) vs Navigation Drawer (Android/Old) vs Navigation Rail.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "iOS Tab Bars", url: "https://developer.apple.com/design/human-interface-guidelines/tab-bars/", source: "Apple HIG" },
+                    { type: "Article", title: "Material Navigation Bar", url: "https://m3.material.io/components/navigation-bar/overview", source: "Material Design" }
+                ],
+                task: {
+                    title: "Navigation Design",
+                    description: "Design: Create a Bottom Navigation Bar. Use 5 tabs maximum. Ensure the 'Active State' is clearly distinct from inactive tabs.",
+                    deliverable: "Tab Bar"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "5. Gestures & Interactions",
+                summary: "Swipe to Delete, Pull to Refresh, and Long Press.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Mobile Gestures UX", url: "https://www.youtube.com/watch?v=GesturesVideo", duration: "10 min" },
+                    { type: "Article", title: "Gestures in Mobile UI", url: "https://www.nngroup.com/articles/touch-gestures/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Gesture Prototype",
+                    description: "Prototype: In Figma, create a 'Swipe to Delete' interaction on a list item using Interactive Components.",
+                    deliverable: "Swipe Interaction"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. Modals & Sheets",
+                summary: "Action Sheets (iOS) vs Bottom Sheets (Android). When to use half-screen overlays.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Sheets: Bottom", url: "https://m3.material.io/components/bottom-sheets/overview", source: "Material Design" },
+                    { type: "Video", title: "Designing Bottom Sheets", url: "https://www.youtube.com/watch?v=BottomSheet", duration: "10 min" }
+                ],
+                task: {
+                    title: "Sheet Design",
+                    description: "Decision: Design a 'Share' menu. Instead of a full-screen modal, design it as a Bottom Sheet that can be dragged down to close.",
+                    deliverable: "Bottom Sheet"
+                }
+            },
+            // PART 3: INPUTS & HAPTICS
+            {
+                day: "Day 4",
+                title: "7. Soft Keyboards & Inputs",
+                summary: "Handling the virtual keyboard pushing content up. Choosing the right keyboard type (Num vs Text).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Designing for Mobile Keyboards", url: "https://baymard.com/blog/mobile-keyboard-layouts", source: "Baymard" },
+                    { type: "Video", title: "Input Types & Keyboards", url: "https://www.youtube.com/watch?v=InputsVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Keyboard Flow",
+                    description: "Flow: Design a 'Login Screen'. Show the state BEFORE typing and the state AFTER the keyboard appears (moving the button up).",
+                    deliverable: "Login Flow"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "8. App Icons & Launch Screens",
+                summary: "The first impression. App Icon grids and Splash Screen guidelines.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "App Icon Design Guidelines", url: "https://developer.apple.com/design/human-interface-guidelines/app-icons/", source: "Apple HIG" },
+                    { type: "Video", title: "Designing App Icons", url: "https://www.youtube.com/watch?v=AppIcon", duration: "10 min" }
+                ],
+                task: {
+                    title: "Icon Export",
+                    description: "Production: Export an App Icon in all required sizes (1024, 180, 120, etc.) using a Figma plugin.",
+                    deliverable: "App Icon Set"
+                }
+            }
+        ]
     }
 ];
 
@@ -1851,6 +1986,7 @@ export const badgeMeta = {
     "Theory": { color: "from-indigo-400 to-cyan-400", icon: "🧠", text: "text-indigo-600 dark:text-indigo-400", bg: "bg-indigo-100 dark:bg-indigo-900/30" },
     "Aesthetics": { color: "from-pink-500 to-red-500", icon: "✨", text: "text-pink-600 dark:text-pink-400", bg: "bg-pink-100 dark:bg-pink-900/30" },
     "Web Standards": { color: "from-sky-500 to-blue-500", icon: "🌐", text: "text-sky-600 dark:text-sky-400", bg: "bg-sky-100 dark:bg-sky-900/30" },
+    "iOS & Android": { color: "from-green-500 to-emerald-500", icon: "📱", text: "text-green-600 dark:text-green-400", bg: "bg-green-100 dark:bg-green-900/30" },
     "Core": { color: "from-blue-500 to-indigo-600", icon: "📐", text: "text-blue-600 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
     "Advanced": { color: "from-purple-500 to-fuchsia-600", icon: "🚀", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" },
     "Specialist": { color: "from-amber-500 to-orange-600", icon: "⭐", text: "text-amber-600 dark:text-amber-400", bg: "bg-amber-100 dark:bg-amber-900/30" },
