@@ -21,6 +21,8 @@ import { courseCatalog, categoryMeta, levelMeta } from '../data/courseCatalog';
 import { roadmapCatalog, roadmapMeta } from '../data/roadmapCatalog';
 import { intensiveCourses } from '../data/intensiveCourses';
 import CourseContainer from './courses/CourseContainer';
+import CourseRoadmap from './CourseRoadmap';
+import CreatorSection from './CreatorSection';
 
 interface Course {
     id: string;
@@ -383,15 +385,20 @@ const LearningHub = () => {
                 <div className="max-w-7xl mx-auto">
                     {/* Intensive Courses Tab */}
                     {activeTab === 'intensive' && (
-                        <div className="space-y-6">
-                            <div className={`text-center py-4 px-6 rounded-2xl mb-8 ${theme === 'dark' ? 'bg-emerald-900/20 border border-emerald-500/30' : 'bg-emerald-50 border border-emerald-200'}`}>
-                                <p className={`text-sm ${theme === 'dark' ? 'text-emerald-300' : 'text-emerald-700'}`}>
-                                    <strong>📖 V.A.T. Model:</strong> Each module includes <span className="text-red-500">📺 Video</span> + <span className="text-blue-500">📄 Article</span> + <span className="text-amber-500">🛠️ Task</span>
+                        <div className="space-y-8">
+                            <CreatorSection />
+                            <div className={`text-center py-6 px-6 rounded-2xl mb-8 border transition-all ${theme === 'dark'
+                                ? 'bg-gradient-to-br from-emerald-900/20 to-teal-900/20 border-emerald-500/30'
+                                : 'bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-200'}`}>
+                                <h3 className={`text-xl font-bold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
+                                    🎓 The ITI 4-Month Video Curriculum
+                                </h3>
+                                <p className={`text-sm ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
+                                    Follow the tracks in order. Each module includes <span className="text-red-500 font-bold">Video</span> + <span className="text-blue-500 font-bold">Article</span> + <span className="text-amber-500 font-bold">Task</span> (V.A.T Model).
                                 </p>
                             </div>
-                            {intensiveCourses.map((course: any) => (
-                                <CourseContainer key={course.id} course={course} />
-                            ))}
+
+                            <CourseRoadmap />
                         </div>
                     )}
 
