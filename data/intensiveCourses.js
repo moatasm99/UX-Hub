@@ -3021,6 +3021,171 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "ai-design-01",
+        title: "Embracing AI in UI/UX in 2026",
+        badge: "Future Skills",
+        badgeColor: "from-purple-600 to-pink-600",
+        totalHours: "30 Hours",
+        totalDays: 4,
+        description: "The ultimate guide to AI tools. From Synthetic Research to Generative UI and Automated Testing.",
+        icon: "🤖",
+        modules: [
+            // PART 1: AI FOR RESEARCH & STRATEGY
+            {
+                day: "Day 1",
+                title: "1. Prompt Engineering for UX Research",
+                summary: "Stop asking basic questions. Using 'Chain of Thought' prompting to build Personas and User Journeys.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "ChatGPT for UX: The Complete Guide", url: "https://uxdesign.cc/chatgpt-for-ux-design-55555", source: "UX Design" },
+                    { type: "Video", title: "Mastering Prompts for User Research", url: "https://www.youtube.com/watch?v=PromptEngineering", duration: "12 min" }
+                ],
+                task: {
+                    title: "Persona Gen",
+                    description: "Prompting: Use ChatGPT to act as a 'Senior UX Researcher'. Ask it to generate a detailed 'User Journey Map' for a Fintech app user who doesn't trust digital banking. Export the data to a table.",
+                    deliverable: "AI Research Log"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Synthetic Users & Competitive Analysis",
+                summary: "Simulating user feedback before you have users. Analyzing competitors instantly.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Synthetic Users in UX Research", url: "https://www.youtube.com/watch?v=SyntheticUsers", duration: "10 min" },
+                    { type: "Article", title: "Using AI for Competitive Audits", url: "https://www.nngroup.com/articles/ai-competitive-analysis/", source: "NN/g" }
+                ],
+                task: {
+                    title: "AI SWOT",
+                    description: "Analysis: Copy the text from 3 competitor websites. Paste it into an AI tool (Claude/ChatGPT) and ask for a 'SWOT Analysis' comparing their Value Propositions.",
+                    deliverable: "SWOT Table"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "3. AI-Powered Information Architecture (Relume)",
+                summary: "Generating Sitemaps and Wireframes in seconds, not days.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Relume Library AI Workflow", url: "https://www.youtube.com/watch?v=RelumeAI", duration: "8 min" },
+                    { type: "Article", title: "AI for Information Architecture", url: "https://medium.com/relume-ai-sitemaps", source: "Relume Blog" }
+                ],
+                task: {
+                    title: "Relume Speed Run",
+                    description: "Build: Use 'Relume AI' (or similar) to generate a Sitemap for a 'Real Estate Platform'. Convert that Sitemap into a Wireframe inside Figma automatically.",
+                    deliverable: "Auto-Wireframe"
+                }
+            },
+            // PART 2: GENERATIVE UI & VISUALS
+            {
+                day: "Day 2",
+                title: "4. Text-to-UI (Galileo & Uizard)",
+                summary: "Generating high-fidelity screens from text descriptions. The end of the blank canvas.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "Galileo AI Demo & Best Practices", url: "https://www.youtube.com/watch?v=GalileoAI", duration: "10 min" },
+                    { type: "Article", title: "The State of Generative UI", url: "https://uxplanet.org/generative-ui-tools-review-55555", source: "UX Planet" }
+                ],
+                task: {
+                    title: "GenUI Critique",
+                    description: "Generate: Use Galileo AI (or Uizard) to generate a 'Dashboard for a Crypto Wallet'. Critique the result: What did the AI get right? What did it fail at?",
+                    deliverable: "Critique Notes"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "5. Midjourney for UI Inspiration",
+                summary: "Creating moodboards and wild concepts. Parameters (--v 6, --ar 16:9).",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Midjourney for UI Designers", url: "https://uxdesign.cc/midjourney-for-ui-design-55555", source: "UX Design" },
+                    { type: "Video", title: "Advanced Midjourney Prompting", url: "https://www.youtube.com/watch?v=MidjourneyUI", duration: "15 min" }
+                ],
+                task: {
+                    title: "AI Moodboard",
+                    description: "Moodboard: Generate 4 distinct UI styles for a 'Meditation App' using Midjourney. One 'Minimalist', one 'Cyberpunk', one 'Nature-inspired'. Use these as a moodboard.",
+                    deliverable: "Inspiration Board"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. Adobe Firefly & Generative Fill",
+                summary: "Editing images inside the design. Expanding backgrounds and generating vectors.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Adobe Firefly in Workflow", url: "https://www.youtube.com/watch?v=FireflyTips", duration: "8 min" },
+                    { type: "Article", title: "Generative Fill for Web Design", url: "https://helpx.adobe.com/photoshop/using/generative-fill.html", source: "Adobe" }
+                ],
+                task: {
+                    title: "Gen Fill Fix",
+                    description: "Edit: Take a hero image that is too small. Use 'Generative Expand' to widen it to fit a desktop screen without stretching.",
+                    deliverable: "Expanded Asset"
+                }
+            },
+            // PART 3: PRODUCTION & OPTIMIZATION
+            {
+                day: "Day 4",
+                title: "7. AI for Design Systems & Tokens",
+                summary: "Automating the boring stuff. Generating color palettes and naming tokens.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "AI in Design Systems", url: "https://www.youtube.com/watch?v=DesignSystemsAI", duration: "10 min" },
+                    { type: "Article", title: "Using Khroma for Color Palettes", url: "https://www.khroma.co/about", source: "Khroma" }
+                ],
+                task: {
+                    title: "Auto-Tokens",
+                    description: "System: Use 'Khroma' (AI Color tool) to generate an accessible color palette. Ask ChatGPT to write the documentation for how to use the 'Secondary Color'.",
+                    deliverable: "AI Docs"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "8. Figma AI Plugins (Magician & More)",
+                summary: "Magic inside Figma. Generating icons, copy, and images on the fly.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Top 5 AI Plugins for Figma", url: "https://www.youtube.com/watch?v=FigmaPluginsAI", duration: "8 min" },
+                    { type: "Article", title: "Magician Plugin Guide", url: "https://magician.design/", source: "Magician" }
+                ],
+                task: {
+                    title: "Plugin Speed Run",
+                    description: "Speed Run: Design a 'Login Card'. Use 'Magician' to generate the icon, the copy text, and a unique background pattern.",
+                    deliverable: "Instant UI"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "9. Predictive Eye Tracking (Attention Insight)",
+                summary: "Testing usability without users. Predicting heatmaps.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Predictive Eye Tracking Validity", url: "https://www.attentioninsight.com/validity/", source: "AttentionInsight" },
+                    { type: "Video", title: "How Attention Insight Works", url: "https://www.youtube.com/watch?v=AttentionAI", duration: "5 min" }
+                ],
+                task: {
+                    title: "AI Audit",
+                    description: "Audit: Upload your design to an AI Heatmap tool (like Attention Insight or a free alternative). Does the AI look at the CTA button? If not, redesign it.",
+                    deliverable: "Heatmap Report"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "10. The Ethics of AI in Design",
+                summary: "Bias, Copyright, and the 'Human in the Loop'. Will AI replace us?",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "AI Will Not Replace You", url: "https://www.youtube.com/watch?v=FutureOfDesign", duration: "15 min" },
+                    { type: "Article", title: "Ethics of Generative AI", url: "https://www.nngroup.com/articles/ai-design-ethics/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Ethics Essay",
+                    description: "Essay: Write a 1-paragraph stance on 'AI Disclosure'. Should we tell users when an interface was designed by AI? Why or why not?",
+                    deliverable: "Position Statement"
+                }
+            }
+        ]
     }
 ];
 
@@ -3046,6 +3211,7 @@ export const badgeMeta = {
     "Capstone": { color: "from-rose-500 to-pink-600", icon: "🏆", text: "text-rose-600 dark:text-rose-400", bg: "bg-rose-100 dark:bg-rose-900/30" },
     "Quality Control": { color: "from-red-500 to-rose-600", icon: "🧐", text: "text-red-600 dark:text-red-400", bg: "bg-red-100 dark:bg-red-900/30" },
     "Get Hired": { color: "from-teal-500 to-green-600", icon: "💼", text: "text-teal-600 dark:text-teal-400", bg: "bg-teal-100 dark:bg-teal-900/30" },
-    "Management": { color: "from-blue-700 to-indigo-800", icon: "🔄", text: "text-blue-700 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" }
+    "Management": { color: "from-blue-700 to-indigo-800", icon: "🔄", text: "text-blue-700 dark:text-blue-400", bg: "bg-blue-100 dark:bg-blue-900/30" },
+    "Future Skills": { color: "from-purple-600 to-pink-600", icon: "🔮", text: "text-purple-600 dark:text-purple-400", bg: "bg-purple-100 dark:bg-purple-900/30" }
 };
 
