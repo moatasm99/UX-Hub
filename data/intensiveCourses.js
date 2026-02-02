@@ -1140,14 +1140,14 @@ export const intensiveCourses = [
         badgeColor: "from-fuchsia-500 to-purple-600",
         totalHours: "45 Hours",
         totalDays: 3,
-        description: "Mastering the industry standard tool. From Vector Networks to Advanced Prototyping and Variables.",
+        description: "Mastering the industry standard. From Constraints and Auto Layout to Advanced Prototyping and Variables.",
         icon: "🎨",
         modules: [
-            // PART 1: ESSENTIALS & LAYOUT
+            // PART 1: LAYOUT & RESPONSIVENESS
             {
                 day: "Day 1",
-                title: "1. Frames, Groups & Constraints",
-                summary: "Why Frames are better than Groups. Understanding Resizing constraints.",
+                title: "1. Frames vs Groups & Constraints",
+                summary: "Why Pros use Frames. Understanding Left/Right/Scale constraints for responsiveness.",
                 duration: "2 Hours",
                 resources: [
                     { type: "Video", title: "Figma 101: Frames vs Groups", url: "https://www.youtube.com/watch?v=jwHgbxNAjMw", duration: "10 min" },
@@ -1155,14 +1155,14 @@ export const intensiveCourses = [
                 ],
                 task: {
                     title: "Constraint Practice",
-                    description: "Practice: Create a 'Card' with an image and text. Set constraints so it stays responsive when you stretch the Frame.",
+                    description: "Practice: Create a 'Card' component with an image and text. Set constraints so the text stays fixed while the image stretches.",
                     deliverable: "Responsive Card"
                 }
             },
             {
                 day: "Day 1",
-                title: "2. Auto Layout Mastery (The Flexbox)",
-                summary: "Padding, Spacing, Hug vs. Fill, and Absolute Positioning.",
+                title: "2. Auto Layout Mastery",
+                summary: "The CSS Flexbox of Design. Hug, Fill, Fixed, and Absolute Positioning.",
                 duration: "3 Hours",
                 resources: [
                     { type: "Video", title: "Auto Layout Deep Dive", url: "https://www.youtube.com/watch?v=T_8d24P96zk", duration: "15 min" },
@@ -1170,14 +1170,14 @@ export const intensiveCourses = [
                 ],
                 task: {
                     title: "Auto Layout Navbar",
-                    description: "Build: Create a 'Navbar' with a Logo (Left) and Menu Items (Right) using Auto Layout 'Space Between'. Make it responsive.",
+                    description: "Build: Create a responsive 'Navigation Bar' with a Logo (Left) and Links (Right) using Auto Layout 'Space Between' mode.",
                     deliverable: "Responsive Navbar"
                 }
             },
             {
                 day: "Day 1",
                 title: "3. Grids & Layout Systems",
-                summary: "Using Column Grids (8pt / 12-Col) for consistent alignment.",
+                summary: "Setting up 8pt Grids and 12-Column Bootstrap grids.",
                 duration: "2 Hours",
                 resources: [
                     { type: "Video", title: "Figma Grids Tutorial", url: "https://www.youtube.com/watch?v=zd8gWJ4hWjM", duration: "8 min" },
@@ -1185,30 +1185,30 @@ export const intensiveCourses = [
                 ],
                 task: {
                     title: "Grid Setup",
-                    description: "Setup: Create a Frame (1440px wide). Add a '12-Column Grid' with 24px Gutter and 80px Margin.",
+                    description: "Setup: Create a Frame (1440px). Add a 12-Column Grid (Margin: 80px, Gutter: 24px) and align a Hero Section to it.",
                     deliverable: "Grid Template"
                 }
             },
-            // PART 2: COMPONENT ARCHITECTURE
+            // PART 2: COMPONENTS & SYSTEMS
             {
                 day: "Day 2",
                 title: "4. Components & Instances",
-                summary: "The 'Master' vs 'Instance' concept. Reusable assets.",
+                summary: "The Master/Instance model. Overrides and resetting assets.",
                 duration: "3 Hours",
                 resources: [
                     { type: "Video", title: "Figma Components Guide", url: "https://www.youtube.com/watch?v=k74IrUNaJkE", duration: "10 min" },
-                    { type: "Article", title: "Components in Figma", url: "https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma", source: "Figma Help" }
+                    { type: "Article", title: "Guide to Components", url: "https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma", source: "Figma Help" }
                 ],
                 task: {
                     title: "Component Creation",
-                    description: "Create: Make a 'Primary Button' component. Create 3 instances and override the text in each one.",
+                    description: "Create: Make a 'Master Button'. Create 3 instances on a new page and override the text and color in each.",
                     deliverable: "Button Component"
                 }
             },
             {
                 day: "Day 2",
-                title: "5. Variants & Component Properties",
-                summary: "Managing states (Hover, Active, Disabled) and Boolean properties.",
+                title: "5. Variants & Properties",
+                summary: "Managing states (Hover, Active, Disabled) and Boolean toggles.",
                 duration: "4 Hours",
                 resources: [
                     { type: "Video", title: "Component Properties (Booleans)", url: "https://www.youtube.com/watch?v=iIq8fFvI1Qs", duration: "12 min" },
@@ -1216,30 +1216,30 @@ export const intensiveCourses = [
                 ],
                 task: {
                     title: "Variant System",
-                    description: "System: Create a Button Set with Variants (Default, Hover, Pressed) and a Boolean Property to toggle an 'Icon'.",
+                    description: "System: Create a Button Set with Variants (Primary/Secondary) and a Boolean Property to toggle an 'Icon' ON/OFF.",
                     deliverable: "Advanced Button Set"
                 }
             },
             {
                 day: "Day 2",
-                title: "6. Styles & Variables (Design Tokens)",
-                summary: "Storing Colors, Typography, and Spacing as variables.",
+                title: "6. Variables (Design Tokens)",
+                summary: "The future of Design Systems. Storing Colors, Numbers, and Strings.",
                 duration: "3 Hours",
                 resources: [
                     { type: "Video", title: "Figma Variables Intro", url: "https://www.youtube.com/watch?v=M5Z3Z3Z3Z3Z", duration: "10 min" },
-                    { type: "Article", title: "Guide to variables", url: "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables", source: "Figma Help" }
+                    { type: "Article", title: "Guide to Variables", url: "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables", source: "Figma Help" }
                 ],
                 task: {
                     title: "Design Tokens",
-                    description: "Tokens: Create a 'Color Collection' with variables for 'Primary', 'Background', and 'Text'. Apply them to your button.",
+                    description: "Tokens: Create a Local Variable Collection for your Brand Colors. Apply these variables to your buttons instead of raw Hex codes.",
                     deliverable: "Variable Collection"
                 }
             },
             // PART 3: PROTOTYPING & HANDOFF
             {
                 day: "Day 3",
-                title: "7. Prototyping 101: Connections",
-                summary: "Linking screens, Back actions, and Scrolling behavior.",
+                title: "7. Prototyping Basics",
+                summary: "Connecting screens, Back actions, and Scroll interactions.",
                 duration: "3 Hours",
                 resources: [
                     { type: "Video", title: "Figma Prototyping Basics", url: "https://www.youtube.com/watch?v=1W1W1W1W1W1", duration: "8 min" },
@@ -1247,14 +1247,14 @@ export const intensiveCourses = [
                 ],
                 task: {
                     title: "Prototype Flow",
-                    description: "Flow: Link a 'Login Screen' to a 'Home Screen'. Add a 'Back' interaction. Set the Home Screen to scroll vertically.",
+                    description: "Flow: Link a 'Login Page' to a 'Dashboard'. Make the Dashboard content scrollable while keeping the Header fixed.",
                     deliverable: "Clickable Prototype"
                 }
             },
             {
                 day: "Day 3",
                 title: "8. Smart Animate & Micro-interactions",
-                summary: "Creating smooth transitions and interactive components.",
+                summary: "Creating smooth transitions and Interactive Components.",
                 duration: "4 Hours",
                 resources: [
                     { type: "Video", title: "Smart Animate Magic", url: "https://www.youtube.com/watch?v=9Z9Z9Z9Z9Z9", duration: "12 min" },
@@ -1262,29 +1262,29 @@ export const intensiveCourses = [
                 ],
                 task: {
                     title: "Micro-interaction",
-                    description: "Animate: Create a 'Toggle Switch' using Interactive Components. Use Smart Animate to slide the knob smoothly.",
+                    description: "Animate: Create a 'Toggle Switch' using Interactive Components. Make it slide smoothly from Left to Right on click.",
                     deliverable: "Animated Toggle"
                 }
             },
             {
                 day: "Day 3",
-                title: "9. Plugins & Community Resources",
-                summary: "Speeding up workflow with Unsplash, Iconify, and Content Reel.",
+                title: "9. Plugins & Efficiency",
+                summary: "Workflow boosters: Unsplash, Iconify, Content Reel, and Simulayt.",
                 duration: "2 Hours",
                 resources: [
                     { type: "Video", title: "Top 10 Figma Plugins", url: "https://www.youtube.com/watch?v=PluginsVideo", duration: "10 min" },
-                    { type: "Article", title: "Using the Figma Community", url: "https://www.figma.com/community", source: "Figma" }
+                    { type: "Article", title: "Figma Community Resources", url: "https://www.figma.com/community", source: "Figma" }
                 ],
                 task: {
-                    title: "Plugin Workflow",
-                    description: "Efficiency: Use the 'Unsplash' plugin to fill 5 user avatars instantly, and 'Iconify' to add a set of icons.",
+                    title: "Speed Run",
+                    description: "Speed Run: Use 'Unsplash' to fill 5 Avatar circles and 'Content Reel' to fill 5 Names in under 30 seconds.",
                     deliverable: "Populated Design"
                 }
             },
             {
                 day: "Day 3",
                 title: "10. Developer Handoff (Dev Mode)",
-                summary: "Preparing files for engineers. Exporting assets and redlining.",
+                summary: "Preparing files for code. Annotations, Sections, and Exporting.",
                 duration: "2 Hours",
                 resources: [
                     { type: "Video", title: "Figma for Developers", url: "https://www.youtube.com/watch?v=DevModeVideo", duration: "10 min" },
@@ -1292,7 +1292,7 @@ export const intensiveCourses = [
                 ],
                 task: {
                     title: "Handoff Prep",
-                    description: "Handoff: Mark a section as 'Ready for Dev'. Copy the CSS code for your Primary Button and paste it in a notepad.",
+                    description: "Handoff: Mark a section as 'Ready for Dev'. Use the 'Measurement' tool to annotate the padding between two elements.",
                     deliverable: "CSS Snippet"
                 }
             }
