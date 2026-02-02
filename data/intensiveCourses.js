@@ -2886,6 +2886,141 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "ba-ux-01",
+        title: "Integration: BA & UX",
+        badge: "Collaboration",
+        badgeColor: "from-lime-500 to-green-600",
+        totalHours: "20 Hours",
+        totalDays: 4,
+        description: "Aligning Business Goals with User Needs. From BRD to Wireframes.",
+        icon: "🤝",
+        modules: [
+            // PART 1: DEFINING THE ROLES
+            {
+                day: "Day 1",
+                title: "1. The Overlap: BA vs UX",
+                summary: "Who does what? Where Requirements meet Empathy.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "BA vs UX: The Distinction", url: "https://www.modernanalyst.com/Resources/Articles/tabid/115/ID/3452/The-Difference-Between-a-UX-Designer-and-a-Business-Analyst.aspx", source: "ModernAnalyst" },
+                    { type: "Video", title: "The Relationship between BA and UX", url: "https://www.youtube.com/watch?v=BAvsUX", duration: "10 min" }
+                ],
+                task: {
+                    title: "Roles Venn Diagram",
+                    description: "Venn Diagram: Draw two circles (BA & UX). List 3 tasks unique to each, and 3 tasks they share (e.g., User Research, Prototyping).",
+                    deliverable: "Diagram"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. Translating Requirements (BRD to Design)",
+                summary: "How to read a Business Requirement Document (BRD) without falling asleep.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "From Requirements to Wireframes", url: "https://uxdesign.cc/from-requirements-to-wireframes-55555", source: "UX Design" },
+                    { type: "Video", title: "Reading a PRD for Designers", url: "https://www.youtube.com/watch?v=PRDVideo", duration: "10 min" }
+                ],
+                task: {
+                    title: "Req Translation",
+                    description: "Translation: Take this Requirement: 'System must validate age > 18'. Turn it into a UI Sketch (Date Picker + Error Message).",
+                    deliverable: "UI Sketch"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "3. User Story Mapping (The Joint Activity)",
+                summary: "The best workshop for BAs and UXers to do together.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Video", title: "User Story Mapping with Jeff Patton", url: "https://www.youtube.com/watch?v=UserStoryMap", duration: "10 min" },
+                    { type: "Article", title: "Guide to User Story Mapping", url: "https://www.nngroup.com/articles/user-story-mapping/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Story Map",
+                    description: "Workshop: Create a User Story Map for an 'Email App'. Top layer: User Activities (Compose, Read). Bottom layer: Details (Attach file, Reply all).",
+                    deliverable: "Map Visualization"
+                }
+            },
+            // PART 2: SHARED ARTIFACTS
+            {
+                day: "Day 2",
+                title: "4. Process Flows vs. User Journeys",
+                summary: "BPMN (Business Logic) vs CJM (User Emotion). Merging them via Service Blueprints.",
+                duration: "3 Hours",
+                resources: [
+                    { type: "Article", title: "Service Blueprints: The Bridge", url: "https://www.nngroup.com/articles/service-blueprints-definition/", source: "NN/g" },
+                    { type: "Video", title: "Process Mapping for UX", url: "https://www.youtube.com/watch?v=ProcessMap", duration: "10 min" }
+                ],
+                task: {
+                    title: "Blueprint Creation",
+                    description: "Blueprint: Map the 'Pizza Order' process. Line of Interaction: What the user sees. Line of Visibility: What the kitchen (Backend) does.",
+                    deliverable: "Service Blueprint"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "5. Data-Driven Design Decisions",
+                summary: "Using BA data (Conversion Rates, Churn) to justify UX improvements.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Using Data to Persuade Stakeholders", url: "https://www.youtube.com/watch?v=DataUX", duration: "10 min" },
+                    { type: "Article", title: "Analytics for UX Designers", url: "https://www.nngroup.com/articles/analytics-user-experience/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Data Hypothesis",
+                    description: "Case: The BA says 'Registration is dropping by 20%'. As a UXer, hypothesize 3 design reasons why (e.g., Form too long, No social login).",
+                    deliverable: "Hypothesis List"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "6. Handling Constraints (Technical & Business)",
+                summary: "When the BA says 'We can't build that'. Negotiation skills.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Designing with Constraints", url: "https://uxplanet.org/designing-with-constraints-55555", source: "UX Planet" },
+                    { type: "Video", title: "Negotiating with Stakeholders", url: "https://www.youtube.com/watch?v=Negotiation", duration: "10 min" }
+                ],
+                task: {
+                    title: "Negotiation Roleplay",
+                    description: "Roleplay: You designed a fancy animated dashboard. The BA says 'Too expensive to build'. Propose a 'Phase 1' (MVP) version.",
+                    deliverable: "MVP Proposal"
+                }
+            },
+            // PART 3: THE WORKFLOW
+            {
+                day: "Day 4",
+                title: "7. The Feedback Loop",
+                summary: "Validating designs against requirements BEFORE development.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Design Reviews with BAs", url: "https://www.youtube.com/watch?v=DesignReview", duration: "8 min" },
+                    { type: "Article", title: "Acceptance Criteria for Design", url: "https://www.scrum.org/resources/blog/acceptance-criteria-ux", source: "Scrum.org" }
+                ],
+                task: {
+                    title: "Review checklist",
+                    description: "Checklist: Create a 'Design Review Checklist' for the BA. (e.g., 'Does this screen cover the Edge Case of a banned user?').",
+                    deliverable: "QA Checklist"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "8. Documentation Handoff",
+                summary: "Combining UI Specs with Functional Specs.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Functional Specifications vs UX Specs", url: "https://uxdesign.cc/functional-specs-vs-ux-specs-55555", source: "UX Design" },
+                    { type: "Video", title: "Documenting Interactions", url: "https://www.youtube.com/watch?v=DocUX", duration: "12 min" }
+                ],
+                task: {
+                    title: "Feature Spec",
+                    description: "Project: Create a 'Feature Spec' page in Figma. Place the UI on the left, and the BA's logic rules (e.g., 'If x > 5, show error') on the right.",
+                    deliverable: "Spec Page"
+                }
+            }
+        ]
     }
 ];
 
