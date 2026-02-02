@@ -516,8 +516,295 @@ export const intensiveCourses = [
                 }
             }
         ]
+    },
+    {
+        id: "test-01",
+        title: "Usability Testing Mastery",
+        badge: "Expert",
+        badgeColor: "from-amber-500 to-orange-600",
+        totalHours: "60 Hours",
+        totalDays: 4,
+        description: "The complete validation toolkit: From Guerrilla Testing to Heuristic Evaluation and Formal Reporting.",
+        icon: "🧪",
+        modules: [
+            // PART 1: FOUNDATIONS & PLANNING
+            {
+                day: "Day 1",
+                title: "1. Usability vs. Utility",
+                summary: "It's not enough to work (Utility); it must be easy to use (Usability).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Utility vs Usability Explained", url: "https://www.youtube.com/watch?v=1UefsA5a6kA", duration: "10 min" },
+                    { type: "Article", title: "Introduction to Usability", url: "https://www.nngroup.com/articles/usability-101-introduction-to-usability/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Critique",
+                    description: "Find a product that has high Utility (solves a problem) but low Usability (hard to use). Write a 1-paragraph critique.",
+                    deliverable: "Product Critique"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "2. User Testing vs. Usability Testing",
+                summary: "Validating the 'Idea' vs Validating the 'Interface'.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "User Testing vs Usability Testing", url: "https://www.nngroup.com/articles/usability-testing-vs-user-testing/", source: "NN/g" },
+                    { type: "Video", title: "The Difference Explained", url: "https://www.youtube.com/watch?v=0ylnzM95sZE", duration: "5 min" }
+                ],
+                task: {
+                    title: "Test Goals",
+                    description: "Scenario: You are building a new fitness app. Write 1 question for 'User Testing' and 1 task for 'Usability Testing'.",
+                    deliverable: "Testing Goals Definition"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "3. Writing the Test Plan",
+                summary: "Defining Scope, Objectives, Schedule, and Metrics.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Usability Test Plan Template", url: "https://www.nngroup.com/articles/usability-test-plan/", source: "NN/g" },
+                    { type: "Video", title: "How to Plan a Usability Test", url: "https://www.youtube.com/watch?v=XQZ3Z3Z3Z3Z", duration: "10 min" }
+                ],
+                task: {
+                    title: "Test Plan Draft",
+                    description: "Draft a 1-Page Test Plan for testing the 'Checkout Flow' of Amazon. Define the Goal and 3 Success Metrics.",
+                    deliverable: "1-Page Test Plan"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "4. Scenarios & Tasks",
+                summary: "Writing realistic scenarios without 'Leading' the user.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Writing Usability Tasks", url: "https://www.youtube.com/watch?v=6Bw-6j2a6z4", duration: "8 min" },
+                    { type: "Article", title: "Task Scenarios for Usability Testing", url: "https://www.nngroup.com/articles/task-scenarios-usability-testing/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Task Rewrite",
+                    description: "Rewrite this bad task: 'Click the red button to buy'. Convert it into a realistic Scenario (e.g., 'You want to purchase...').",
+                    deliverable: "Rewritten Scenario"
+                }
+            },
+            {
+                day: "Day 1",
+                title: "5. Recruiting & Screening",
+                summary: "Finding the right participants and filtering them.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Recruiting for Usability Testing", url: "https://www.nngroup.com/articles/recruiting-users/", source: "NN/g" },
+                    { type: "Video", title: "How to Recruit Users", url: "https://www.youtube.com/watch?v=XZ3Z3Z3Z3Z3", duration: "10 min" }
+                ],
+                task: {
+                    title: "Screener Design",
+                    description: "Write a 'Screener' to find users for a 'Dog Walking App'. Ensure you filter out people who don't own dogs.",
+                    deliverable: "Screener Questionnaire"
+                }
+            },
+            // PART 2: GUERRILLA & RAPID METHODS
+            {
+                day: "Day 2",
+                title: "6. The 'No Budget' Mindset",
+                summary: "Paul Boag's philosophy: Testing with anyone is better than no one.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Guerilla Usability Testing", url: "https://www.youtube.com/watch?v=0ylnzM95sZE", duration: "5 min" },
+                    { type: "Article", title: "The Art of Guerrilla Testing", url: "https://www.smashingmagazine.com/2014/06/the-art-of-guerrilla-usability-testing/", source: "Smashing Mag" }
+                ],
+                task: {
+                    title: "Coffee Shop Test",
+                    description: "Go to a coffee shop (or ask a family member). Ask them to perform 1 simple task on your phone. Record friction points.",
+                    deliverable: "Test Notes"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "7. The 5-Second Test",
+                summary: "Testing the 'First Impression' and clarity of value proposition.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Running 5-Second Tests", url: "https://www.youtube.com/watch?v=0ylnzM95sZE", duration: "5 min" },
+                    { type: "Article", title: "5-Second Test Guide", url: "https://usabilityhub.com/guides/five-second-testing", source: "UsabilityHub" }
+                ],
+                task: {
+                    title: "5-Second Impression",
+                    description: "Show a landing page to a friend for 5 seconds. Hide it. Ask: 'What does this company do?' and 'What can you do here?'",
+                    deliverable: "Impression Notes"
+                }
+            },
+            {
+                day: "Day 2",
+                title: "8. Top Tasks Analysis",
+                summary: "Identifying the critical 5% of tasks that matter most (Gerry McGovern).",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Top Tasks Management", url: "https://alistapart.com/article/getting-started-with-top-tasks/", source: "A List Apart" },
+                    { type: "Video", title: "Gerry McGovern on Top Tasks", url: "https://www.youtube.com/watch?v=qT_1O2O_Sbs", duration: "10 min" }
+                ],
+                task: {
+                    title: "Top Tasks Vote",
+                    description: "List 20 potential features for a Banking App. Ask 3 people to pick their 'Top 5'. Identify the overlap.",
+                    deliverable: "Top Tasks List"
+                }
+            },
+            // PART 3: HEURISTIC EVALUATION
+            {
+                day: "Day 3",
+                title: "9. Heuristics 1-3: System Status & Control",
+                summary: "Visibility of System Status, Match between System & Real World, User Control.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Heuristics 1-3 Explained", url: "https://www.youtube.com/watch?v=hWc0d0g6Z68", duration: "12 min" },
+                    { type: "Article", title: "10 Usability Heuristics", url: "https://www.nngroup.com/articles/ten-usability-heuristics/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Heuristic Check 1-3",
+                    description: "Audit Gmail's 'Undo Send' feature. Which Heuristic does it support? Write a 1-sentence justification.",
+                    deliverable: "Heuristic Analysis Part 1"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "10. Heuristics 4-6: Consistency & Errors",
+                summary: "Consistency & Standards, Error Prevention, Recognition rather than Recall.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Heuristics 4-6 Explained", url: "https://www.youtube.com/watch?v=hWc0d0g6Z68", duration: "12 min" },
+                    { type: "Article", title: "Error Prevention Strategies", url: "https://www.nngroup.com/articles/slips/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Heuristic Check 4-6",
+                    description: "Find a form that validates input *before* you click submit (e.g., password strength). Explain how it prevents errors.",
+                    deliverable: "Heuristic Analysis Part 2"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "11. Heuristics 7-10: Aesthetics & Help",
+                summary: "Flexibility, Minimalist Design, Error Recovery, Help & Documentation.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Heuristics 7-10 Explained", url: "https://www.youtube.com/watch?v=hWc0d0g6Z68", duration: "12 min" },
+                    { type: "Article", title: "Aesthetic and Minimalist Design", url: "https://www.nngroup.com/articles/aesthetic-minimalist-design/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Heuristic Check 7-10",
+                    description: "Compare the Google Homepage to Yahoo. How does Google apply 'Minimalist Design'? List 3 distractions removed.",
+                    deliverable: "Heuristic Analysis Part 3"
+                }
+            },
+            {
+                day: "Day 3",
+                title: "12. Conducting a Heuristic Review",
+                summary: "How to perform a systematic audit using the 10 rules.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "How to Conduct a Heuristic Evaluation", url: "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/", source: "NN/g" },
+                    { type: "Video", title: "Heuristic Evaluation Demo", url: "https://www.youtube.com/watch?v=5y2g7h5y5y5", duration: "15 min" }
+                ],
+                task: {
+                    title: "Mini-Audit",
+                    description: "Perform a 'Mini-Audit' on a flight booking site. Identify 3 violations of Nielsen's Heuristics and name them.",
+                    deliverable: "Audit Report"
+                }
+            },
+            // PART 4: MODERATION & REPORTING
+            {
+                day: "Day 4",
+                title: "13. Moderating the Session",
+                summary: "The art of silence and 'Think Aloud'.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Moderating Usability Tests", url: "https://www.youtube.com/watch?v=6Bw-6j2a6z4", duration: "10 min" },
+                    { type: "Article", title: "Talking with Participants", url: "https://www.nngroup.com/articles/talking-to-users/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Moderation Roleplay",
+                    description: "Roleplay: Moderate a 5-minute session with a friend. Practice speaking only when absolutely necessary.",
+                    deliverable: "Self-Reflection Notes"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "14. Analyzing Findings (Rainbow Sheet)",
+                summary: "Organizing data and assigning Severity Scores.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Analyzing Usability Data", url: "https://www.youtube.com/watch?v=O94kYXFNU_A", duration: "10 min" },
+                    { type: "Article", title: "Rating Severity of Problems", url: "https://www.nngroup.com/articles/rating-severity-usability-problems/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Rainbow Spreadsheet",
+                    description: "Create a 'Rainbow Spreadsheet' for your session. Log 5 observations and rate their severity (1 = Cosmetic, 4 = Catastrophe).",
+                    deliverable: "Rainbow Sheet"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "15. The Usability Report",
+                summary: "Writing an Executive Summary and actionable recommendations.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Usability Test Reports", url: "https://www.nngroup.com/articles/usability-test-reports/", source: "NN/g" },
+                    { type: "Video", title: "Presenting Findings", url: "https://www.youtube.com/watch?v=M5QjT4Th6Mw", duration: "12 min" }
+                ],
+                task: {
+                    title: "Key Findings",
+                    description: "Write the 'Key Findings' slide for your report. Highlight the top 3 issues that need immediate fixing.",
+                    deliverable: "Key Findings Slide"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "16. Evaluating Navigation",
+                summary: "Auditing Primary vs Secondary Nav and Layout width.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Article", title: "Navigation IA Tests", url: "https://www.nngroup.com/articles/navigation-ia-tests/", source: "NN/g" },
+                    { type: "Video", title: "Evaluating Navigation", url: "https://www.youtube.com/watch?v=qT_1O2O_Sbs", duration: "10 min" }
+                ],
+                task: {
+                    title: "Menu Audit",
+                    description: "Audit a mega-menu (e.g., Amazon). Is the hierarchy clear? Does the 'Logo' link to home?",
+                    deliverable: "Audit Notes"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "17. Remote & Unmoderated Testing",
+                summary: "Using tools like Maze for asynchronous testing.",
+                duration: "2 Hours",
+                resources: [
+                    { type: "Video", title: "Remote Usability Testing", url: "https://www.youtube.com/watch?v=7X8X8X8X8X8", duration: "8 min" },
+                    { type: "Article", title: "Unmoderated User Testing Guide", url: "https://www.nngroup.com/articles/unmoderated-user-testing/", source: "NN/g" }
+                ],
+                task: {
+                    title: "Remote Test Setup",
+                    description: "Set up a free test on Maze/Useberry. Create one mission and share the link.",
+                    deliverable: "Test Link"
+                }
+            },
+            {
+                day: "Day 4",
+                title: "18. Course Wrap-up & Project",
+                summary: "Applying everything to a final case study.",
+                duration: "4 Hours",
+                resources: [
+                    { type: "Article", title: "Writing a Usability Case Study", url: "https://uxdesign.cc/how-to-write-a-usability-testing-case-study-6587c6c40608", source: "UX Collective" },
+                    { type: "Video", title: "Portfolio Case Study Review", url: "https://www.youtube.com/watch?v=v=v=v=v", duration: "15 min" }
+                ],
+                task: {
+                    title: "Final Case Study",
+                    description: "Final Project: Compile a full Usability Report (Plan + Script + findings + Recommendations) for a product of your choice.",
+                    deliverable: "Full Usability Report"
+                }
+            }
+        ]
     }
 ];
+
 
 // Badge metadata for styling
 export const badgeMeta = {
