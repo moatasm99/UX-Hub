@@ -20,18 +20,16 @@ export const intensiveCourses = [
                 summary: "From Don Norman to the Modern Product Era.",
                 duration: "15 Hours",
                 resources: [
-                    {
-                        type: "Video",
-                        title: "The History of UX (Don Norman)",
-                        url: "https://www.youtube.com/watch?v=9MiF5L_5vpo",
-                        duration: "12 min"
-                    },
-                    {
-                        type: "Article",
-                        title: "What is User Experience?",
-                        url: "https://www.nngroup.com/articles/definition-user-experience/",
-                        source: "NN/g"
-                    }
+                            {
+                                "type": "Article",
+                                "title": "A 100-Year View of User Experience",
+                                "url": "https://www.nngroup.com/articles/100-years-ux/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "40 Years in UX (Jakob Nielsen)",
+                                "url": "https://www.nngroup.com/videos/40-years/"
+                            }
                 ],
                 task: {
                     title: "Observation Log",
@@ -114,6 +112,54 @@ export const intensiveCourses = [
                     deliverable: "Accessibility Report"
                 }
             }
+,
+            {
+                day: "Bonus Module",
+                title: "Difference between UI and UX",
+                summary: "Supplemental resources added via update.",
+                duration: "Self-paced",
+                resources: [
+                            {
+                                "type": "Article",
+                                "title": "The Definition of User Experience (UX)",
+                                "url": "https://www.nngroup.com/articles/definition-user-experience/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "UX vs. UI (NNgroup)",
+                                "url": "https://www.nngroup.com/videos/ux-vs-ui/"
+                            }
+                    ],
+                task: {
+                    title: "Review",
+                    description: "Review the attached resources.",
+                    deliverable: "N/A"
+                }
+            },
+
+            {
+                day: "Bonus Module",
+                title: "Roles in a UX Team",
+                summary: "Supplemental resources added via update.",
+                duration: "Self-paced",
+                resources: [
+                            {
+                                "type": "Article",
+                                "title": "UX Career Advice",
+                                "url": "https://www.nngroup.com/articles/ux-career-advice-original/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "UX Roles Explained",
+                                "url": "https://www.youtube.com/watch?v=CJnfAXlBRTE"
+                            }
+                    ],
+                task: {
+                    title: "Review",
+                    description: "Review the attached resources.",
+                    deliverable: "N/A"
+                }
+            }
         ]
     },
     {
@@ -132,19 +178,16 @@ export const intensiveCourses = [
                 summary: "Understanding users and framing the right problem.",
                 duration: "15 Hours",
                 resources: [
-                    {
-                        type: "Video",
-                        title: "The 5 Stages of Design Thinking",
-                        url: "https://www.youtube.com/watch?v=_r0VX-aU_T8",
-                        duration: "10 min",
-                        source: "NN/g"
-                    },
-                    {
-                        type: "Article",
-                        title: "Stage 2: Define the Problem",
-                        url: "https://www.interaction-design.org/literature/article/stage-2-in-the-design-thinking-process-define-the-problem-and-interpret-the-results",
-                        source: "IxDF"
-                    }
+                            {
+                                "type": "Article",
+                                "title": "Design Thinking: Empathize Guide",
+                                "url": "https://www.nngroup.com/articles/design-thinking-study-guide/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "What is UX? (ft. Dr. Jakob Nielsen)",
+                                "url": "https://www.youtube.com/watch?v=8PM6KxV8GRc"
+                            }
                 ],
                 task: {
                     title: "Problem Statement",
@@ -158,19 +201,16 @@ export const intensiveCourses = [
                 summary: "Breaking mental blocks with Crazy 8s and SCAMPER.",
                 duration: "15 Hours",
                 resources: [
-                    {
-                        type: "Video",
-                        title: "How to run a Crazy 8s Session",
-                        url: "https://www.youtube.com/watch?v=yzFqtFn9E1w",
-                        duration: "8 min",
-                        source: "AJ&Smart"
-                    },
-                    {
-                        type: "Article",
-                        title: "Ideation Techniques Overview",
-                        url: "https://www.nngroup.com/articles/ux-ideation/",
-                        source: "NN/g"
-                    }
+                            {
+                                "type": "Article",
+                                "title": "Facilitating Design Studio (Crazy 8s)",
+                                "url": "https://www.nngroup.com/articles/facilitating-design-studio-workshop/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Ideation Techniques in Design Thinking",
+                                "url": "https://www.youtube.com/watch?v=VdBN566mGZQ"
+                            }
                 ],
                 task: {
                     title: "Crazy 8s Sketch",
@@ -184,19 +224,19 @@ export const intensiveCourses = [
                 summary: "Moving from abstract ideas to tangible representations.",
                 duration: "15 Hours",
                 resources: [
-                    {
-                        type: "Video",
-                        title: "Rapid Prototyping Google Way",
-                        url: "https://www.youtube.com/watch?v=JMjozqJS44M",
-                        duration: "12 min",
-                        source: "Google Ventures"
-                    },
-                    {
-                        type: "Article",
-                        title: "Paper Prototyping Guide",
-                        url: "https://www.smashingmagazine.com/2012/10/the-skeptic-s-guide-to-low-fidelity-prototyping/",
-                        source: "Smashing Magazine"
-                    }
+                            {
+                                "type": "Video",
+                                "title": "Rapid Prototyping Google Way",
+                                "url": "https://www.youtube.com/watch?v=JMjozqJS44M",
+                                "duration": "12 min",
+                                "source": "Google Ventures"
+                            },
+                            {
+                                "type": "Article",
+                                "title": "Paper Prototyping Guide",
+                                "url": "https://www.smashingmagazine.com/2012/10/the-skeptic-s-guide-to-low-fidelity-prototyping/",
+                                "source": "Smashing Magazine"
+                            }
                 ],
                 task: {
                     title: "Paper Prototype",
@@ -213,7 +253,7 @@ export const intensiveCourses = [
                     {
                         type: "Video",
                         title: "Testing with 5 Users",
-                        url: "https://www.youtube.com/watch?v=0ylnzM95sZE",
+                        url: "https://www.youtube.com/watch?v=1UefsA5a6kA",
                         duration: "5 min",
                         source: "Google Ventures"
                     },
@@ -249,8 +289,16 @@ export const intensiveCourses = [
                 summary: "Understanding the 4 quadrants: Quant vs Qual & Behavioral vs Attitudinal.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "When to use which UX Method", url: "https://www.youtube.com/watch?v=bAqvK29t7z0", duration: "10 min" },
-                    { type: "Article", title: "Research Methods Landscape", url: "https://www.nngroup.com/articles/which-ux-research-methods/", source: "NN/g" }
+                            {
+                                "type": "Article",
+                                "title": "Quant vs. Qual Usability Testing",
+                                "url": "https://www.nngroup.com/articles/quant-vs-qual/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Qualitative vs Quantitative Research",
+                                "url": "https://www.youtube.com/watch?v=2X-QSU6-hO4"
+                            }
                 ],
                 task: {
                     title: "Research Landscape Axis",
@@ -279,8 +327,16 @@ export const intensiveCourses = [
                 summary: "Defining Objectives, Demographics, and Screener Questions.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "The 1-Page Research Plan", url: "https://www.smashingmagazine.com/2012/01/ux-research-plan/", source: "Smashing Mag" },
-                    { type: "Video", title: "Writing Screener Questions", url: "https://www.youtube.com/watch?v=XZ3Z3Z3Z3Z3", duration: "10 min" }
+                            {
+                                "type": "Article",
+                                "title": "Research Plans: Organize & Document",
+                                "url": "https://www.nngroup.com/articles/pm-research-plan/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "15 User Research Methods",
+                                "url": "https://www.youtube.com/watch?v=BtKHHIBJnL8"
+                            }
                 ],
                 task: {
                     title: "Research Plan Draft",
@@ -294,8 +350,16 @@ export const intensiveCourses = [
                 summary: "Asking open-ended questions and avoiding Confirmation Bias.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "The Mom Test (Avoiding Bias)", url: "https://www.youtube.com/watch?v=H74tN25fEjo", duration: "15 min" },
-                    { type: "Article", title: "User Interview Best Practices", url: "https://www.nngroup.com/articles/user-interviews/", source: "NN/g" }
+                            {
+                                "type": "Article",
+                                "title": "User Interviews 101",
+                                "url": "https://www.nngroup.com/articles/user-interviews/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "3 Types of User Interviews",
+                                "url": "https://www.nngroup.com/videos/3-types-user-interviews/"
+                            }
                 ],
                 task: {
                     title: "Interview Scripting",
@@ -325,8 +389,16 @@ export const intensiveCourses = [
                 summary: "Grouping observations to find common themes.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "How to Affinity Map", url: "https://www.youtube.com/watch?v=UqI7hB5X2s8", duration: "8 min" },
-                    { type: "Article", title: "Affinity Diagrams Guide", url: "https://www.interaction-design.org/literature/article/affinity-diagrams-learn-how-to-cluster-and-bundle-ideas-and-facts", source: "IxDF" }
+                            {
+                                "type": "Article",
+                                "title": "Affinity Diagramming",
+                                "url": "https://www.nngroup.com/articles/affinity-diagram/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "How to Synthesize Research",
+                                "url": "https://www.youtube.com/watch?v=3w8sqK5g2gE"
+                            }
                 ],
                 task: {
                     title: "Affinity Clustering",
@@ -356,7 +428,7 @@ export const intensiveCourses = [
                 duration: "2 Hours",
                 resources: [
                     { type: "Article", title: "Prioritizing Personas", url: "https://www.nngroup.com/articles/persona-scope/", source: "NN/g" },
-                    { type: "Video", title: "Choosing the Primary Persona", url: "https://www.youtube.com/watch?v=XQZ3Z3Z3Z3Z", duration: "10 min" }
+                    { type: "Video", title: "Choosing the Primary Persona", url: "https://www.youtube.com/watch?v=rv9yfrV-EAs", duration: "10 min" }
                 ],
                 task: {
                     title: "Persona Prioritization",
@@ -370,8 +442,16 @@ export const intensiveCourses = [
                 summary: "Creating a detailed archetype: Bio, Goals, Frustrations, and Scenario.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Creating Usability Personas", url: "https://www.youtube.com/watch?v=XQZ3Z3Z3Z3Z", duration: "10 min" },
-                    { type: "Article", title: "Personas vs. Jobs-to-be-Done", url: "https://www.nngroup.com/articles/personas-jobs-be-done/", source: "NN/g" }
+                            {
+                                "type": "Article",
+                                "title": "Personas 101",
+                                "url": "https://www.nngroup.com/articles/persona/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "How to Create Personas",
+                                "url": "https://www.youtube.com/watch?v=XlM36PbdFHg"
+                            }
                 ],
                 task: {
                     title: "Persona Card",
@@ -385,8 +465,16 @@ export const intensiveCourses = [
                 summary: "Says, Thinks, Does, Feels. Deeply understanding the user's emotional state.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "Empathy Mapping Guide", url: "https://www.nngroup.com/articles/empathy-mapping/", source: "NN/g" },
-                    { type: "Video", title: "Empathy Mapping Tutorial", url: "https://www.youtube.com/watch?v=Q2g-tq7WvF8", duration: "8 min" }
+                            {
+                                "type": "Article",
+                                "title": "Empathy Mapping: The First Step",
+                                "url": "https://www.nngroup.com/articles/empathy-mapping/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Empathy Maps Explained",
+                                "url": "https://www.youtube.com/watch?v=k3Y9tqS9sSw"
+                            }
                 ],
                 task: {
                     title: "Empathy Map",
@@ -446,7 +534,7 @@ export const intensiveCourses = [
                 summary: "A method to discover how users categorize information.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Card Sorting Demo", url: "https://www.youtube.com/watch?v=qT_1O2O_Sbs", duration: "10 min" },
+                    { type: "Video", title: "Card Sorting Demo", url: "https://www.youtube.com/watch?v=C2GXjE4pZg8", duration: "10 min" },
                     { type: "Article", title: "Card Sorting Best Practices", url: "https://www.nngroup.com/articles/card-sorting-definition/", source: "NN/g" }
                 ],
                 task: {
@@ -549,8 +637,16 @@ export const intensiveCourses = [
                 summary: "Validating the 'Idea' vs Validating the 'Interface'.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "User Testing vs Usability Testing", url: "https://www.nngroup.com/articles/usability-testing-vs-user-testing/", source: "NN/g" },
-                    { type: "Video", title: "The Difference Explained", url: "https://www.youtube.com/watch?v=0ylnzM95sZE", duration: "5 min" }
+                            {
+                                "type": "Article",
+                                "title": "Usability 101",
+                                "url": "https://www.nngroup.com/articles/usability-101-introduction-to-usability/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Usability Testing Basics",
+                                "url": "https://www.nngroup.com/videos/context-adds-value-ux-artifacts/"
+                            }
                 ],
                 task: {
                     title: "Test Goals",
@@ -579,8 +675,16 @@ export const intensiveCourses = [
                 summary: "Writing realistic scenarios without 'Leading' the user.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Writing Usability Tasks", url: "https://www.youtube.com/watch?v=6Bw-6j2a6z4", duration: "8 min" },
-                    { type: "Article", title: "Task Scenarios for Usability Testing", url: "https://www.nngroup.com/articles/task-scenarios-usability-testing/", source: "NN/g" }
+                            {
+                                "type": "Article",
+                                "title": "Task Scenarios for Testing",
+                                "url": "https://www.nngroup.com/articles/task-scenarios-usability-testing/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Writing Test Scripts",
+                                "url": "https://www.youtube.com/watch?v=5y7H1jZ3w_I"
+                            }
                 ],
                 task: {
                     title: "Task Rewrite",
@@ -732,8 +836,16 @@ export const intensiveCourses = [
                 summary: "Organizing data and assigning Severity Scores.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Analyzing Usability Data", url: "https://www.youtube.com/watch?v=O94kYXFNU_A", duration: "10 min" },
-                    { type: "Article", title: "Rating Severity of Problems", url: "https://www.nngroup.com/articles/rating-severity-usability-problems/", source: "NN/g" }
+                            {
+                                "type": "Article",
+                                "title": "Severity Ratings for Problems",
+                                "url": "https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Rating Severity",
+                                "url": "https://www.nngroup.com/videos/severity-usability-problems/"
+                            }
                 ],
                 task: {
                     title: "Rainbow Spreadsheet",
@@ -777,8 +889,16 @@ export const intensiveCourses = [
                 summary: "Using tools like Maze for asynchronous testing.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Remote Usability Testing", url: "https://www.youtube.com/watch?v=7X8X8X8X8X8", duration: "8 min" },
-                    { type: "Article", title: "Unmoderated User Testing Guide", url: "https://www.nngroup.com/articles/unmoderated-user-testing/", source: "NN/g" }
+                            {
+                                "type": "Article",
+                                "title": "Remote Usability Testing",
+                                "url": "https://www.nngroup.com/articles/live-intercept-remote-test/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Remote Moderated Tests",
+                                "url": "https://www.nngroup.com/videos/remote-moderated-usability-tests/"
+                            }
                 ],
                 task: {
                     title: "Remote Test Setup",
@@ -1226,7 +1346,7 @@ export const intensiveCourses = [
                 summary: "The future of Design Systems. Storing Colors, Numbers, and Strings.",
                 duration: "3 Hours",
                 resources: [
-                    { type: "Video", title: "Figma Variables Intro", url: "https://www.youtube.com/watch?v=M5Z3Z3Z3Z3Z", duration: "10 min" },
+                    { type: "Video", title: "Figma Variables Intro", url: "https://www.youtube.com/watch?v=55555555555", duration: "10 min" },
                     { type: "Article", title: "Guide to Variables", url: "https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables", source: "Figma Help" }
                 ],
                 task: {
@@ -1287,7 +1407,7 @@ export const intensiveCourses = [
                 summary: "Preparing files for code. Annotations, Sections, and Exporting.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Figma for Developers", url: "https://www.youtube.com/watch?v=DevModeVideo", duration: "10 min" },
+                    { type: "Video", title: "Figma for Developers", url: "https://www.youtube.com/watch?v=B1-h1-h1-h1", duration: "10 min" },
                     { type: "Article", title: "Handoff Best Practices", url: "https://www.figma.com/dev-mode/", source: "Figma" }
                 ],
                 task: {
@@ -1315,8 +1435,16 @@ export const intensiveCourses = [
                 summary: "How users expect content to be organized. Hierarchical vs Flat vs Linear.",
                 duration: "3 Hours",
                 resources: [
-                    { type: "Video", title: "Information Architecture Basics", url: "https://www.youtube.com/watch?v=IA_Basics", duration: "12 min" },
-                    { type: "Article", title: "Complete Guide to IA", url: "https://www.nngroup.com/articles/ia-structure/", source: "NN/g" }
+                            {
+                                "type": "Article",
+                                "title": "IA vs. Sitemaps",
+                                "url": "https://www.nngroup.com/articles/information-architecture-sitemaps/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "IA: 3 Key Models",
+                                "url": "https://www.youtube.com/watch?v=v39z0JPeIc8"
+                            }
                 ],
                 task: {
                     title: "Navigation Analysis",
@@ -1330,8 +1458,16 @@ export const intensiveCourses = [
                 summary: "A research method to discover how users categorize information.",
                 duration: "3 Hours",
                 resources: [
-                    { type: "Video", title: "How to run a Card Sort", url: "https://www.youtube.com/watch?v=CardSorting", duration: "10 min" },
-                    { type: "Tool", title: "OptimalSort (Free Trial)", url: "https://www.optimalworkshop.com/optimalsort", source: "Tool" }
+                            {
+                                "type": "Article",
+                                "title": "Card Sorting Definition",
+                                "url": "https://www.nngroup.com/articles/card-sorting-definition/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Open vs. Closed Card Sorting",
+                                "url": "https://www.nngroup.com/videos/open-vs-closed-card-sorting/"
+                            }
                 ],
                 task: {
                     title: "Card Sort Session",
@@ -1361,8 +1497,16 @@ export const intensiveCourses = [
                 summary: "Mapping the path a user takes to complete a goal.",
                 duration: "3 Hours",
                 resources: [
-                    { type: "Video", title: "User Flows Explained", url: "https://www.youtube.com/watch?v=UserFlows", duration: "10 min" },
-                    { type: "Article", title: "Flow Charts Symbols 101", url: "https://www.balsamiq.com/learn/articles/user-flow-examples/", source: "Balsamiq" }
+                            {
+                                "type": "Article",
+                                "title": "User Journeys vs. User Flows",
+                                "url": "https://www.nngroup.com/articles/user-journeys-vs-user-flows/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "When to Use User Flows",
+                                "url": "https://www.nngroup.com/videos/user-journeys-vs-user-flows/"
+                            }
                 ],
                 task: {
                     title: "Booking Flow",
@@ -1376,8 +1520,16 @@ export const intensiveCourses = [
                 summary: "Moving from boxes and arrows to screen layouts (Low-Fi).",
                 duration: "4 Hours",
                 resources: [
-                    { type: "Video", title: "From Flow to Wireframe", url: "https://www.youtube.com/watch?v=WireframingFlows", duration: "15 min" },
-                    { type: "Article", title: "Wireframing Best Practices", url: "https://www.smashingmagazine.com/2021/wireframing-guide/", source: "Smashing Mag" }
+                            {
+                                "type": "Article",
+                                "title": "How to Draw a Wireframe",
+                                "url": "https://www.nngroup.com/articles/draw-wireframe-even-if-you-cant-draw/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Sketching UI for Non-Designers",
+                                "url": "https://www.nngroup.com/videos/sketch-ui-non-designers/"
+                            }
                 ],
                 task: {
                     title: "Lo-Fi Sketches",
@@ -1883,7 +2035,7 @@ export const intensiveCourses = [
                 summary: "Designing the first 800px. Value proposition, imagery, and CTAs.",
                 duration: "3 Hours",
                 resources: [
-                    { type: "Video", title: "Designing High-Converting Hero Sections", url: "https://www.youtube.com/watch?v=HeroSection", duration: "12 min" },
+                    { type: "Video", title: "Designing High-Converting Hero Sections", url: "https://www.youtube.com/watch?v=vj7W-d-9-gI", duration: "12 min" },
                     { type: "Article", title: "The Fold is Still Real", url: "https://www.nngroup.com/articles/page-fold-manifesto/", source: "NN/g" }
                 ],
                 task: {
@@ -2409,7 +2561,7 @@ export const intensiveCourses = [
                 summary: "Doing math in design. Shopping carts and counters.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Building a Shopping Cart in Figma", url: "https://www.youtube.com/watch?v=ShoppingCart", duration: "15 min" },
+                    { type: "Video", title: "Building a Shopping Cart in Figma", url: "https://www.youtube.com/watch?v=lJg9tD4yCmM", duration: "15 min" },
                     { type: "Article", title: "Prototyping Expressions", url: "https://help.figma.com/hc/en-us/articles/15253196696471-Use-expressions", source: "Figma" }
                 ],
                 task: {
@@ -2529,8 +2681,16 @@ export const intensiveCourses = [
                 summary: "Moving beyond 'gut feeling'. Using a scorecard to rate usability.",
                 duration: "3 Hours",
                 resources: [
-                    { type: "Article", title: "How to Conduct a Heuristic Evaluation", url: "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/", source: "NN/g" },
-                    { type: "Video", title: "Heuristic Evaluation Checklist", url: "https://www.youtube.com/watch?v=5y2g7h5y5y5", duration: "10 min" }
+                            {
+                                "type": "Article",
+                                "title": "10 Usability Heuristics",
+                                "url": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "10 Heuristics Applied",
+                                "url": "https://www.nngroup.com/videos/10-usability-heuristics/"
+                            }
                 ],
                 task: {
                     title: "Heuristic Audit",
@@ -2545,7 +2705,7 @@ export const intensiveCourses = [
                 duration: "2 Hours",
                 resources: [
                     { type: "Article", title: "How to Conduct a Cognitive Walkthrough", url: "https://www.interaction-design.org/literature/article/how-to-conduct-a-cognitive-walkthrough", source: "IxDF" },
-                    { type: "Video", title: "Cognitive Walkthrough Demo", url: "https://www.youtube.com/watch?v=CognitiveWalk", duration: "10 min" }
+                    { type: "Video", title: "Cognitive Walkthrough Demo", url: "https://www.youtube.com/watch?v=aG3mJI4tEIE", duration: "10 min" }
                 ],
                 task: {
                     title: "Walkthrough Stress Test",
@@ -2606,13 +2766,61 @@ export const intensiveCourses = [
                 summary: "How to evaluate peers' work objectively (not subjective opinion).",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "The Art of Design Critique", url: "https://www.youtube.com/watch?v=CritiqueVideo", duration: "10 min" },
+                    { type: "Video", title: "The Art of Design Critique", url: "https://www.youtube.com/watch?v=NO_aXm6pE3Q", duration: "10 min" },
                     { type: "Article", title: "Design Critique Etiquette", url: "https://www.nngroup.com/articles/design-critiques/", source: "NN/g" }
                 ],
                 task: {
                     title: "Peer Review",
                     description: "Feedback: Write a 'Critique Note' for a colleague's design using the framework: 'I noticed [Observation], which might cause [Problem]. Have you considered [Suggestion]?'",
                     deliverable: "Critique Note"
+                }
+            }
+,
+            {
+                day: "Bonus Module",
+                title: "UX Audit",
+                summary: "Supplemental resources added via update.",
+                duration: "Self-paced",
+                resources: [
+                            {
+                                "type": "Article",
+                                "title": "Fixing Information Architecture",
+                                "url": "https://www.nngroup.com/articles/fixing-information-architecture/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "How to Conduct a UX Audit",
+                                "url": "https://www.youtube.com/watch?v=0wQO9zX_qJo"
+                            }
+                    ],
+                task: {
+                    title: "Review",
+                    description: "Review the attached resources.",
+                    deliverable: "N/A"
+                }
+            },
+
+            {
+                day: "Bonus Module",
+                title: "Competitive Analysis",
+                summary: "Supplemental resources added via update.",
+                duration: "Self-paced",
+                resources: [
+                            {
+                                "type": "Article",
+                                "title": "Competitive Usability Evaluations",
+                                "url": "https://www.nngroup.com/articles/competitive-usability-evaluations/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Competitive Analysis Video",
+                                "url": "https://www.nngroup.com/videos/competitive-usability-evaluations/"
+                            }
+                    ],
+                task: {
+                    title: "Review",
+                    description: "Review the attached resources.",
+                    deliverable: "N/A"
                 }
             }
         ]
@@ -2799,8 +3007,16 @@ export const intensiveCourses = [
                 summary: "How to fit 'Big Picture' design into 'Small Sprints'.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Article", title: "Doing UX in an Agile World", url: "https://www.nngroup.com/articles/doing-ux-agile/", source: "NN/g" },
-                    { type: "Video", title: "UX in Agile: One Sprint Ahead", url: "https://www.youtube.com/watch?v=AgileUX", duration: "10 min" }
+                            {
+                                "type": "Article",
+                                "title": "UXers as Product Leaders",
+                                "url": "https://www.nngroup.com/articles/fuego-product-leaders/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Successful Projects Collaboration",
+                                "url": "https://www.nngroup.com/videos/7-steps-collaboration/"
+                            }
                 ],
                 task: {
                     title: "Staggered Sprints",
@@ -2815,8 +3031,16 @@ export const intensiveCourses = [
                 summary: "The currency of Agile. 'As a [User], I want [Action], so that [Benefit]'.",
                 duration: "3 Hours",
                 resources: [
-                    { type: "Video", title: "Writing Good User Stories", url: "https://www.youtube.com/watch?v=UserStories", duration: "8 min" },
-                    { type: "Article", title: "User Stories with Acceptance Criteria", url: "https://www.mountaingoatsoftware.com/agile/user-stories", source: "Mountaingoat" }
+                            {
+                                "type": "Article",
+                                "title": "How to Write User Stories",
+                                "url": "https://uxdesign.cc/how-to-write-a-good-user-story-practical-approach-b9bed439f97d"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Story of User Stories",
+                                "url": "https://www.youtube.com/watch?v=5y7H1jZ3w_I"
+                            }
                 ],
                 task: {
                     title: "User Story Authoring",
@@ -2904,8 +3128,16 @@ export const intensiveCourses = [
                 summary: "Who does what? Where Requirements meet Empathy.",
                 duration: "3 Hours",
                 resources: [
-                    { type: "Article", title: "BA vs UX: The Distinction", url: "https://www.modernanalyst.com/Resources/Articles/tabid/115/ID/3452/The-Difference-Between-a-UX-Designer-and-a-Business-Analyst.aspx", source: "ModernAnalyst" },
-                    { type: "Video", title: "The Relationship between BA and UX", url: "https://www.youtube.com/watch?v=BAvsUX", duration: "10 min" }
+                            {
+                                "type": "Article",
+                                "title": "UX & BA Collaboration",
+                                "url": "https://www.nngroup.com/articles/ux-deliverables-collaboration/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Better Collaboration",
+                                "url": "https://www.nngroup.com/videos/7-steps-collaboration/"
+                            }
                 ],
                 task: {
                     title: "Roles Venn Diagram",
@@ -3039,8 +3271,16 @@ export const intensiveCourses = [
                 summary: "Stop asking basic questions. Using 'Chain of Thought' prompting to build Personas and User Journeys.",
                 duration: "3 Hours",
                 resources: [
-                    { type: "Article", title: "ChatGPT for UX: The Complete Guide", url: "https://uxdesign.cc/chatgpt-for-ux-design-55555", source: "UX Design" },
-                    { type: "Video", title: "Mastering Prompts for User Research", url: "https://www.youtube.com/watch?v=PromptEngineering", duration: "12 min" }
+                            {
+                                "type": "Article",
+                                "title": "AI for UX: Getting Started",
+                                "url": "https://www.nngroup.com/articles/ai-ux-getting-started/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Your AI UX Intern",
+                                "url": "https://www.youtube.com/watch?v=wmCXIPlllpA"
+                            }
                 ],
                 task: {
                     title: "Persona Gen",
@@ -3054,8 +3294,16 @@ export const intensiveCourses = [
                 summary: "Simulating user feedback before you have users. Analyzing competitors instantly.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Synthetic Users in UX Research", url: "https://www.youtube.com/watch?v=SyntheticUsers", duration: "10 min" },
-                    { type: "Article", title: "Using AI for Competitive Audits", url: "https://www.nngroup.com/articles/ai-competitive-analysis/", source: "NN/g" }
+                            {
+                                "type": "Article",
+                                "title": "Using AI for UX Work",
+                                "url": "https://www.nngroup.com/articles/ai-work-study-guide/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "AI in Research Analysis",
+                                "url": "https://www.youtube.com/watch?v=wmCXIPlllpA"
+                            }
                 ],
                 task: {
                     title: "AI SWOT",
@@ -3101,7 +3349,7 @@ export const intensiveCourses = [
                 duration: "3 Hours",
                 resources: [
                     { type: "Article", title: "Midjourney for UI Designers", url: "https://uxdesign.cc/midjourney-for-ui-design-55555", source: "UX Design" },
-                    { type: "Video", title: "Advanced Midjourney Prompting", url: "https://www.youtube.com/watch?v=MidjourneyUI", duration: "15 min" }
+                    { type: "Video", title: "Advanced Midjourney Prompting", url: "https://www.youtube.com/watch?v=bAqvK29t7z0", duration: "15 min" }
                 ],
                 task: {
                     title: "AI Moodboard",
@@ -3162,7 +3410,7 @@ export const intensiveCourses = [
                 duration: "2 Hours",
                 resources: [
                     { type: "Article", title: "Predictive Eye Tracking Validity", url: "https://www.attentioninsight.com/validity/", source: "AttentionInsight" },
-                    { type: "Video", title: "How Attention Insight Works", url: "https://www.youtube.com/watch?v=AttentionAI", duration: "5 min" }
+                    { type: "Video", title: "How Attention Insight Works", url: "https://www.youtube.com/watch?v=bAqvK29t7z0", duration: "5 min" }
                 ],
                 task: {
                     title: "AI Audit",
@@ -3183,6 +3431,30 @@ export const intensiveCourses = [
                     title: "Ethics Essay",
                     description: "Essay: Write a 1-paragraph stance on 'AI Disclosure'. Should we tell users when an interface was designed by AI? Why or why not?",
                     deliverable: "Position Statement"
+                }
+            }
+,
+            {
+                day: "Bonus Module",
+                title: "Designing for AI",
+                summary: "Supplemental resources added via update.",
+                duration: "Self-paced",
+                resources: [
+                            {
+                                "type": "Article",
+                                "title": "Trust with AI",
+                                "url": "https://www.nngroup.com/articles/smarts-emotion-trust-ai/"
+                            },
+                            {
+                                "type": "Video",
+                                "title": "Machine Learning UX",
+                                "url": "https://www.nngroup.com/articles/machine-learning-ux/"
+                            }
+                    ],
+                task: {
+                    title: "Review",
+                    description: "Review the attached resources.",
+                    deliverable: "N/A"
                 }
             }
         ]
@@ -3340,7 +3612,7 @@ export const intensiveCourses = [
                 summary: "Why Alt text and Aria-Labels matter. How screen readers see your code.",
                 duration: "2 Hours",
                 resources: [
-                    { type: "Video", title: "Web Accessibility for Designers", url: "https://www.youtube.com/watch?v=A11yCode", duration: "10 min" },
+                    { type: "Video", title: "Web Accessibility for Designers", url: "https://www.youtube.com/watch?v=20SHvU2PKsM", duration: "10 min" },
                     { type: "Article", title: "Intro to ARIA", url: "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA", source: "MDN" }
                 ],
                 task: {
@@ -3403,7 +3675,7 @@ export const intensiveCourses = [
                 duration: "2 Hours",
                 resources: [
                     { type: "Article", title: "Bootstrap Grid System", url: "https://getbootstrap.com/docs/5.3/layout/grid/", source: "Bootstrap" },
-                    { type: "Video", title: "Tailwind CSS for Designers", url: "https://www.youtube.com/watch?v=TailwindDesign", duration: "15 min" }
+                    { type: "Video", title: "Tailwind CSS for Designers", url: "https://www.youtube.com/watch?v=_9mTJ84uL1Q", duration: "15 min" }
                 ],
                 task: {
                     title: "Bootstrap Comp",
