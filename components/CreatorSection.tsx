@@ -87,7 +87,7 @@ const CreatorSection = () => {
                         href="https://www.linkedin.com/in/moatasm-shaban-7994711a2/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold bg-[#0A66C2] text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 hover:-translate-y-1 transition-all"
+                        className="flex items-center gap-2 px-8 py-3.5 rounded-2xl font-bold bg-[#0A66C2] text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 hover:-translate-y-1 transition-all focus:outline-none focus:ring-4 focus:ring-blue-500/50"
                     >
                         <Linkedin className="w-5 h-5" />
                         <span>Let's Connect</span>

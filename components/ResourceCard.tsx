@@ -30,17 +30,17 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ item }) => {
   };
 
   return (
-    <div className="glass-card rounded-2xl p-6 flex flex-col h-full relative overflow-hidden group bg-card transition-all duration-300">
+    <div className="glass-card rounded-3xl p-6 flex flex-col h-full relative overflow-hidden group bg-card transition-all duration-300">
       <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none group-hover:bg-blue-500/10 dark:group-hover:bg-white/10 transition"></div>
 
       {item.subcategory && (
-        <div className="inline-block text-[10px] font-bold px-3 py-1 rounded-lg mb-4 bg-slate-200/50 dark:bg-slate-700/30 text-slate-600 dark:text-slate-400 border border-slate-300/50 dark:border-slate-600/30 w-max">
+        <div className="inline-block text-[10px] font-bold px-3 py-1 rounded-lg mb-4 bg-slate-200/50 dark:bg-slate-700/30 text-slate-700 dark:text-slate-400 border border-slate-300/50 dark:border-slate-600/30 w-max">
           {item.subcategory}
         </div>
       )}
 
       <div className="flex justify-between items-start mb-4">
-        <div className="w-12 h-12 flex items-center justify-center bg-slate-100 dark:bg-slate-800/80 rounded-xl text-2xl border border-slate-200 dark:border-slate-700/50">
+        <div className="w-12 h-12 flex items-center justify-center bg-slate-100 dark:bg-slate-800/80 rounded-2xl text-2xl border border-slate-200 dark:border-slate-700/50">
           {item.icon}
         </div>
         <span className={`text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full border ${getTagStyles(item.type)}`}>
@@ -49,13 +49,13 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ item }) => {
       </div>
 
       <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">{title}</h3>
-      <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-grow leading-relaxed">{desc}</p>
+      <p className="text-slate-700 dark:text-slate-400 text-sm mb-6 flex-grow leading-relaxed">{desc}</p>
 
       <a
         href={item.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-auto w-full bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-300 hover:text-white font-semibold py-3 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-2 group-hover:shadow-lg group-hover:shadow-blue-900/20 relative overflow-hidden"
+        className="mt-auto w-full bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 text-slate-700 dark:text-slate-300 hover:text-white font-semibold py-3 px-4 rounded-3xl transition-all text-center flex items-center justify-center gap-2 group-hover:shadow-lg group-hover:shadow-blue-900/20 relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900"
       >
         {t('resource.link')}
         <span className={i18n.dir() === 'rtl' ? 'rotate-180' : ''}>↗</span>

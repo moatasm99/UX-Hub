@@ -161,10 +161,10 @@ const LearningHub = () => {
                         </div>
 
                         {/* Tab Navigation */}
-                        <div className="hidden md:flex items-center gap-2 p-1 rounded-xl bg-slate-100 dark:bg-slate-800">
+                        <div className="hidden md:flex items-center gap-2 p-1 rounded-2xl bg-slate-100 dark:bg-slate-800">
                             <button
                                 onClick={() => { setActiveTab('curriculum'); setSelectedCategory('All'); }}
-                                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === 'curriculum'
+                                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 ${activeTab === 'curriculum'
                                     ? 'bg-white dark:bg-slate-700 shadow-sm text-purple-600 dark:text-purple-400'
                                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                                     }`}
@@ -174,7 +174,7 @@ const LearningHub = () => {
                             </button>
                             <button
                                 onClick={() => { setActiveTab('intensive'); setSelectedCategory('All'); }}
-                                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === 'intensive'
+                                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 ${activeTab === 'intensive'
                                     ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-lg'
                                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                                     }`}
@@ -184,7 +184,7 @@ const LearningHub = () => {
                             </button>
                             <button
                                 onClick={() => { setActiveTab('roadmap'); setSelectedCategory('All'); }}
-                                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === 'roadmap'
+                                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 ${activeTab === 'roadmap'
                                     ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg'
                                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                                     }`}
@@ -197,7 +197,7 @@ const LearningHub = () => {
                         {/* Theme Toggle */}
                         <button
                             onClick={toggleTheme}
-                            className={`p-3 rounded-xl transition-all duration-300 ${theme === 'dark'
+                            className={`p-3 rounded-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 ${theme === 'dark'
                                 ? 'bg-slate-800 hover:bg-slate-700 text-yellow-400'
                                 : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
                                 }`}
@@ -207,10 +207,10 @@ const LearningHub = () => {
                     </div>
 
                     {/* Mobile Tab Navigation */}
-                    <div className="flex md:hidden items-center gap-2 mt-4 overflow-x-auto">
+                    <div className="flex md:hidden items-center gap-2 mt-4 overflow-x-auto pb-2">
                         <button
                             onClick={() => { setActiveTab('curriculum'); setSelectedCategory('All'); }}
-                            className={`flex-shrink-0 flex items-center justify-center gap-1 px-3 py-2 rounded-lg text-xs font-medium transition-all ${activeTab === 'curriculum'
+                            className={`flex-shrink-0 flex items-center justify-center gap-1 px-4 py-3 rounded-xl text-xs font-medium transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 ${activeTab === 'curriculum'
                                 ? 'bg-purple-600 text-white'
                                 : theme === 'dark' ? 'bg-slate-800 text-slate-400' : 'bg-slate-100 text-slate-600'
                                 }`}
@@ -220,7 +220,7 @@ const LearningHub = () => {
                         </button>
                         <button
                             onClick={() => { setActiveTab('intensive'); setSelectedCategory('All'); }}
-                            className={`flex-shrink-0 flex items-center justify-center gap-1 px-3 py-2 rounded-lg text-xs font-medium transition-all ${activeTab === 'intensive'
+                            className={`flex-shrink-0 flex items-center justify-center gap-1 px-4 py-3 rounded-xl text-xs font-medium transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 ${activeTab === 'intensive'
                                 ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white'
                                 : theme === 'dark' ? 'bg-slate-800 text-slate-400' : 'bg-slate-100 text-slate-600'
                                 }`}
@@ -230,7 +230,7 @@ const LearningHub = () => {
                         </button>
                         <button
                             onClick={() => { setActiveTab('roadmap'); setSelectedCategory('All'); }}
-                            className={`flex-shrink-0 flex items-center justify-center gap-1 px-3 py-2 rounded-lg text-xs font-medium transition-all ${activeTab === 'roadmap'
+                            className={`flex-shrink-0 flex items-center justify-center gap-1 px-4 py-3 rounded-xl text-xs font-medium transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 ${activeTab === 'roadmap'
                                 ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white'
                                 : theme === 'dark' ? 'bg-slate-800 text-slate-400' : 'bg-slate-100 text-slate-600'
                                 }`}
@@ -309,9 +309,9 @@ const LearningHub = () => {
                                 placeholder={activeTab === 'curriculum' ? "Search topics, resources..." : "Search product resources..."}
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
-                                className={`w-full pl-12 pr-4 py-4 rounded-2xl border-2 transition-all duration-300 focus:outline-none text-lg ${theme === 'dark'
+                                className={`w-full pl-12 pr-4 py-4 rounded-3xl border-2 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-500/20 text-lg ${theme === 'dark'
                                     ? 'bg-slate-800/50 border-slate-700 focus:border-purple-500 text-white placeholder-slate-500'
-                                    : 'bg-white border-slate-200 focus:border-purple-500 text-slate-900 placeholder-slate-400'
+                                    : 'bg-white border-slate-200 focus:border-purple-500 text-slate-900 placeholder-slate-500'
                                     }`}
                             />
                         </div>
@@ -323,7 +323,7 @@ const LearningHub = () => {
             {activeTab !== 'intensive' && (
                 <section className="px-4 pb-8">
                     <div className="max-w-7xl mx-auto">
-                        <div className={`p-4 rounded-2xl ${theme === 'dark' ? 'bg-slate-800/50' : 'bg-white shadow-sm'}`}>
+                        <div className={`p-4 rounded-3xl ${theme === 'dark' ? 'bg-slate-800/50' : 'bg-white shadow-sm'}`}>
                             <div className="flex flex-wrap items-center gap-4">
                                 <div className="flex items-center gap-2">
                                     <Filter className={`w-5 h-5 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`} />
@@ -338,7 +338,7 @@ const LearningHub = () => {
                                         <button
                                             key={cat}
                                             onClick={() => setSelectedCategory(cat)}
-                                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${selectedCategory === cat
+                                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 ${selectedCategory === cat
                                                 ? activeTab === 'roadmap'
                                                     ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg'
                                                     : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
@@ -361,7 +361,7 @@ const LearningHub = () => {
                                                 <button
                                                     key={level}
                                                     onClick={() => setSelectedLevel(level)}
-                                                    className={`px-3 py-1 rounded-lg text-xs font-medium transition-all ${selectedLevel === level
+                                                    className={`px-3 py-1 rounded-xl text-xs font-medium transition-all focus:outline-none focus:ring-2 focus:ring-purple-500 ${selectedLevel === level
                                                         ? 'bg-purple-600 text-white'
                                                         : theme === 'dark'
                                                             ? 'bg-slate-700 text-slate-400 hover:bg-slate-600'
@@ -387,7 +387,7 @@ const LearningHub = () => {
                     {activeTab === 'intensive' && (
                         <div className="space-y-8">
                             <CreatorSection />
-                            <div className={`text-center py-6 px-6 rounded-2xl mb-8 border transition-all ${theme === 'dark'
+                            <div className={`text-center py-6 px-6 rounded-3xl mb-8 border transition-all ${theme === 'dark'
                                 ? 'bg-gradient-to-br from-emerald-900/20 to-teal-900/20 border-emerald-500/30'
                                 : 'bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-200'}`}>
                                 <h3 className={`text-xl font-bold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
@@ -425,14 +425,22 @@ const LearningHub = () => {
                                             {(courses as Course[]).map((course) => (
                                                 <div
                                                     key={course.id}
-                                                    className={`rounded-2xl border overflow-hidden transition-all duration-300 ${theme === 'dark'
+                                                    className={`rounded-3xl border overflow-hidden transition-all duration-300 ${theme === 'dark'
                                                         ? 'bg-slate-800/50 border-slate-700 hover:border-purple-500/50'
                                                         : 'bg-white border-slate-200 hover:border-purple-300 hover:shadow-lg'
                                                         }`}
                                                 >
                                                     <div
                                                         onClick={() => toggleCard(course.id)}
-                                                        className={`p-5 cursor-pointer ${theme === 'dark' ? 'hover:bg-slate-800' : 'hover:bg-slate-50'}`}
+                                                        role="button"
+                                                        tabIndex={0}
+                                                        onKeyDown={(e) => {
+                                                            if (e.key === 'Enter' || e.key === ' ') {
+                                                                e.preventDefault();
+                                                                toggleCard(course.id);
+                                                            }
+                                                        }}
+                                                        className={`p-5 cursor-pointer transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500 rounded-3xl ${theme === 'dark' ? 'hover:bg-slate-800' : 'hover:bg-slate-50'}`}
                                                     >
                                                         <div className="flex items-start justify-between gap-3">
                                                             <div className="flex-1">
@@ -448,7 +456,7 @@ const LearningHub = () => {
                                                                     {course.description}
                                                                 </p>
                                                             </div>
-                                                            <div className={`p-2 rounded-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-100'}`}>
+                                                            <div className={`p-2 rounded-xl ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-100'}`}>
                                                                 {expandedCards[course.id]
                                                                     ? <ChevronUp className="w-5 h-5" />
                                                                     : <ChevronDown className="w-5 h-5" />
@@ -465,23 +473,23 @@ const LearningHub = () => {
                                                                         href={resource.url}
                                                                         target="_blank"
                                                                         rel="noopener noreferrer"
-                                                                        className={`flex items-center gap-3 p-3 rounded-xl transition-all group ${theme === 'dark'
+                                                                        className={`flex items-center gap-3 p-3 rounded-2xl transition-all group focus:outline-none focus:ring-2 focus:ring-purple-500 ${theme === 'dark'
                                                                             ? 'bg-slate-700/50 hover:bg-slate-700'
                                                                             : 'bg-slate-50 hover:bg-slate-100'
                                                                             }`}
                                                                     >
-                                                                        <div className={`p-2 rounded-lg ${resource.type === 'Video' ? 'bg-red-500/10 text-red-500' : resource.type === 'Article' ? 'bg-blue-500/10 text-blue-500' : 'bg-purple-500/10 text-purple-500'}`}>
+                                                                        <div className={`p-2 rounded-xl ${resource.type === 'Video' ? 'bg-red-500/10 text-red-500' : resource.type === 'Article' ? 'bg-blue-500/10 text-blue-500' : 'bg-purple-500/10 text-purple-500'}`}>
                                                                             {getResourceIcon(resource.type)}
                                                                         </div>
                                                                         <div className="flex-1 min-w-0">
                                                                             <p className={`text-sm font-medium truncate ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
                                                                                 {resource.title}
                                                                             </p>
-                                                                            <p className={`text-xs ${theme === 'dark' ? 'text-slate-500' : 'text-slate-400'}`}>
+                                                                            <p className={`text-xs ${theme === 'dark' ? 'text-slate-500' : 'text-slate-500'}`}>
                                                                                 {resource.type} • {resource.label || 'Resource'}
                                                                             </p>
                                                                         </div>
-                                                                        <ExternalLink className={`w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`} />
+                                                                        <ExternalLink className={`w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`} />
                                                                     </a>
                                                                 ))}
                                                             </div>
@@ -519,14 +527,22 @@ const LearningHub = () => {
                                             {(items as RoadmapItem[]).map((item) => (
                                                 <div
                                                     key={item.id}
-                                                    className={`rounded-2xl border-2 overflow-hidden transition-all duration-300 ${theme === 'dark'
+                                                    className={`rounded-3xl border-2 overflow-hidden transition-all duration-300 ${theme === 'dark'
                                                         ? 'bg-slate-800/50 border-amber-500/30 hover:border-amber-500/60'
                                                         : 'bg-white border-amber-300 hover:border-amber-500'
                                                         }`}
                                                 >
                                                     <div
                                                         onClick={() => toggleCard(item.id)}
-                                                        className={`p-5 cursor-pointer ${theme === 'dark' ? 'hover:bg-slate-800' : 'hover:bg-amber-50'}`}
+                                                        role="button"
+                                                        tabIndex={0}
+                                                        onKeyDown={(e) => {
+                                                            if (e.key === 'Enter' || e.key === ' ') {
+                                                                e.preventDefault();
+                                                                toggleCard(item.id);
+                                                            }
+                                                        }}
+                                                        className={`p-5 cursor-pointer transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500 rounded-3xl ${theme === 'dark' ? 'hover:bg-slate-800' : 'hover:bg-amber-50'}`}
                                                     >
                                                         <div className="flex items-start justify-between gap-3">
                                                             <div className="flex-1">
@@ -537,7 +553,7 @@ const LearningHub = () => {
                                                                     {item.description}
                                                                 </p>
                                                             </div>
-                                                            <div className={`p-2 rounded-lg ${theme === 'dark' ? 'bg-amber-900/30' : 'bg-amber-100'}`}>
+                                                            <div className={`p-2 rounded-xl ${theme === 'dark' ? 'bg-amber-900/30' : 'bg-amber-100'}`}>
                                                                 {expandedCards[item.id]
                                                                     ? <ChevronUp className="w-5 h-5 text-amber-500" />
                                                                     : <ChevronDown className="w-5 h-5 text-amber-500" />
@@ -554,23 +570,23 @@ const LearningHub = () => {
                                                                         href={resource.url}
                                                                         target="_blank"
                                                                         rel="noopener noreferrer"
-                                                                        className={`flex items-center gap-3 p-3 rounded-xl transition-all group ${theme === 'dark'
+                                                                        className={`flex items-center gap-3 p-3 rounded-2xl transition-all group focus:outline-none focus:ring-2 focus:ring-amber-500 ${theme === 'dark'
                                                                             ? 'bg-slate-700/50 hover:bg-slate-700'
                                                                             : 'bg-amber-50 hover:bg-amber-100'
                                                                             }`}
                                                                     >
-                                                                        <div className={`p-2 rounded-lg ${resource.type === 'Video' ? 'bg-red-500/10 text-red-500' : resource.type === 'Article' ? 'bg-blue-500/10 text-blue-500' : 'bg-purple-500/10 text-purple-500'}`}>
+                                                                        <div className={`p-2 rounded-xl ${resource.type === 'Video' ? 'bg-red-500/10 text-red-500' : resource.type === 'Article' ? 'bg-blue-500/10 text-blue-500' : 'bg-purple-500/10 text-purple-500'}`}>
                                                                             {getResourceIcon(resource.type)}
                                                                         </div>
                                                                         <div className="flex-1 min-w-0">
                                                                             <p className={`text-sm font-medium truncate ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
                                                                                 {resource.title}
                                                                             </p>
-                                                                            <p className={`text-xs ${theme === 'dark' ? 'text-slate-500' : 'text-slate-400'}`}>
+                                                                            <p className={`text-xs ${theme === 'dark' ? 'text-slate-500' : 'text-slate-500'}`}>
                                                                                 {resource.type} • {resource.label || 'Resource'}
                                                                             </p>
                                                                         </div>
-                                                                        <ExternalLink className={`w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`} />
+                                                                        <ExternalLink className={`w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`} />
                                                                     </a>
                                                                 ))}
                                                             </div>
@@ -590,7 +606,7 @@ const LearningHub = () => {
             {/* Footer */}
             <footer className={`border-t py-8 px-4 ${theme === 'dark' ? 'border-slate-800 bg-slate-900/50' : 'border-slate-200 bg-white'}`}>
                 <div className="max-w-7xl mx-auto text-center">
-                    <p className={`text-sm ${theme === 'dark' ? 'text-slate-500' : 'text-slate-400'}`}>
+                    <p className={`text-sm ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
                         Built with 💜 for ITI UX/UI Design Students
                     </p>
                 </div>
@@ -599,7 +615,7 @@ const LearningHub = () => {
             {/* Vibe Check FAB */}
             <button
                 onClick={handleVibeCheck}
-                className={`fixed bottom-6 right-6 px-6 py-3 rounded-full font-bold shadow-2xl transition-all duration-300 transform hover:scale-110 ${isVibing
+                className={`fixed bottom-6 right-6 px-6 py-4 rounded-full font-bold shadow-2xl transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-purple-500/50 ${isVibing
                     ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white animate-bounce'
                     : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:shadow-purple-500/30'
                     }`}

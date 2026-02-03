@@ -76,14 +76,22 @@ const CourseContainer: React.FC<CourseContainerProps> = ({ course }) => {
             {/* Course Header - Wide Row Layout */}
             <div
                 onClick={() => setIsExpanded(!isExpanded)}
-                className={`cursor-pointer w-full p-5 ${theme === 'dark' ? 'hover:bg-slate-800/50' : 'hover:bg-slate-50'} transition-colors duration-200`}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setIsExpanded(!isExpanded);
+                    }
+                }}
+                className={`cursor-pointer w-full p-5 ${theme === 'dark' ? 'hover:bg-slate-800/50' : 'hover:bg-slate-50'} transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500 rounded-3xl`}
             >
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-8">
 
                     {/* LEFT: Icon & Main Info */}
                     <div className="flex items-start md:items-center gap-4 flex-1">
                         {/* Icon */}
-                        <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${course.badgeColor} flex items-center justify-center text-2xl shadow-md shrink-0`}>
+                        <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${course.badgeColor} flex items-center justify-center text-2xl shadow-md shrink-0`}>
                             {course.icon}
                         </div>
 
@@ -102,7 +110,7 @@ const CourseContainer: React.FC<CourseContainerProps> = ({ course }) => {
                             <h3 className={`text-lg md:text-xl font-bold truncate pr-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
                                 {course.title}
                             </h3>
-                            <p className={`text-sm line-clamp-1 md:line-clamp-1 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>
+                            <p className={`text-sm line-clamp-1 md:line-clamp-1 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
                                 {course.description}
                             </p>
                         </div>
@@ -112,18 +120,18 @@ const CourseContainer: React.FC<CourseContainerProps> = ({ course }) => {
                     <div className="flex items-center justify-between md:justify-end gap-3 md:gap-6 w-full md:w-auto mt-2 md:mt-0 pt-3 md:pt-0 border-t md:border-none border-dashed border-slate-200 dark:border-slate-800">
                         {/* Stats */}
                         <div className="flex items-center gap-4 text-xs font-medium opacity-80">
-                            <span className={`flex items-center gap-1 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>
+                            <span className={`flex items-center gap-1 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
                                 <Clock className="w-3.5 h-3.5" />
                                 {course.totalHours}
                             </span>
-                            <span className={`flex items-center gap-1 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'}`}>
+                            <span className={`flex items-center gap-1 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
                                 <Layers className="w-3.5 h-3.5" />
                                 {course.modules.length} Modules
                             </span>
                         </div>
 
                         {/* Chevron Trigger */}
-                        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${isExpanded ? 'bg-purple-500 text-white rotate-180' : (theme === 'dark' ? 'bg-slate-800 text-slate-400 hover:text-purple-400' : 'bg-slate-100 text-slate-500 hover:text-purple-600')}`}>
+                        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${isExpanded ? 'bg-purple-500 text-white rotate-180' : (theme === 'dark' ? 'bg-slate-800 text-slate-400 hover:text-purple-400' : 'bg-slate-100 text-slate-600 hover:text-purple-600')}`}>
                             <ChevronDown className="w-5 h-5" />
                         </div>
                     </div>
@@ -152,7 +160,7 @@ const CourseContainer: React.FC<CourseContainerProps> = ({ course }) => {
                                 }`}>
                                 📚 Course Modules ({course.modules.length} Days)
                             </p>
-                            <p className={`text-sm ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'
+                            <p className={`text-sm ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'
                                 }`}>
                                 Each module follows the <span className="font-bold">V.A.T.</span> Model
                             </p>
@@ -174,7 +182,7 @@ const CourseContainer: React.FC<CourseContainerProps> = ({ course }) => {
 
                     {/* Course Completion Banner */}
                     {completedModules.size === course.modules.length && (
-                        <div className={`mx-6 md:mx-8 mb-6 md:mb-8 p-6 rounded-2xl text-center ${theme === 'dark'
+                        <div className={`mx-6 md:mx-8 mb-6 md:mb-8 p-6 rounded-3xl text-center ${theme === 'dark'
                             ? 'bg-gradient-to-r from-emerald-900/30 to-green-900/30 border border-emerald-500/30'
                             : 'bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-200'
                             }`}>

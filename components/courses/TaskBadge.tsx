@@ -16,9 +16,9 @@ const TaskBadge: React.FC<TaskBadgeProps> = ({ task }) => {
     const { theme } = useTheme();
 
     return (
-        <div className={`relative overflow-hidden rounded-xl border-2 border-dashed transition-all ${theme === 'dark'
-                ? 'bg-gradient-to-br from-amber-900/20 to-orange-900/20 border-amber-500/40'
-                : 'bg-gradient-to-br from-amber-50 to-orange-50 border-amber-400'
+        <div className={`relative overflow-hidden rounded-3xl border-2 border-dashed transition-all ${theme === 'dark'
+            ? 'bg-gradient-to-br from-amber-900/20 to-orange-900/20 border-amber-500/40'
+            : 'bg-gradient-to-br from-amber-50 to-orange-50 border-amber-400'
             }`}>
             {/* Header Badge */}
             <div className={`flex items-center gap-2 px-4 py-2 border-b ${theme === 'dark' ? 'border-amber-500/20 bg-amber-900/30' : 'border-amber-200 bg-amber-100'

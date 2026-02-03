@@ -95,7 +95,7 @@ const CourseRoadmap = () => {
                     <div key={index} className="relative">
                         {/* Section Header */}
                         <div className={`flex items-center gap-4 mb-6 pb-4 border-b ${theme === 'dark' ? 'border-slate-800' : 'border-slate-200'}`}>
-                            <div className={`w-14 h-14 rounded-xl flex items-center justify-center text-white shadow-lg text-2xl shrink-0 ${colors.iconBg}`}>
+                            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-lg text-2xl shrink-0 ${colors.iconBg}`}>
                                 {section.icon}
                             </div>
                             <div>

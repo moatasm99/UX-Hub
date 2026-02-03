@@ -23,15 +23,15 @@ const ResourceItem: React.FC<ResourceItemProps> = ({ resource }) => {
             href={resource.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`group flex items-center gap-4 p-4 rounded-xl border transition-all duration-300 hover:scale-[1.02] ${theme === 'dark'
-                    ? 'bg-slate-800/50 border-slate-700 hover:border-slate-500 hover:bg-slate-800'
-                    : 'bg-white border-slate-200 hover:border-slate-300 hover:shadow-md'
+            className={`group flex items-center gap-4 p-4 rounded-2xl border transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 ${theme === 'dark'
+                ? 'bg-slate-800/50 border-slate-700 hover:border-slate-500 hover:bg-slate-800'
+                : 'bg-white border-slate-200 hover:border-slate-300 hover:shadow-md'
                 }`}
         >
             {/* Icon */}
-            <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center ${isVideo
-                    ? 'bg-gradient-to-br from-red-500 to-rose-600 text-white'
-                    : 'bg-gradient-to-br from-blue-500 to-indigo-600 text-white'
+            <div className={`flex-shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center ${isVideo
+                ? 'bg-gradient-to-br from-red-500 to-rose-600 text-white'
+                : 'bg-gradient-to-br from-blue-500 to-indigo-600 text-white'
                 }`}>
                 {isVideo ? <Video className="w-5 h-5" /> : <FileText className="w-5 h-5" />}
             </div>
@@ -44,14 +44,14 @@ const ResourceItem: React.FC<ResourceItemProps> = ({ resource }) => {
                         {isVideo ? '📺 Video' : '📄 Article'}
                     </span>
                     {resource.duration && (
-                        <span className={`text-xs flex items-center gap-1 ${theme === 'dark' ? 'text-slate-500' : 'text-slate-400'
+                        <span className={`text-xs flex items-center gap-1 ${theme === 'dark' ? 'text-slate-500' : 'text-slate-600'
                             }`}>
                             <Clock className="w-3 h-3" />
                             {resource.duration}
                         </span>
                     )}
                     {resource.source && (
-                        <span className={`text-xs px-2 py-0.5 rounded-full ${theme === 'dark' ? 'bg-slate-700 text-slate-400' : 'bg-slate-100 text-slate-500'
+                        <span className={`text-xs px-2 py-0.5 rounded-full ${theme === 'dark' ? 'bg-slate-700 text-slate-400' : 'bg-slate-100 text-slate-600'
                             }`}>
                             {resource.source}
                         </span>
@@ -64,7 +64,7 @@ const ResourceItem: React.FC<ResourceItemProps> = ({ resource }) => {
             </div>
 
             {/* External Link Icon */}
-            <ExternalLink className={`w-4 h-4 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity ${theme === 'dark' ? 'text-slate-400' : 'text-slate-500'
+            <ExternalLink className={`w-4 h-4 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'
                 }`} />
         </a>
     );
