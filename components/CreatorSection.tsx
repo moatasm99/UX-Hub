@@ -29,7 +29,7 @@ const CreatorSection = () => {
                                 <img
                                     src="/images/creator.jpg"
                                     alt="Moatasm Shaban - Founder"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover object-top"
                                 />
                             </div>
 
